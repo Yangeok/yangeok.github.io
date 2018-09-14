@@ -39,6 +39,9 @@ jekyll-archives:
 
 # Disqus comments
 disqus_shortname: yangeok
+disqus_id: yangeok
+disqus_url: yangeok
+
 
 # Google analytics
 # ga_tracking_id: "UA-XXXX-1"
