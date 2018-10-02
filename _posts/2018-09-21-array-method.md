@@ -1,34 +1,39 @@
 ---
 layout: post
-title:  배열 처리 메서드
+title:  배열 메서드
 author: Yangeok
 categories: Javascript
 comments: true
 ---
 
-## forEach
+// TODO: 대범주 이름 통일, 정리하기
+## array.forEach()
 ### 패턴1
 ```javascript
-let data = [1, 2, 3, 4, 5]
+let arr = [1, 2, 3, 4, 5]
 let result = [];
 
-data.forEach(i => {
+arr.forEach(i => {
     result.push(i-1); // 모든 원소값에서 1씩 감소
 });
 console.log(result); // [0, 1, 2, 3, 4]
 ```
 ### 패턴2
 ```javascript
-let data = [1, 2, 3, 4, 5]
+let arr = [1, 2, 3, 4, 5]
 
-data.forEach((val, idx, arr) => { // 매개변수는 값, 인덱스, 배열
-    data[idx] = val-1; // 모든 원소값에서 1씩 감소
+arr.forEach((val, idx, arr) => { // 매개변수는 값, 인덱스, 배열
+    arr[idx] = val-1; // 모든 원소값에서 1씩 감소
 });
-console.log(data); // [0, 1, 2, 3, 4]
+console.log(arr); // [0, 1, 2, 3, 4]
 ```
 기존 배열을 가공해서 평균, 합계를 구할때 사용한다.
 
 ## map
+
+### 구조
+```array.map(callback[, thisArg]```
+
 ```javascript
 let data = [1, 2, 3, 4, 5]
 
@@ -40,7 +45,7 @@ console.log(result); // [0, 1, 2, 3, 4]
 
 새롭게 가공후 수정된 배열을 리턴할때 사용한다.
 
-## filter
+## Array.filter()
 ### 패턴1
 ```javascript
 let data = [
@@ -77,7 +82,7 @@ console.log(result); // [ { name: 'd', age: 4 } ]
 ```
 ```array.prototype.filer```을 통해 더 공부해보기.
 
-## every
+## Array.every()
 ```javascript
 let data = [
     {name: "a", age: 1},
@@ -111,13 +116,13 @@ console.log(result); // false
 ```
 배열 내부를 순회하며 **조건을 만족하는 값(return true)**이 발견되면 순회는 중단된다. 내부원소 하나라도 만족하면 true를 출력한다.
 
-## reject
+## Array.reject()
 ```javascript
 
 ```
 reject는 filter와 정반대로 작동한다. 조건이 false인 배열값들이 들어간 새로운 배열을 return한다.
 
-## reduce
+## Array.reduce()
 ### 기본형
 ```javascript
 arr.reduce(callback[, initialValue])
@@ -241,7 +246,7 @@ console.log(getData2); // a
 ```
 initialValue가 있고 없음에 따른 차이를 보여준다. ```getData2```는 reduce메소드의 두번째 매개변수로 아무값도 전달되지 않았기 때문에 a만 return했다. 
 
-### flatten
+### Array.flatten()
 ```javascript
 let data = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 let flatArrayReducer = (pre, val, idx, arr) => {
@@ -253,7 +258,7 @@ console.log(flattendData); // [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 깊이가 있는 배열들을 납작하게 만들려면, 배열을 순회하면서 concat로직을 활용해서 구현할 수 있다.
 
-### flattenMap
+### Array.flattenMap()
 ```javascript
 let data = [
     {
@@ -296,7 +301,7 @@ console.log(flattendCastArray); // ['ㄱ', 'ㄴ', 'ㄷ', 'ㅈ', 'ㅂ', 'ㅇ']
 ```
 배열을 순횧면서 배열 값으로 들어있는 객체의 키값 존재여부를 확인후, 유니크한 **cast를 키로 갖는 배열의 값들**을 최종적으로 return하는 로직이다. ```Array.isArray()```, ```string.indexOf()```메소드 참조.
 
-### reduceRight
+### Array.reduceRight()
 ```javascript
 let data = [1, 2, 3, 4, '5']
 let sumData = data.reduce((pre, val) => {
@@ -308,7 +313,7 @@ let sumData2 = data.reduceRight((pre, val) => { // reduceRight 메소드 사용
 console.log(sumData); // 105
 console.log(sumData2); //054321
 ```
-initialValue 0과 '5'가 합쳐지면서 '05'가 되고 그 뒤로도 문자열이 되어 '054321'이 return된다.
+initialValue 0과 '5'가 합쳐지면서 '05'가 되고 그 뒤로도 문자열이 되어 '054321'이 return된다. ```reduce()```메서드와 실행 방향이 반대쪽으로 오른쪽부터 연산을 시작한다.
 
 ### reduce를 활용한 함수형 프로그래밍
 ```javascript
@@ -345,17 +350,17 @@ let finalValue2 = pipeline.reduce((pre, val) => {
 console.log(finalValue2); // 1
 ```
 
-## join
+## Array.join()
 ```javascript
 
 ```
 
-## slice
+## Array.slice()
 ```javascript
 
 ```
 
-## sort
+## Array.sort()
 ```javascript
 
 ```
