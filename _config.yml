@@ -67,12 +67,12 @@ disqus_shortname: yangeok
 #     desc: Follow me on Twitter            # Description to display as link title, etc
 #     share: true                           # Include in the "Share" section of posts
 social:
-#   - name: Twitter
-#     icon: twitter
-#     username: Theyangeok
-#     url: https://twitter.com/Theyangeok
-#     desc: Follow me on Twitter
-#     share: true
+  - name: Tistory blog
+    icon: tumblr
+    username: Yangeok
+    url: https://yangwookee.tistory.com
+    desc: Visit my daily life
+    share: true
 
   # - name: Facebook
   #   icon: facebook
@@ -83,7 +83,7 @@ social:
 
   - name: GitHub
     icon: github
-    username: yangeok
+    username: Yangeok
     url: https://github.com/yangeok
     desc: Fork me on GitHub
     share: false
@@ -111,8 +111,8 @@ social:
 
   - name: Instagram
     icon: instagram
-    username: yangeok
-    url: https://instagram.com/wook_eee
+    username: wooo_kee
+    url: https://instagram.com/wooo_kee
     desc: Follow me on Instagram
     share: false
 
