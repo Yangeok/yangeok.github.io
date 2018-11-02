@@ -1,5 +1,8 @@
 # Centrarium [![Circle CI](https://circleci.com/gh/bencentra/centrarium/tree/master.svg?style=svg)](https://circleci.com/gh/bencentra/centrarium/tree/master)
 
+## Scripts
+* ```bundle exec jekyll serve```: watching blog
+<!-- 
 A simple yet classy theme for your Jekyll website or blog. Customizable to fit your style or brand.
 
 Built with these awesome libraries:
@@ -234,4 +237,4 @@ MIT. See [LICENSE.MD](https://github.com/bencentra/centrarium/blob/master/LICENS
 [disqus]: https://disqus.com/
 [ga]: http://www.google.com/analytics/
 [archives]: https://github.com/jekyll/jekyll-archives
-[sitemap]: https://github.com/jekyll/jekyll-sitemap
+[sitemap]: https://github.com/jekyll/jekyll-sitemap -->
