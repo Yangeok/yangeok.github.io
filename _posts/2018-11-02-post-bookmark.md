@@ -45,6 +45,7 @@ categories: Bookmark
 * [SequelizeJS 기본](https://hyunseob.github.io/2016/03/27/usage-of-sequelize-js/)
 * [SequelizeJS REST API에서 데이터 삽입](https://blog.naver.com/agilesoft/220985682264)
 * [nodemailer 사용법](http://onemooon.tistory.com/entry/NODE-JS-nodemailer%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EB%A9%94%EC%9D%BC%EC%9D%84-%EC%A0%84%EC%86%A1%ED%95%B4%EB%B3%B4%EC%9E%90?category=949714)
+* [oAuth와 JWT 인증구조 도식화](https://www.sauru.so/blog/basic-of-oauth2-and-jwt/)
 
 ## 데이터베이스
 * [테스팅 방법 (영문)](https://www.guru99.com/data-testing.html)
