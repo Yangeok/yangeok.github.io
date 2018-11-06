@@ -56,6 +56,13 @@ categories: Bookmark
 * [MySQL 테이블을 CSV로 추출하기](https://gist.github.com/gaerae/6219678)
 * [SQL 요약정리](http://loopypapa.tistory.com/m/category/Database/SQL%20%EC%9A%94%EC%95%BD%20%EC%A0%95%EB%A6%AC)
 
+## DevOps
+
+### S3
+* [소개와 간단한 사용](http://wildpup.cafe24.com/archives/785)
+* [버킷과 객체의 권한을 설정하여 웹에 공개하기](http://wildpup.cafe24.com/archives/804)
+* [versioning 기능 사용하기](http://wildpup.cafe24.com/archives/821)
+
 ## 생산성 향상
 * [변수명 지어주는 사이트](https://www.curioustore.com/#!/)
 * [윈도우즈 명령어](http://kimsungjin.tistory.com/81)
