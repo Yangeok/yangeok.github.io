@@ -30,10 +30,12 @@ categories: Bookmark
 ### 문법
 * [THIS객체의 정체](http://beomy.tistory.com/6)
 * [ES5 vs. ES6 import, export, default (영문)](https://hackernoon.com/import-export-default-require-commandjs-javascript-nodejs-es6-vs-cheatsheet-different-tutorial-example-5a321738b50f)
+* [scope와 hosting](http://beomy.tistory.com/7)
 
 ### 리액트
 * [깊이있는 리액트 개발환경 구축하기](http://sujinlee.me/webpack-react-tutorial/)
 * [공식 튜토리얼 한글 번역](https://brunch.co.kr/@hee072794/72)
+* [리덕스 소개](http://beomy.tistory.com/34?category=609182)
 * [리덕스 튜토리얼](https://deminoth.github.io/redux/)
 * [리덕스란 무엇인가](https://voidsatisfaction.github.io/2017/02/24/what-is-redux/)
 * [웹팩의 기본개념](http://blog.jeonghwan.net/js/2017/05/15/webpack.html)
@@ -62,6 +64,11 @@ categories: Bookmark
 * [소개와 간단한 사용](http://wildpup.cafe24.com/archives/785)
 * [버킷과 객체의 권한을 설정하여 웹에 공개하기](http://wildpup.cafe24.com/archives/804)
 * [versioning 기능 사용하기](http://wildpup.cafe24.com/archives/821)
+* [공식 안내서](https://docs.aws.amazon.com/ko_kr/AmazonS3/latest/dev/Welcome.html)
+
+## 튜토리얼
+* [카톡 플친 봇 만들기](http://wingnim.tistory.com/2?category=767913)
+* [코드 플로우](https://codeflow.study/)
 
 ## 생산성 향상
 * [변수명 지어주는 사이트](https://www.curioustore.com/#!/)
@@ -72,6 +79,7 @@ categories: Bookmark
 * [oven.io 프로토타이퍼](https://ovenapp.io/)
 * [Markdown cheat sheet (영문)](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lines)
 * [Github 협업하는 방법](https://gmlwjd9405.github.io/2017/10/27/how-to-collaborate-on-GitHub-1.html)
+* [로고 자동생성](https://hatchful.shopify.com/)
 
 ## 취업
 * [프론트엔드 면접질문 핸드북](https://github.com/yangshun/front-end-interview-handbook/tree/master/Translations/Korean)
