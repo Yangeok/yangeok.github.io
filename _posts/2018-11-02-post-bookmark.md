@@ -3,7 +3,7 @@ layout: post
 title: '개발 포스트 북마크'
 author: Yangeok
 categories: Bookmark
-tags: [bookmark 저장 개발 기술]
+tags: [bookmark 저장 개발 기술 책갈피]
 ---
 
 개발 블로그에서 나중에 다시 봐야겠다 싶은 포스트들을 모아봤습니다.
@@ -82,6 +82,10 @@ tags: [bookmark 저장 개발 기술]
 
 - [카톡 플친 봇 만들기](http://wingnim.tistory.com/2?category=767913)
 - [코드 플로우](https://codeflow.study/)
+- [PuTTY를 통한 EC2 사용법](https://eastsocial.co.kr/archives/4498)
+- [우분투 웹서버 세팅 방법](https://blog.lael.be/post/73)
+- [Github 협업하는 방법](https://gmlwjd9405.github.io/2017/10/27/how-to-collaborate-on-GitHub-1.html)
+- [AWS DNS 등록 서비스인 ROUTE 53 사용법](https://brunch.co.kr/@topasvga/25)
 
 ## 생산성 향상
 
@@ -92,7 +96,6 @@ tags: [bookmark 저장 개발 기술]
 - [Weather Icons (영문)](https://erikflowers.github.io/weather-icons/)
 - [oven.io 프로토타이퍼](https://ovenapp.io/)
 - [Markdown cheat sheet (영문)](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lines)
-- [Github 협업하는 방법](https://gmlwjd9405.github.io/2017/10/27/how-to-collaborate-on-GitHub-1.html)
 - [로고 자동생성](https://hatchful.shopify.com/)
 - [Prettier 명령어](https://steemit.com/kr/@shimdh/prettier)
 
