@@ -58,6 +58,7 @@ tags: [bookmark 저장 개발 기술 책갈피]
 - [oAuth와 JWT 인증구조 도식화](https://www.sauru.so/blog/basic-of-oauth2-and-jwt/)
 - [ExpressJS, KoaJS 비교 (영문)](https://medium.com/netscape/mastering-koa-middleware-f0af6d327a69)
 - [Koa RESTful API with JWT Auth 참고자료 (영문)](https://dev.to/vitaliikulyk/how-to-initialize-multilayer-nodejs-restful-api-with-jwt-auth-and-postgresql-in-3-steps--c8c)
+- [Passport with JWT (영문)](https://medium.com/front-end-hacking/learn-using-jwt-with-passport-authentication-9761539c4314)
 
 ## 데이터베이스
 

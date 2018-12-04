@@ -32,7 +32,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 ```
 
-여기까지가 기본설정입니다. 그런데 예제에는 왜 세션을 사용하는건지 아직 이해가 안되네요.
+여기까지가 기본설정입니다.
 
 ```js
 // route.js
