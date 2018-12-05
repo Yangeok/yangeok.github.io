@@ -36,6 +36,7 @@ tags: [bookmark 저장 개발 기술 책갈피]
 - [ES5 vs. ES6 import, export, default (영문)](https://hackernoon.com/import-export-default-require-commandjs-javascript-nodejs-es6-vs-cheatsheet-different-tutorial-example-5a321738b50f)
 - [scope와 hosting](http://beomy.tistory.com/7)
 - [await vs. return vs. return await (영문)](https://jakearchibald.com/2017/await-vs-return-vs-return-await/)
+- [프로토타입 이해하기](https://medium.com/@bluesh55/javascript-prototype-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-f8e67c286b67)
 
 ### 리액트
 
