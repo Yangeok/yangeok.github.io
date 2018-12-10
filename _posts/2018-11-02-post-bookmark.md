@@ -60,6 +60,7 @@ tags: [bookmark 저장 개발 기술 책갈피]
 - [ExpressJS, KoaJS 비교 (영문)](https://medium.com/netscape/mastering-koa-middleware-f0af6d327a69)
 - [Koa RESTful API with JWT Auth 참고자료 (영문)](https://dev.to/vitaliikulyk/how-to-initialize-multilayer-nodejs-restful-api-with-jwt-auth-and-postgresql-in-3-steps--c8c)
 - [Passport with JWT (영문)](https://medium.com/front-end-hacking/learn-using-jwt-with-passport-authentication-9761539c4314)
+- [Passport via social login with JWT (영문)](https://www.sitepoint.com/spa-social-login-google-facebook/)
 - [Serverless backend with aws lambda and node.js (영문)](https://medium.com/crowdbotics/how-to-build-a-serverless-backend-with-aws-lambda-and-nodejs-e0d1257086b4)
 - [디버깅 하는방법 (영문)](https://medium.com/cleversonder/supercharge-your-debugging-experience-for-node-js-3f0ddfaffbb2)
 
