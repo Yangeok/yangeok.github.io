@@ -99,7 +99,7 @@ tags: [bookmark 저장 개발 기술 책갈피]
 - [웹기반 ERD툴 + SQL 생성기](http://aquerytool.com/)
 - [Open Weather Map API (영문)](https://openweathermap.org/api)
 - [Weather Icons (영문)](https://erikflowers.github.io/weather-icons/)
-- [oven.io 프로토타이퍼](https://ovenapp.io/)
+- [Oven.io 프로토타이퍼](https://ovenapp.io/)
 - [Markdown cheat sheet (영문)](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lines)
 - [로고 자동생성](https://hatchful.shopify.com/)
 - [Prettier 명령어](https://steemit.com/kr/@shimdh/prettier)
