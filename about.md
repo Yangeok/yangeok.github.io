@@ -6,9 +6,6 @@ permalink: /about/
 
 <img src="{{ site.baseurl }}/assets/profile-placeholder.jpg" title="" class="profile">
 
-Yangwook Jeong  
-1992.06.01  
+## Yangwook Jeong
 
-[yangeok][yangeok] [GitHub repository](https://github.com/yangeok/).
-
-[yangeok]: http://yangeok.github.io
+Skill set: Javascript, Node.js, Express.js, Koa.js, , sequelize.js, MySQL, MongoDB, AWS, PuTTy
