@@ -20,6 +20,12 @@ tags: [bookmark 저장 개발 기술 책갈피]
 
 - [레이아웃 익히기](http://ko.learnlayout.com/)
 
+## 웹
+
+- [쿠키와 세션](https://nesoy.github.io/articles/2017-03/Session-Cookie)
+- [쿠키와 세션 2](https://jeong-pro.tistory.com/80)
+- [쿠키와 세션 3](http://jinbroing.tistory.com/76)
+
 ## 자바스크립트
 
 ### 생태계
