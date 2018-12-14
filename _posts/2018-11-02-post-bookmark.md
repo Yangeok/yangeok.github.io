@@ -25,6 +25,7 @@ tags: [bookmark 저장 개발 기술 책갈피]
 - [쿠키와 세션](https://nesoy.github.io/articles/2017-03/Session-Cookie)
 - [쿠키와 세션 2](https://jeong-pro.tistory.com/80)
 - [쿠키와 세션 3](http://jinbroing.tistory.com/76)
+- [웹스토리지](http://sjh836.tistory.com/162)
 
 ## 자바스크립트
 
@@ -43,6 +44,7 @@ tags: [bookmark 저장 개발 기술 책갈피]
 - [scope와 hosting](http://beomy.tistory.com/7)
 - [await vs. return vs. return await (영문)](https://jakearchibald.com/2017/await-vs-return-vs-return-await/)
 - [프로토타입 이해하기](https://medium.com/@bluesh55/javascript-prototype-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-f8e67c286b67)
+- [코드 성능 올리는 방법](https://joshuajangblog.wordpress.com/2016/11/21/javascript-coding-pattern-for-junior-web-developer/)
 
 ### 리액트
 
