@@ -81,6 +81,7 @@ tags: [bookmark 저장 개발 기술 책갈피]
 - [MySQL 비교연산자 모음](http://randa.tistory.com/entry/%EC%97%B0%EC%82%B0%EC%9E%902-MySQL-%EB%B9%84%EA%B5%90%EC%97%B0%EC%82%B0%EC%9E%90)
 - [MySQL 테이블을 CSV로 추출하기](https://gist.github.com/gaerae/6219678)
 - [SQL 요약정리](http://loopypapa.tistory.com/m/category/Database/SQL%20%EC%9A%94%EC%95%BD%20%EC%A0%95%EB%A6%AC)
+- [SQL WITH/CTE 정리 및 예제](http://developerking.tistory.com/48)
 
 ## DevOps
 
