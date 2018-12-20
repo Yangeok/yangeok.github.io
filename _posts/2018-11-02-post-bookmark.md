@@ -82,6 +82,7 @@ tags: [bookmark 저장 개발 기술 책갈피]
 - [MySQL 테이블을 CSV로 추출하기](https://gist.github.com/gaerae/6219678)
 - [SQL 요약정리](http://loopypapa.tistory.com/m/category/Database/SQL%20%EC%9A%94%EC%95%BD%20%EC%A0%95%EB%A6%AC)
 - [SQL WITH/CTE 정리 및 예제](http://developerking.tistory.com/48)
+- [SQL 트리형 테이블 구조 및 쿼리](https://wooriworld2006.tistory.com/417)
 
 ## DevOps
 
