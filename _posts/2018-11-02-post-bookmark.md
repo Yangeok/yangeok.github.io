@@ -50,10 +50,14 @@ tags: [bookmark 저장 개발 기술 책갈피]
 
 - [깊이있는 리액트 개발환경 구축하기](http://sujinlee.me/webpack-react-tutorial/)
 - [공식 튜토리얼 한글 번역](https://brunch.co.kr/@hee072794/72)
+- [웹팩의 기본개념](http://blog.jeonghwan.net/js/2017/05/15/webpack.html)
+
+### 리덕스
+
 - [리덕스 소개](http://beomy.tistory.com/34?category=609182)
 - [리덕스 튜토리얼](https://deminoth.github.io/redux/)
 - [리덕스란 무엇인가](https://voidsatisfaction.github.io/2017/02/24/what-is-redux/)
-- [웹팩의 기본개념](http://blog.jeonghwan.net/js/2017/05/15/webpack.html)
+- [리덕스란 무엇인가 (2)](https://chanspark.github.io/2017/09/15/React-Redux%EB%9E%80.html)
 
 ## 바벨
 
