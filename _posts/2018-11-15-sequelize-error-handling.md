@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'KoaJS로 작성하는 깔끔한 코드'
+title: 'Koa.js로 작성하는 깔끔한 코드'
 author: Yangeok
 categories: Node.js
 tags: [노드 노드제이에스 시퀄 시퀄라이즈 RDBM]

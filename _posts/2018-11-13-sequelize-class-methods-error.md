@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'SequelizeJS 모델 정의'
+title: 'Sequelize.js 모델 정의'
 author: Yangeok
 categories: Node.js
 tags: [노드 노드제이에스 시퀄 시퀄라이즈 RDBM]
