@@ -8,4 +8,4 @@ permalink: /about/
 
 ## Yangwook Jeong
 
-Skill set: Javascript, Node.js, Express.js, Koa.js, , sequelize.js, MySQL, MongoDB, AWS, PuTTy
+💪 Javascript, Node.js, Express.js, Koa.js, , sequelize.js, MySQL, MongoDB, AWS
