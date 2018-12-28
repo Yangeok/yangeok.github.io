@@ -122,3 +122,9 @@ tags: [bookmark 저장 개발 기술 책갈피]
 ## 취업
 
 - [프론트엔드 면접질문 핸드북](https://github.com/yangshun/front-end-interview-handbook/tree/master/Translations/Korean)
+
+## 동영상 강의
+
+- [Khan academy](https://ko.khanacademy.org/computing)
+- [Coursera](https://ko.coursera.org/)
+- [Udemy](https://www.udemy.com/courses/development/)
