@@ -3,10 +3,10 @@ layout: post
 title: 'Sequelize.js 중첩모델 쿼리 작성하는법'
 author: Yangeok
 categories: Javascript
-tags: [for문 종류]
+comments: true
 tags:
   [
-    nested set model 중첩모델 중첩 트리 중첩구조 구조 트리구조 트리모델 tree 노드 부모 자식 node parent child 시퀄 시퀄라이즈 자바스크립트 js javascript 노드제이에스 nodejs node.js
+    nested set model 중첩모델 중첩 트리 중첩구조 구조 트리구조 트리모델 tree 노드 부모 자식 node parent child 시퀄 시퀄라이즈 자바스크립트 js javascript 노드제이에스 nodejs node.js,
   ]
 ---
 
