@@ -5,6 +5,7 @@ author: Yangeok
 categories: Node.js
 comments: true
 tags: [jwt token json web]
+cover: '/assets/jwt.jpg'
 ---
 
 ## 헤더에 실어서 보내는 방법

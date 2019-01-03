@@ -4,6 +4,7 @@ title: 배열 메서드
 author: Yangeok
 categories: Javascript
 tags: [ES6]
+cover: '/assets/header_image.jpg'
 ---
 
 // TODO: 대범주 이름 통일, 정리하기

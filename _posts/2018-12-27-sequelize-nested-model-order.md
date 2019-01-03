@@ -2,12 +2,13 @@
 layout: post
 title: 'Sequelize.js 중첩모델 쿼리 작성하는법'
 author: Yangeok
-categories: Javascript
+categories: Node.js
 comments: true
 tags:
   [
     nested set model 중첩모델 중첩 트리 중첩구조 구조 트리구조 트리모델 tree 노드 부모 자식 node parent child 시퀄 시퀄라이즈 자바스크립트 js javascript 노드제이에스 nodejs node.js,
   ]
+cover: '/assets/sequelize.jpg'
 ---
 
 부모 밑에 자식이 자식 밑에 손자가 있는 구조로 JSON데이터를 뽑아줄겁니다. 여기서 정렬을 거는 방법을 확인해볼겁니다. 먼저 모델을 정의하고 제약을 걸어줍니다.

@@ -4,6 +4,7 @@ title: 'Koa.js로 작성하는 깔끔한 코드'
 author: Yangeok
 categories: Node.js
 tags: [노드 노드제이에스 시퀄 시퀄라이즈 RDBM]
+cover: '/assets/koa-sequelize.jpg'
 ---
 
 작업환경은 NodeJS v8, KoaJS, SequelizeJS(MySQL)입니다. API 작성전 모듈을 작성합니다.

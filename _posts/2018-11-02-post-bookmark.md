@@ -4,6 +4,7 @@ title: '개발 포스트 북마크'
 author: Yangeok
 categories: Bookmark
 tags: [bookmark 저장 개발 기술 책갈피]
+cover: '/assets/bookmark.jpg'
 ---
 
 개발 블로그에서 나중에 다시 봐야겠다 싶은 포스트들을 모아봤습니다.
