@@ -92,6 +92,10 @@ cover: '/assets/bookmark.jpg'
 
 ## DevOps
 
+### FTP
+
+- [Filezilla 사용법](http://blog.naver.com/PostView.nhn?blogId=ghgus947&logNo=220861653610&parentCategoryNo=&categoryNo=&viewDate=&isShowPopularPosts=false&from=postView)
+
 ### S3
 
 - [소개와 간단한 사용](http://wildpup.cafe24.com/archives/785)
