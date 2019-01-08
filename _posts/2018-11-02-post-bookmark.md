@@ -111,6 +111,8 @@ cover: '/assets/bookmark.jpg'
 - [우분투 웹서버 세팅 방법](https://blog.lael.be/post/73)
 - [Github 협업하는 방법](https://gmlwjd9405.github.io/2017/10/27/how-to-collaborate-on-GitHub-1.html)
 - [AWS DNS 등록 서비스인 ROUTE 53 사용법](https://brunch.co.kr/@topasvga/25)
+- [Docker에서 커밋을 통해 이미지, 컨테이너 생성하는 방법](https://spoqa.github.io/2013/11/22/docker-the-cloud.html)
+- [Docker 튜토리얼](https://subicura.com/2017/01/19/docker-guide-for-beginners-2.html)
 
 ## 생산성 향상
 
@@ -133,3 +135,7 @@ cover: '/assets/bookmark.jpg'
 - [Khan academy](https://ko.khanacademy.org/computing)
 - [Coursera](https://ko.coursera.org/)
 - [Udemy](https://www.udemy.com/courses/development/)
+
+## 커뮤니티
+
+- [Docker Slack Channel](https://open-container-korea.slack.com/messages/C02DDJFN2/)
