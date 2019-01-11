@@ -125,6 +125,7 @@ cover: '/assets/bookmark.jpg'
 - [Markdown cheat sheet (영문)](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lines)
 - [로고 자동생성](https://hatchful.shopify.com/)
 - [Prettier 명령어](https://steemit.com/kr/@shimdh/prettier)
+- [쉘스크립트 치트시트](http://kukuta.tistory.com/85)
 
 ## 취업
 
