@@ -51,7 +51,7 @@ $ curl https://registry-1.docker.io/v2/
 
 제가 직관적으로 알 수 있었던 것은 인증이 안됐다는 것. 이것을 제외하고는 무슨말인지 이해할 수가 없습니다. 구글에 위의 객체를 넣고 검색해보면 결과가 많이 뜹니다. [깃헙 이슈](https://github.com/moby/moby/issues/32270)로 링크를 타고 들어가니 dns 서버를 `8.8.8.8`로 세팅하란 말이네요. 실행에 옮겨봅니다. 도커 세팅으로 들어갑니다.
 
-![](https://t1.daumcdn.net/cfile/tistory/996ECE395C3829DF25)
+<img src="https://t1.daumcdn.net/cfile/tistory/996ECE395C3829DF25" width="250")
 
 이제 세팅창이 뜰겁니다.
 
