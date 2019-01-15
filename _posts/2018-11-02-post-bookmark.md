@@ -113,6 +113,9 @@ cover: '/assets/bookmark.jpg'
 - [AWS DNS 등록 서비스인 ROUTE 53 사용법](https://brunch.co.kr/@topasvga/25)
 - [Docker에서 커밋을 통해 이미지, 컨테이너 생성하는 방법](https://spoqa.github.io/2013/11/22/docker-the-cloud.html)
 - [Docker 튜토리얼](https://subicura.com/2017/01/19/docker-guide-for-beginners-2.html)
+- [Docker 튜토리얼 (2)](https://www.slideshare.net/pyrasis/docker-fordummies-44424016)
+- [EC2에 배포하기](https://jojoldu.tistory.com/263?category=635883)
+- [Travis CI & AWS CodeDeploy로 배포 자동화 구축하기](https://jojoldu.tistory.com/265?category=635883)
 
 ## 생산성 향상
 
