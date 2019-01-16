@@ -117,6 +117,12 @@ cover: '/assets/bookmark.jpg'
 - [EC2에 배포하기](https://jojoldu.tistory.com/263?category=635883)
 - [Travis CI & AWS CodeDeploy로 배포 자동화 구축하기](https://jojoldu.tistory.com/265?category=635883)
 
+## 블록체인
+
+- [NaiveChain (영문)](https://github.com/lhartikk/naivechain)
+- [NaiveCoin (영문)](https://github.com/conradoqg/naivecoin)
+- [JS로 구현하는 블록체인](https://brunch.co.kr/@brunch45gp/85)
+
 ## 생산성 향상
 
 - [변수명 지어주는 사이트](https://www.curioustore.com/#!/)
