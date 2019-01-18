@@ -123,6 +123,10 @@ cover: '/assets/bookmark.jpg'
 - [NaiveCoin (영문)](https://github.com/conradoqg/naivecoin)
 - [JS로 구현하는 블록체인](https://brunch.co.kr/@brunch45gp/85)
 
+## 머신러닝
+
+- [기계학습은 즐겁다](https://medium.com/@jongdae.lim/%EA%B8%B0%EA%B3%84-%ED%95%99%EC%8A%B5-machine-learning-%EC%9D%80-%EC%A6%90%EA%B2%81%EB%8B%A4-part-1-9a0297198ad8)
+
 ## 생산성 향상
 
 - [변수명 지어주는 사이트](https://www.curioustore.com/#!/)
