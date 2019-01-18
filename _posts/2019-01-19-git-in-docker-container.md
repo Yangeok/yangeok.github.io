@@ -2,7 +2,7 @@
 layout: post
 title: '도커 컨테이너에서 깃 사용하는 방법'
 author: Yangeok
-categories: Node.js
+categories: DevOps
 comments: true
 tags:
   [
@@ -205,3 +205,9 @@ $ export LANG=ko_KR.UTF-8
     - LANG 환경값 등록
 
 뭘 위한 여정이었는지는 모르겠으나 도움되는 분들이 계시길 바랍니다.
+
+다음과 같이 이미지를 가져와서 돌리시면 위의 과정 대부분을 생략할 수가 있습니다. 하지만 빌드중 커맨드 입력이 안되기 때문에 locale 패키지 재설정과 LANG 환경값 등록은 컨테이너 실행후 직접 하셔야합니다.
+
+```sh
+$ docker pull wooky92/ubuntu-git
+```
