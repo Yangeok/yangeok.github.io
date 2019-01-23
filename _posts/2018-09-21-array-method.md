@@ -1,10 +1,10 @@
 ---
 layout: post
-title: 배열 메서드
+title: ES6 배열 메서드
 author: Yangeok
 categories: Javascript
-tags: [ES6]
-cover: '/assets/header_image.jpg'
+tags: [ES6 array method 메소드]
+cover: 'https://t1.daumcdn.net/cfile/tistory/99BB1D465C47AEAF27'
 ---
 
 ## array.forEach()

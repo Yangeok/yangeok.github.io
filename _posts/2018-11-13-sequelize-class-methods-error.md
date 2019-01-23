@@ -4,7 +4,7 @@ title: 'Sequelize.js 모델 정의'
 author: Yangeok
 categories: Node.js
 tags: [노드 노드제이에스 시퀄 시퀄라이즈 RDBM]
-cover: '/assets/sequelize.jpg'
+cover: 'https://t1.daumcdn.net/cfile/tistory/9962D04D5C47AEAF2B'
 ---
 
 본 포스팅은 `sequelize-cli`를 사용하였습니다. 디렉토리 구조는 아래와 같습니다.

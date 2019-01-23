@@ -5,7 +5,7 @@ author: Yangeok
 categories: DevOps
 comments: true
 tags: [docker build error err msg message 메시지 에러 도커 빌드]
-cover: '/assets/docker.jpg'
+cover: 'https://t1.daumcdn.net/cfile/tistory/990BDE495C47AEAF28'
 ---
 
 작업환경은 윈도우10, VSC를 이용했습니다. 도커 버전은 다음과 같습니다.

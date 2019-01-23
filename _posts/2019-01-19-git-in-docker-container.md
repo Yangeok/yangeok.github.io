@@ -8,7 +8,7 @@ tags:
   [
     깃 깃헙 깃허브 도커 다커 독커 docker git github 계정 두개 다른 컨테이너 이미지 container image POSIX 우분투 ubuntu locale 로케일 패키지 vi vim editor 에디터 빔 비,
   ]
-cover: '/assets/gitdock.jpg'
+cover: 'https://t1.daumcdn.net/cfile/tistory/99A09C505C47AEB02B'
 ---
 
 바쁜 일상을 살아가고 강박적으로 깃헙에 커밋을 올리는 병에 걸린 사람이 한 명 있습니다. 항상 늦게까지 약속이 있는 날은 노트북을 챙겨 다닙니다. 하지만 그날따라 약속도 없을 것같고 커밋도 올리기 싫어 늑장부리고 싶어지는 날이었습니다. 갑자기 급약속이 생깁니다. 약속이 금방 끝날 것같아 노트북은 챙기지 않습니다. 자정이 지나서야 집에 들어올 수 있었습니다. 그날 해야할 커밋도 하지 못하고 말이죠.

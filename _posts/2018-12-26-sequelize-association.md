@@ -8,7 +8,7 @@ tags:
   [
     셀프조인 조인 레프트조인 레프트 join self left outer alias nickname as 앨리어스,
   ]
-cover: '/assets/sequelize.jpg'
+cover: 'https://t1.daumcdn.net/cfile/tistory/9962D04D5C47AEAF2B'
 ---
 
 Categories 테이블을 만들었는데 셀프조인을 할 예정입니다. 왜냐면 테이블 하나만 가지고 트리구조를 만들거거든요. sequelize-cli를 사용해서 디렉토리가 `models`, `migrations`, `seeders` 이렇게 3개가 존재합니다. 아래 코드는 `models` 폴더 안에 생성된 단수 파일명으로 생성된 `category.js`입니다. `migrations/****-create-category.js` 파일도 아래와 똑같은 구조로 수정해주어야 합니다. `DataTypes`만 `Sequelize`로 수정해주면 두 파일간의 내용이 똑같아지니 다른 튜토리얼을 보고 따라하시면 됩니다. 참고로 `migrations` 하위 파일들은 테이블마다 `createdAt`, `updatedAt`을 가지고 있으니 참고하시구요.

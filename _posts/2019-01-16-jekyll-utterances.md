@@ -8,7 +8,7 @@ tags:
   [
     github page blog jekyll utterances comments comment 댓글 깃헙 깃허브 페이지 블로그,
   ]
-cover: '/assets/jekyll.jpg'
+cover: 'https://t1.daumcdn.net/cfile/tistory/9918A1345C47AEB028'
 ---
 
 작업환경은 Github Page Blog, Jekyll, [Centrarium Theme](http://bencentra.com/centrarium)입니다.

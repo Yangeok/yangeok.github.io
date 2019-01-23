@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<img src="{{ site.baseurl }}/assets/profile-placeholder.jpg" title="" class="profile">
+<img src="https://t1.daumcdn.net/cfile/tistory/99BB17465C47AEAF29" title="" class="profile">
 
 ## Yangwook Jeong
 
