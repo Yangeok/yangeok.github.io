@@ -49,6 +49,8 @@ cover: 'https://t1.daumcdn.net/cfile/tistory/996EA8335C47AEAF27'
 - [await vs. return vs. return await (영문)](https://jakearchibald.com/2017/await-vs-return-vs-return-await/)
 - [프로토타입 이해하기](https://medium.com/@bluesh55/javascript-prototype-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-f8e67c286b67)
 - [코드 성능 올리는 방법](https://joshuajangblog.wordpress.com/2016/11/21/javascript-coding-pattern-for-junior-web-developer/)
+- [배열 메서드 설명 및 사용법](https://bblog.tistory.com/300)
+- [jsDoc 가이드라인 (영문)](http://usejsdoc.org/)
 
 ### 리액트
 
