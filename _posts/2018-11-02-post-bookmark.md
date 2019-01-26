@@ -125,6 +125,9 @@ cover: 'https://t1.daumcdn.net/cfile/tistory/996EA8335C47AEAF27'
 - [Docker 튜토리얼 (2)](https://www.slideshare.net/pyrasis/docker-fordummies-44424016)
 - [EC2에 배포하기](https://jojoldu.tistory.com/263?category=635883)
 - [Travis CI & AWS CodeDeploy로 배포 자동화 구축하기](https://jojoldu.tistory.com/265?category=635883)
+- [PuTTY로 Lightsail 접속하기](https://extrememanual.net/27663)
+- [PuTTY로 Lightsail MacOS에서 접속하기](https://poohsiro.com/%EC%95%84%EB%A7%88%EC%A1%B4-%EB%9D%BC%EC%9D%B4%ED%8A%B8%EC%84%B8%EC%9D%BC-ssh-%EC%A0%91%EC%86%8D%ED%95%98%EA%B8%B0/)
+- [PuTTY로 Lightsail MacOS에서 접속하기 (2)](https://swiftcoding.org/server-connection#web-console)
 
 ## 블록체인
 
