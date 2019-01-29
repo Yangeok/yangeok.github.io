@@ -1,6 +1,6 @@
 # External gems
 # See http://ixti.net/software/2013/01/28/using-jekyll-plugins-on-github-pages.html for making `jekyll archives` work.
-gems:
+plugins:
   - jekyll-archives # Sorry, not GitHub pages friendly!
   - jekyll-sitemap
   - jekyll-paginate
@@ -22,7 +22,7 @@ logo: 'https://t1.daumcdn.net/cfile/tistory/99A1353E5C47AEAF26'
 
 # Build settings
 markdown: kramdown
-paginate: 5
+paginate: 10
 paginate_path: '/page:num/'
 inter_post_navigation: false
 highlightjs_theme: 'monokai-sublime'

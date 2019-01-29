@@ -4,10 +4,7 @@ title: Sequelize.js에서 테이블 별명 사용하는법
 author: Yangeok
 categories: Node.js
 comments: true
-tags:
-  [
-    셀프조인 조인 레프트조인 레프트 join self left outer alias nickname as 앨리어스,
-  ]
+tags: ['join', 'self', 'left', 'outer', 'alias', 'nickname', 'as']
 cover: 'https://t1.daumcdn.net/cfile/tistory/9962D04D5C47AEAF2B'
 ---
 

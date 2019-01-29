@@ -6,7 +6,17 @@ categories: DevOps
 comments: true
 tags:
   [
-    깃 깃헙 깃허브 도커 다커 독커 docker git github 계정 두개 다른 컨테이너 이미지 container image POSIX 우분투 ubuntu locale 로케일 패키지 vi vim editor 에디터 빔 비,
+    'docker',
+    'git',
+    'github',
+    'container',
+    'image',
+    'POSIX',
+    'ubuntu',
+    'locale',
+    'vi',
+    'vim',
+    'editor',
   ]
 cover: 'https://t1.daumcdn.net/cfile/tistory/99A09C505C47AEB02B'
 ---

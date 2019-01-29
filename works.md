@@ -6,7 +6,7 @@ permalink: /works/
 
 ## Works
 
-#### [GitHub repository](https://github.com/yangeok/)
+#### [GitHub Repository](https://github.com/yangeok/)
 
 #### [Github TIL](https://github.com/Yangeok/Today-I-learned/tree/master/diary):
 

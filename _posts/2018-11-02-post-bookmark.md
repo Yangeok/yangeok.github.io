@@ -4,9 +4,7 @@ title: '개발 포스트 북마크'
 author: Yangeok
 categories: Bookmark
 tags:
-  [
-    bookmark 저장 개발 기술 책갈피 dev development technique 테크닉 tutorial full stack,
-  ]
+  ['bookmark', 'dev', 'development', 'technique', 'tutorial', 'full', 'stack']
 cover: 'https://t1.daumcdn.net/cfile/tistory/996EA8335C47AEAF27'
 ---
 

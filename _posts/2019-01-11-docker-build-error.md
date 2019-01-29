@@ -4,7 +4,7 @@ title: '도커 빌드중 에러 메시지가 뜰때 해결 방법'
 author: Yangeok
 categories: DevOps
 comments: true
-tags: [docker build error err msg message 메시지 에러 도커 빌드]
+tags: ['docker', 'build', 'error', 'err', 'msg', 'message']
 cover: 'https://t1.daumcdn.net/cfile/tistory/990BDE495C47AEAF28'
 ---
 

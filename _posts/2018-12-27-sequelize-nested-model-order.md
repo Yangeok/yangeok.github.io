@@ -6,7 +6,17 @@ categories: Node.js
 comments: true
 tags:
   [
-    nested set model 중첩모델 중첩 트리 중첩구조 구조 트리구조 트리모델 tree 노드 부모 자식 node parent child 시퀄 시퀄라이즈 자바스크립트 js javascript 노드제이에스 nodejs node.js,
+    'nested',
+    'set',
+    'model',
+    'tree',
+    'node',
+    'parent',
+    'child',
+    'js',
+    'javascript',
+    'nodejs',
+    'node.js',
   ]
 cover: 'https://t1.daumcdn.net/cfile/tistory/9962D04D5C47AEAF2B'
 ---

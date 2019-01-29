@@ -4,10 +4,7 @@ title: '깃헙 저장소 이슈 페이지를 댓글로 쓰는 방법'
 author: Yangeok
 categories: Blog
 comments: true
-tags:
-  [
-    github page blog jekyll utterances comments comment 댓글 깃헙 깃허브 페이지 블로그,
-  ]
+tags: ['github', 'page', 'blog', 'jekyll', 'utterances', 'comments', 'comment']
 cover: 'https://t1.daumcdn.net/cfile/tistory/9918A1345C47AEB028'
 ---
 

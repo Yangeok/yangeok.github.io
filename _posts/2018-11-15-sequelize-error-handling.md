@@ -3,7 +3,7 @@ layout: post
 title: 'Koa.js로 작성하는 깔끔한 코드'
 author: Yangeok
 categories: Node.js
-tags: [노드 노드제이에스 시퀄 시퀄라이즈 RDBM sequelize orm sequelize.js 코아]
+tags: ['RDBM', 'sequelize', 'orm', 'sequelize.js']
 cover: 'https://t1.daumcdn.net/cfile/tistory/99FBD2415C47AEB028'
 ---
 
