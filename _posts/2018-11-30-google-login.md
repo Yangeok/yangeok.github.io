@@ -67,11 +67,7 @@ passport.use(new GoogleOauthJWTStrategy({
     });
 ```
 
-구글ID라던지 시크릿키는 `.env`파일에 따로 담아 로드했습니다. 구글 개발자 페이지에 등록된 `clientId`와 `clientSecret`을 통해 계정 정보를 확인합니다.
-
-<img src="https://doc-10-28-docs.googleusercontent.com/docs/securesc/if1n05um7d152p097slpq26n64a9c86c/6dbijlc3mnsghtd78ckcabbib4ttg2pa/1543550400000/16223825726810088227/16223825726810088227/1UAdqIZcq791HdXwtvjY-7nnSA3fUVp0P?e=view" width="500">
-
-`/auth/google`에서 콜백된 구글 로그인 페이지가 뜰겁니다. 여기서 계정을 선택하면 아까 위에 있던 코드중 콜백 함수가 실행될 차례입니다.
+구글ID라던지 시크릿키는 `.env`파일에 따로 담아 로드했습니다. 구글 개발자 페이지에 등록된 `clientId`와 `clientSecret`을 통해 계정 정보를 확인합니다. `/auth/google`에서 콜백된 구글 로그인 페이지가 뜰겁니다. 여기서 계정을 선택하면 아까 위에 있던 코드중 콜백 함수가 실행될 차례입니다.
 
 ```js
 async (accesstoken, loginInfo, refreshToken, done) => {

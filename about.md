@@ -8,4 +8,6 @@ permalink: /about/
 
 ## Yangwook Jeong
 
-💪 Javascript, Node.js, Express.js, Koa.js, , sequelize.js, MySQL, MongoDB, AWS
+A Person who wants to learn constantly.
+
+💪 Javascript, Node.js, Express, Koa, sequelize.js, MySQL, MongoDB, AWS
