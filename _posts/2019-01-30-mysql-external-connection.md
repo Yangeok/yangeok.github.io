@@ -2,7 +2,7 @@
 layout: post
 title: 'MySQL 외부에서 접속할 수 있게 세팅하기'
 author: Yangeok
-categories: Devops
+categories: Database
 comments: true
 tags: ['sql', 'mysql', 'database', 'db', 'external', 'connection', 'access']
 cover: 'https://www.dropbox.com/s/rczseclrmthbnrt/mylightbuntu.jpg?dl=1'
