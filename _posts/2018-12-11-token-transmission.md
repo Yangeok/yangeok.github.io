@@ -5,7 +5,7 @@ author: Yangeok
 categories: Node.js
 comments: true
 tags: ['jwt', 'token', 'json', 'web', 'transfer']
-cover: 'https://t1.daumcdn.net/cfile/tistory/996E90335C47AEB027'
+cover: 'https://www.dropbox.com/s/c9i6s85ejd1q9mp/jwt.jpg?dl=0'
 ---
 
 ## 헤더에 실어서 보내는 방법

@@ -5,7 +5,7 @@ author: Yangeok
 categories: Bookmark
 tags:
   ['bookmark', 'dev', 'development', 'technique', 'tutorial', 'full', 'stack']
-cover: 'https://t1.daumcdn.net/cfile/tistory/996EA8335C47AEAF27'
+cover: 'https://www.dropbox.com/s/lwqhflqngz8x2b4/bookmark.jpg?dl=1'
 ---
 
 개발 블로그에서 나중에 다시 봐야겠다 싶은 포스트들을 모아봤습니다.

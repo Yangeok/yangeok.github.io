@@ -17,12 +17,12 @@ description: >
   Web Development Blog.
 baseurl: ''
 url: 'http://yangeok.github.io' # the base hostname & protocol for your site
-cover: 'https://t1.daumcdn.net/cfile/tistory/99BB1D465C47AEAF27'
-logo: 'https://t1.daumcdn.net/cfile/tistory/99A1353E5C47AEAF26'
+cover: 'https://www.dropbox.com/s/nbvy0eonl84zzqo/header_image.jpg?dl=1'
+logo: 'https://www.dropbox.com/s/d5o1gujoa24p9nf/logo.png?dl=1'
 
 # Build settings
 markdown: kramdown
-paginate: 10
+paginate: 5
 paginate_path: '/page:num/'
 inter_post_navigation: false
 highlightjs_theme: 'monokai-sublime'

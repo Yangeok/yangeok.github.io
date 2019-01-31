@@ -1,10 +1,10 @@
 ---
 layout: post
-title: 'Koa.js로 작성하는 깔끔한 코드'
+title: 'Koa.js로 가독성 좋게 재작성하기'
 author: Yangeok
 categories: Node.js
 tags: ['RDBM', 'sequelize', 'orm', 'sequelize.js']
-cover: 'https://t1.daumcdn.net/cfile/tistory/99FBD2415C47AEB028'
+cover: 'https://www.dropbox.com/s/k6ax2ykw8mfu5ma/sequelize.jpg?dl=1'
 ---
 
 작업환경은 Node.js v8, Koa.js, Sequelize.js(MySQL)입니다. API 작성전 모듈을 작성합니다.

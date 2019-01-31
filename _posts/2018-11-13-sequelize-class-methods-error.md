@@ -3,8 +3,8 @@ layout: post
 title: 'Sequelize.js 모델 정의'
 author: Yangeok
 categories: Node.js
-tags: ['RDBM']
-cover: 'https://t1.daumcdn.net/cfile/tistory/9962D04D5C47AEAF2B'
+tags: ['RDBM', 'relational', 'database', 'ORM']
+cover: 'https://www.dropbox.com/s/k6ax2ykw8mfu5ma/sequelize.jpg?dl=1'
 ---
 
 본 포스팅은 `sequelize-cli`를 사용하였습니다. 디렉토리 구조는 아래와 같습니다.

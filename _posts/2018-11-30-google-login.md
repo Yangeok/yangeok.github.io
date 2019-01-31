@@ -4,7 +4,7 @@ title: Passport.js를 사용한 구글 로그인
 author: Yangeok
 categories: Node.js
 tags: ['OAuth', 'passport.js', 'passport']
-cover: 'https://t1.daumcdn.net/cfile/tistory/992CAD445C47AEAF28'
+cover: 'https://www.dropbox.com/s/i32i8iyt9v30cf8/passport.jpg?dl=1'
 ---
 
 작업환경은 NodeJS, KoaJS, koa-passport, [passport-google-oauth-jwt](https://www.npmjs.com/package/passport-google-oauth-jwt)입니다.

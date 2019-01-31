@@ -5,7 +5,7 @@ author: Yangeok
 categories: Blog
 comments: true
 tags: ['github', 'page', 'blog', 'jekyll', 'utterances', 'comments', 'comment']
-cover: 'https://t1.daumcdn.net/cfile/tistory/9918A1345C47AEB028'
+cover: 'https://www.dropbox.com/s/oluu7xjynpble4h/gitkyll.jpg?dl=1'
 ---
 
 작업환경은 Github Page Blog, Jekyll, [Centrarium Theme](http://bencentra.com/centrarium)입니다.
@@ -29,19 +29,19 @@ utterances은 깃헙 이슈 검색 [api](https://developer.github.com/v3/search/
 
 2. utterances 웹페이지에서 [configuration](https://utteranc.es/#configuration)탭으로 갑니다. `repo`에 힌트가 나온 것처럼 `사용자명/저장소명`을 입력합니다. 저는 `Yangeok/blog-comments`라고 입력했습니다.
 
-![](https://t1.daumcdn.net/cfile/tistory/99FAE3435C3E902E05)
+![](https://www.dropbox.com/s/nr95s7th6dgiibj/utterence2.png?dl=1)
 
 3. 포스트와 깃헙저장소 이슈를 이제 연결을 시켜줘야 합니다. 옵션이 6개 있는데 위의 4개는 utterances가 `pathname`, `url`이나 `title`을 자동추적해서 블로그 댓글과 이슈를 생성해주지만, 밑에 2개는 사용자가 직접 세팅을 해줘야 생성이 되니 참고바랍니다. 저는 `pathname`을 선택했습니다.
 
-![](https://t1.daumcdn.net/cfile/tistory/9996E0475C3E902E06)
+![](https://www.dropbox.com/s/zbq9hrxo1fbkq6w/utterence3.png?dl=1)
 
 4. 댓글창 테마를 고릅니다.
 
-![](https://t1.daumcdn.net/cfile/tistory/992A554D5C3E902E0D)
+![](https://www.dropbox.com/s/ndxf83laa0ofq7e/utterence4.png?dl=1)
 
 5. 소스를 복붙합니다. disqus를 사용할때와 마찬가지로 포스팅 댓글 부분 레이아웃 소스에 붙여줍니다.
 
-![](https://t1.daumcdn.net/cfile/tistory/99613E4E5C3E902E16)
+![](https://www.dropbox.com/s/st1o6d0wkoigm68/utterence1.png?dl=1)
 
 ```js
 <script
@@ -64,10 +64,10 @@ utterances은 깃헙 이슈 검색 [api](https://developer.github.com/v3/search/
 
 잘되는군요. 댓글이 보기에 훨씬 disqus보다 깔끔하고 댓글들을 [깃헙저장소 이슈페이지](https://github.com/Yangeok/blog-comments/issues)에서 한번에 모아서 볼 수 있으니 훨씬 좋을 것 같습니다. 참고로 utterances는 작년 3월에 시작된 프로젝트더라구요. 어서 이름을 떨쳤으면 하는 바램입니다.
 
-![](https://t1.daumcdn.net/cfile/tistory/9970A7405C3E87F801)
+![](https://www.dropbox.com/s/paf0vcjqt520phh/utterence5.png?dl=1)
 
 이렇게 뜨던 댓글이
 
-![](https://t1.daumcdn.net/cfile/tistory/9949DA4F5C3E87F807)
+![](https://www.dropbox.com/s/mumfe9199aluwkz/utterence6.png?dl=1)
 
 이렇게 바뀝니다.

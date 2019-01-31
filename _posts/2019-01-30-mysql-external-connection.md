@@ -2,13 +2,13 @@
 layout: post
 title: 'MySQL 외부에서 접속할 수 있게 세팅하기'
 author: Yangeok
-categories: Database
+categories: Devops
 comments: true
 tags: ['sql', 'mysql', 'database', 'db', 'external', 'connection', 'access']
-cover: 'https://t1.daumcdn.net/cfile/tistory/994EB64A5C47AEAF29'
+cover: 'https://www.dropbox.com/s/rczseclrmthbnrt/mylightbuntu.jpg?dl=1'
 ---
 
-현재 AWS Lightsail에 MySQL을 설치한 상태이고 로컬에서 인스턴스에 설치된 MySQL로 접근을 하고자 합니다. 외부에서 접근을 허용하기 위해 4가지 일이 필요합니다.
+현재 Ubuntu 16.04가 설치된 AWS Lightsail에 MySQL을 설치한 상태이고 로컬에서 인스턴스에 설치된 MySQL로 접근을 하고자 합니다. 외부에서 접근을 허용하기 위해 4가지 일이 필요합니다.
 
 1. AWS 웹페이지에서 방화벽을 열어준다.
 2. 인스턴스 내 config 파일을 수정한다.
@@ -17,19 +17,19 @@ cover: 'https://t1.daumcdn.net/cfile/tistory/994EB64A5C47AEAF29'
 
 첫번째부터 시작하겠습니다. 우선 인스턴스를 하나 만들고 인스턴스 설정으로 들어갑니다.
 
-![](https://t1.daumcdn.net/cfile/tistory/99B622335C4EF81701)
+![](https://www.dropbox.com/s/10qg9ha074epg0l/mysql%20%282%29.png?dl=1)
 
 상단에 네트워킹 탭이 있습니다. 네트워킹 - 방화벽으로 갑니다.
 
-![](https://t1.daumcdn.net/cfile/tistory/9984C23F5C4EF81729)
+![](https://www.dropbox.com/s/mvxa5lht9oiumig/mysql%20%283%29.png?dl=1)
 
 다른 항목 추가를 눌러 `MySQL/Aurora`를 선택해주면 포트를 자동으로 MySQL이 쓰는 포트인 `3306`으로 만들어줍니다. 저장을 누릅니다.
 
-![](https://t1.daumcdn.net/cfile/tistory/99023E455C4EF81727)
+![](https://www.dropbox.com/s/ts3sg41vho4scwg/mysql%20%284%29.png?dl=1)
 
 두번째, 인스턴스로 들어갑니다. 아직 로컬에서는 접근 못하니 AWS 웹페이지에서 브라우저를 이용한 연결을 합니다.
 
-![](https://t1.daumcdn.net/cfile/tistory/99D55A3E5C4EF8173A)
+![](https://www.dropbox.com/s/jfhohj0svs2iokw/mysql%20%285%29.png?dl=1)
 
 인스턴스 쉘에 접속했으면 MySQL에서 허용할 호스트주소를 설정하는 파일을 수정해야 합니다. 내가 설치한 MySQL버전이 어떻게 되는지에 따라 설정 방법이 다릅니다.
 
@@ -115,7 +115,7 @@ $ sudo service mysqld restart
 
 이제 커맨드라인에서 원격환경 MySQL에 접속이 잘 되는지 확인을 한번 해볼까요. 다음과 같이 잘되는 모습을 확인할 수 있습니다.
 
-![](https://t1.daumcdn.net/cfile/tistory/99C339355C4EF8170C)
+![](https://www.dropbox.com/s/tkrr2r6xkzv3bl7/mysql%20%281%29.png?dl=1)
 
 참조:
 
