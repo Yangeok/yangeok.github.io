@@ -20,6 +20,9 @@ url: 'http://yangeok.github.io' # the base hostname & protocol for your site
 cover: 'https://www.dropbox.com/s/nbvy0eonl84zzqo/header_image.jpg?dl=1'
 logo: 'https://www.dropbox.com/s/d5o1gujoa24p9nf/logo.png?dl=1'
 
+# Variable
+img_url: 'https://s3.ap-northeast-2.amazonaws.com/image.yangeok'
+
 # Build settings
 markdown: kramdown
 paginate: 5

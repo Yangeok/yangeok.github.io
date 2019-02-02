@@ -99,7 +99,9 @@ cover: 'https://www.dropbox.com/s/lwqhflqngz8x2b4/bookmark.jpg?dl=1'
 
 - [Filezilla 사용법](http://blog.naver.com/PostView.nhn?blogId=ghgus947&logNo=220861653610&parentCategoryNo=&categoryNo=&viewDate=&isShowPopularPosts=false&from=postView)
 
-### S3
+### AWS
+
+#### S3
 
 - [소개와 간단한 사용](http://wildpup.cafe24.com/archives/785)
 - [버킷과 객체의 권한을 설정하여 웹에 공개하기](http://wildpup.cafe24.com/archives/804)
@@ -126,6 +128,9 @@ cover: 'https://www.dropbox.com/s/lwqhflqngz8x2b4/bookmark.jpg?dl=1'
 - [PuTTY로 Lightsail 접속하기](https://extrememanual.net/27663)
 - [PuTTY로 Lightsail MacOS에서 접속하기](https://poohsiro.com/%EC%95%84%EB%A7%88%EC%A1%B4-%EB%9D%BC%EC%9D%B4%ED%8A%B8%EC%84%B8%EC%9D%BC-ssh-%EC%A0%91%EC%86%8D%ED%95%98%EA%B8%B0/)
 - [PuTTY로 Lightsail MacOS에서 접속하기 (2)](https://swiftcoding.org/server-connection#web-console)
+- [특정 파일을 다른 깃 저장소에 연결시키는 방법](https://stackoverflow.com/questions/7597748/linking-a-single-file-from-another-git-repository)
+- [실행중인 노드 웹서버 프로세스 죽이는 방법](https://stackoverflow.com/questions/31649267/how-to-kill-a-nodejs-process-in-linux)
+- [윈도우즈 종료시 프로그램/배치스크립트 실행시키는 방법](https://zypper.tistory.com/58)
 
 ## 블록체인
 
@@ -153,6 +158,7 @@ cover: 'https://www.dropbox.com/s/lwqhflqngz8x2b4/bookmark.jpg?dl=1'
 ## 취업
 
 - [프론트엔드 면접질문 핸드북](https://github.com/yangshun/front-end-interview-handbook/tree/master/Translations/Korean)
+- [주니어 개발자를 위한 취업 정보](https://github.com/jojoldu/junior-recruit-scheduler)
 
 ## 동영상 강의
 
