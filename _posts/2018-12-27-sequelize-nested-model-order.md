@@ -18,7 +18,7 @@ tags:
     'nodejs',
     'node.js',
   ]
-cover: 'https://www.dropbox.com/s/k6ax2ykw8mfu5ma/sequelize.jpg?dl=1'
+cover: 'http://drive.google.com/uc?export=view&id=1tzqWG8SozuBI9BZkjMpkLxG-T84MbHt2'
 ---
 
 부모 밑에 자식이 자식 밑에 손자가 있는 구조로 JSON데이터를 뽑아줄겁니다. 여기서 정렬을 거는 방법을 확인해볼겁니다. 먼저 모델을 정의하고 제약을 걸어줍니다.

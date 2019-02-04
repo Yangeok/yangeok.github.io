@@ -5,7 +5,7 @@ author: Yangeok
 categories: Blog
 comments: true
 tags: ['github', 'page', 'blog', 'jekyll', 'utterances', 'comments', 'comment']
-cover: 'https://www.dropbox.com/s/oluu7xjynpble4h/gitkyll.jpg?dl=1'
+cover: 'http://drive.google.com/uc?export=view&id=1W8G0IEL970Xe3pNQL-OR8NOq3S9_XkGa'
 ---
 
 작업환경은 Github Page Blog, Jekyll, [Centrarium Theme](http://bencentra.com/centrarium)입니다.

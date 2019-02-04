@@ -6,7 +6,7 @@ categories: DevOps
 comments: true
 tags:
   ['aws', 'windows', 'putty', 'instance', 'amazon', 'web', 'service', 'access']
-cover: 'https://www.dropbox.com/s/nn9v33kxuac9awc/lightsail.jpg?dl=1'
+cover: 'http://drive.google.com/uc?export=view&id=1WFUVsQcVxZCa28Fu9dDFfLo40tEfDwQT'
 ---
 
 AWS 자체 튜토리얼에 나온대로 인증키쌍을 생성했는데 안되더라구요. 한국커뮤니티에는 관련글이 전혀 없었고 외국 커뮤니티도 겨우 뒤져 찾아낸 방법입니다. 리눅스나 맥에서는 쉘을 통해 간단한 명령어를 통해서 바로 인스턴스에 접속할 수 있지만 윈도우는 그렇지 못합니다. 그래서 우리는 아래와 같은 4단계를 거쳐 윈도우에서 인스턴스에 접근할 수 있게 되는 튜토리얼을 [AWS 튜토리얼](https://lightsail.aws.amazon.com/ls/docs/ko/articles/lightsail-how-to-set-up-putty-to-connect-using-ssh)에서 볼 수 있습니다.
@@ -31,23 +31,23 @@ DIsconnected: No supported authentication methods available (server sent: public
 
 PuTTYgen에서 **Conversions - Import key** 를 통해 아까 인스턴스에서 다운받은 SSH키 파일을 데려옵니다.
 
-![](https://s3.ap-northeast-2.amazonaws.com/image.yangeok/dev/putty/putty4.png)
+![](http://drive.google.com/uc?export=view&id=1FnoeUpB8TPpurobXFkBdXZqAPsLRKjVN)
 
 튜토리얼에서는 **Actions - Load an existing private key file - Load** 를 통해 `.pem`파일을 가져오라고 합니다. 그리고 이런 메시지까지 같이 뜨죠. Save private key를 통해 PuTTY 고유 포맷으로 저장하라는 소리군요.
 
-![](https://s3.ap-northeast-2.amazonaws.com/image.yangeok/dev/putty/putty7.png)
+![](http://drive.google.com/uc?export=view&id=1xViTWV5af7kxQH_FB5h1KlfCE5m0m88x)
 
 파일을 처음 소개한 방법을 통해 가져오고 나서 키쌍을 생성하기 전에 **Parameters - Type of key to generate** 에서 타입을 **SSH-1 (RSA)** 로 꼭 설정을 바꿔준 후에 **Actions - Generate a public/private key pair - Generate** 를 합니다.
 
-![](https://s3.ap-northeast-2.amazonaws.com/image.yangeok/dev/putty/putty5.png)
+![](http://drive.google.com/uc?export=view&id=1cEeOJzl6GvjmJ_hAqXHT6ymeNdke5fUB)
 
 생성을 누르고 난 후에는 PuTTY창 안에서 마우스를 계속해서 움직여줘야 합니다. 랜덤한 키를 생성하기 위한 행동인 것 같습니다. 저는 처음에 멍청하게도 아래와 같은 메시지를 읽지도 않고 키 생성이 왜 이렇게 느리지라고만 생각했는데 지금 생각하면 어이가 없습니다.
 
-![](https://s3.ap-northeast-2.amazonaws.com/image.yangeok/dev/putty/putty5.png)
+![](http://drive.google.com/uc?export=view&id=1rv8iyG6RbYyBriOREcTVS3Xo3yz-28BF)
 
 생성이 다됐다면 **Action - Save the generated key - Save private key** 를 통해 `.ppk`확장자로 개인키를 저장합니다. 그리고는 PuTTY로 넘어와서 튜토리얼에 나온 간단한 세팅을 마치면 윈도우에서도 자체 SSH 클라이언트로 라이트세일에 접속할 수가 있게 됩니다. 여담으로 AWS 포럼에도 에러가 난다고 글을 올리는데 왜 AWS측에서는 튜토리얼을 업데이트하지 않는지 이해가 안되는군요.
 
-![](https://s3.ap-northeast-2.amazonaws.com/image.yangeok/dev/putty/putty2.png)
+![](http://drive.google.com/uc?export=view&id=1Ru7cMseL4a589Co4I3kdJWPhrmoIcODk)
 
 (chmod가 필요할 수도 있다는 내용을 작성할 것)
 

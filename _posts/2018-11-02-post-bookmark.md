@@ -5,7 +5,7 @@ author: Yangeok
 categories: Bookmark
 tags:
   ['bookmark', 'dev', 'development', 'technique', 'tutorial', 'full', 'stack']
-cover: 'https://www.dropbox.com/s/lwqhflqngz8x2b4/bookmark.jpg?dl=1'
+cover: 'http://drive.google.com/uc?export=view&id=1C7aA6GL0RiF3PX6eb8eP0RgV9j0Eq5CT'
 ---
 
 개발 블로그에서 나중에 다시 봐야겠다 싶은 포스트들을 모아봤습니다.
@@ -159,6 +159,11 @@ cover: 'https://www.dropbox.com/s/lwqhflqngz8x2b4/bookmark.jpg?dl=1'
 
 - [프론트엔드 면접질문 핸드북](https://github.com/yangshun/front-end-interview-handbook/tree/master/Translations/Korean)
 - [주니어 개발자를 위한 취업 정보](https://github.com/jojoldu/junior-recruit-scheduler)
+
+## 알고리즘
+
+- [해커랭크 (영문)](https://www.hackerrank.com/)
+- [코드워즈 (영문)](https://www.codewars.com/)
 
 ## 동영상 강의
 

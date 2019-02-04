@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<img src="https://t1.daumcdn.net/cfile/tistory/99BB17465C47AEAF29" title="" class="profile">
+<img src="http://drive.google.com/uc?export=view&id=1a-jqeWFzugtREEuBOvLmwo6QpfTUF080" title="" class="profile">
 
 ## Yangwook Jeong
 
