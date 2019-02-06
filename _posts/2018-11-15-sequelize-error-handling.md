@@ -3,7 +3,8 @@ layout: post
 title: 'Koa.js로 가독성 좋게 재작성하기'
 author: Yangeok
 categories: Node.js
-tags: ['RDBM', 'sequelize', 'orm', 'sequelize.js']
+comments: true
+# tags: ['RDBM', 'sequelize', 'orm', 'sequelize.js']
 cover: 'http://drive.google.com/uc?export=view&id=1tzqWG8SozuBI9BZkjMpkLxG-T84MbHt2'
 ---
 

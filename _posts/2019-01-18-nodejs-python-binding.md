@@ -4,7 +4,7 @@ title: 'Node.js에 Python 바인딩 하는방법'
 author: Yangeok
 categories: Node.js
 comments: true
-tags: ['nodejs', 'node.js', 'python', 'binding', 'bind', 'connect']
+# tags: ['nodejs', 'node.js', 'python', 'binding', 'bind', 'connect']
 cover: 'http://drive.google.com/uc?export=view&id=1IhRnzezzJBUVznx5zWTsbEuHKNv2F-NR'
 ---
 

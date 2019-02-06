@@ -4,17 +4,17 @@ title: 'Javascript 배열 가공하기'
 author: Yangeok
 categories: Javascript
 comments: true
-tags:
-  [
-    'javascript',
-    'ecmascript',
-    'es6',
-    'arr',
-    'array',
-    'obj',
-    'object',
-    'manufacture',
-  ]
+# tags:
+#   [
+#     'javascript',
+#     'ecmascript',
+#     'es6',
+#     'arr',
+#     'array',
+#     'obj',
+#     'object',
+#     'manufacture',
+#   ]
 cover: 'http://drive.google.com/uc?export=view&id=1bruVEytwg8WRTy8b_st8-v-gdXzu1Fsd'
 ---
 

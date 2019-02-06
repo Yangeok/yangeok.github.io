@@ -3,8 +3,9 @@ layout: post
 title: '개발 포스트 북마크'
 author: Yangeok
 categories: Bookmark
-tags:
-  ['bookmark', 'dev', 'development', 'technique', 'tutorial', 'full', 'stack']
+comments: true
+# tags:
+#   ['bookmark', 'dev', 'development', 'technique', 'tutorial', 'full', 'stack']
 cover: 'http://drive.google.com/uc?export=view&id=1C7aA6GL0RiF3PX6eb8eP0RgV9j0Eq5CT'
 ---
 

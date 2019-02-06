@@ -3,7 +3,8 @@ layout: post
 title: 'Sequelize.js 모델 정의'
 author: Yangeok
 categories: Node.js
-tags: ['RDBM', 'relational', 'database', 'ORM']
+comments: true
+# tags: ['RDBM', 'relational', 'database', 'ORM']
 cover: 'http://drive.google.com/uc?export=view&id=1tzqWG8SozuBI9BZkjMpkLxG-T84MbHt2'
 ---
 

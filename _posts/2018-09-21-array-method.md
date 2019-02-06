@@ -3,7 +3,8 @@ layout: post
 title: ES6 배열 메서드
 author: Yangeok
 categories: Javascript
-tags: ['ES6', 'array', 'method']
+comments: true
+# tags: ['ES6', 'array', 'method']
 cover: 'http://drive.google.com/uc?export=view&id=1bruVEytwg8WRTy8b_st8-v-gdXzu1Fsd'
 ---
 

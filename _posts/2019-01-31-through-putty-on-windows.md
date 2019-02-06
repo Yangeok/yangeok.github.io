@@ -4,8 +4,8 @@ title: '윈도우에서 PuTTY를 통해 AWS 인스턴스 접속하는 방법'
 author: Yangeok
 categories: DevOps
 comments: true
-tags:
-  ['aws', 'windows', 'putty', 'instance', 'amazon', 'web', 'service', 'access']
+# tags:
+#   ['aws', 'windows', 'putty', 'instance', 'amazon', 'web', 'service', 'access']
 cover: 'http://drive.google.com/uc?export=view&id=1WFUVsQcVxZCa28Fu9dDFfLo40tEfDwQT'
 ---
 

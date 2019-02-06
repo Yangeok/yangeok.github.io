@@ -3,7 +3,8 @@ layout: post
 title: Passport.js를 사용한 구글 로그인
 author: Yangeok
 categories: Node.js
-tags: ['OAuth', 'passport.js', 'passport']
+comments: true
+# tags: ['OAuth', 'passport.js', 'passport']
 cover: 'https://drive.google.com/open?id=1SHwmxE7z3-kZof0sgPMW0rHUldn3gIKk'
 ---
 

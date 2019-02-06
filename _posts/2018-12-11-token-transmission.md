@@ -4,7 +4,7 @@ title: JWT 전송 방법 두 가지
 author: Yangeok
 categories: Node.js
 comments: true
-tags: ['jwt', 'token', 'json', 'web', 'transfer']
+# tags: ['jwt', 'token', 'json', 'web', 'transfer']
 cover: 'http://drive.google.com/uc?export=view&id=1S6QR9ZmqBj0_V0IPa-UklnmpqeKwgEGw'
 ---
 

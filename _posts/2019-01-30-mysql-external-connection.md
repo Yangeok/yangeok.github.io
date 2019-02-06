@@ -4,7 +4,7 @@ title: 'MySQL 외부에서 접속할 수 있게 세팅하기'
 author: Yangeok
 categories: Database
 comments: true
-tags: ['sql', 'mysql', 'database', 'db', 'external', 'connection', 'access']
+# tags: ['sql', 'mysql', 'database', 'db', 'external', 'connection', 'access']
 cover: 'http://drive.google.com/uc?export=view&id=18w00LonsJDFKFndMWlEtmuTRgIfdSMuW'
 ---
 

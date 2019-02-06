@@ -4,20 +4,20 @@ title: '도커 컨테이너에서 깃 사용하는 방법'
 author: Yangeok
 categories: DevOps
 comments: true
-tags:
-  [
-    'docker',
-    'git',
-    'github',
-    'container',
-    'image',
-    'POSIX',
-    'ubuntu',
-    'locale',
-    'vi',
-    'vim',
-    'editor',
-  ]
+# tags:
+#   [
+#     'docker',
+#     'git',
+#     'github',
+#     'container',
+#     'image',
+#     'POSIX',
+#     'ubuntu',
+#     'locale',
+#     'vi',
+#     'vim',
+#     'editor',
+#   ]
 cover: 'http://drive.google.com/uc?export=view&id=1wg59g72ondi8FZEBO9Yvc1_JAj7I5ilX'
 ---
 

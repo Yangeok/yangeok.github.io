@@ -4,20 +4,20 @@ title: 'Sequelize.js 중첩모델 쿼리 작성하는법'
 author: Yangeok
 categories: Node.js
 comments: true
-tags:
-  [
-    'nested',
-    'set',
-    'model',
-    'tree',
-    'node',
-    'parent',
-    'child',
-    'js',
-    'javascript',
-    'nodejs',
-    'node.js',
-  ]
+# tags:
+#   [
+#     'nested',
+#     'set',
+#     'model',
+#     'tree',
+#     'node',
+#     'parent',
+#     'child',
+#     'js',
+#     'javascript',
+#     'nodejs',
+#     'node.js',
+#   ]
 cover: 'http://drive.google.com/uc?export=view&id=1tzqWG8SozuBI9BZkjMpkLxG-T84MbHt2'
 ---
 
