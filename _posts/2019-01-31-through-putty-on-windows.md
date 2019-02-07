@@ -9,7 +9,7 @@ comments: true
 cover: 'http://drive.google.com/uc?export=view&id=1WFUVsQcVxZCa28Fu9dDFfLo40tEfDwQT'
 ---
 
-AWS 자체 튜토리얼에 나온대로 인증키쌍을 생성했는데 안되더라구요. 한국커뮤니티에는 관련글이 전혀 없었고 외국 커뮤니티도 겨우 뒤져 찾아낸 방법입니다. 리눅스나 맥에서는 쉘을 통해 간단한 명령어를 통해서 바로 인스턴스에 접속할 수 있지만 윈도우는 그렇지 못합니다. 그래서 우리는 아래와 같은 4단계를 거쳐 윈도우에서 인스턴스에 접근할 수 있게 되는 튜토리얼을 [AWS 튜토리얼](https://lightsail.aws.amazon.com/ls/docs/ko/articles/lightsail-how-to-set-up-putty-to-connect-using-ssh)에서 볼 수 있습니다.
+AWS 자체 튜토리얼에 나온대로 인증키쌍을 생성했는데 안되더라구요. 리눅스나 맥에서는 쉘을 통해 간단한 명령어를 통해서 바로 인스턴스에 접속할 수 있지만 윈도우는 그렇지 못합니다. 그래서 우리는 아래와 같은 4단계를 거쳐 윈도우에서 인스턴스에 접근할 수 있게 되는 튜토리얼을 [AWS 튜토리얼](https://lightsail.aws.amazon.com/ls/docs/ko/articles/lightsail-how-to-set-up-putty-to-connect-using-ssh)에서 볼 수 있습니다.
 
 1. AWS에서 SSH키를 다운받는다.
 2. PuTTY를 설치한다.

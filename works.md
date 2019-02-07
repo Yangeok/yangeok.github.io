@@ -6,7 +6,7 @@ permalink: /works/
 
 ## Works
 
-#### [Portfolio](https://yangeok-private.github.io/portfolio/)
+<!-- #### [Portfolio](https://yangeok-private.github.io/portfolio/) -->
 
 #### [GitHub Repository](https://github.com/yangeok/)
 
