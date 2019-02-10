@@ -155,6 +155,7 @@ cover: 'http://drive.google.com/uc?export=view&id=1C7aA6GL0RiF3PX6eb8eP0RgV9j0Eq
 - [로고 자동생성](https://hatchful.shopify.com/)
 - [Prettier 명령어](https://steemit.com/kr/@shimdh/prettier)
 - [쉘스크립트 치트시트](http://kukuta.tistory.com/85)
+- [정규표현식](https://poiemaweb.com/js-regexp)
 
 ## 취업
 
