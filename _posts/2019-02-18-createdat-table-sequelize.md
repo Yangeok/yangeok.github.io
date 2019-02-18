@@ -4,7 +4,7 @@ title: '테이블 컬럼 추가시 에러 해결하기'
 author: Yangeok
 categories: Node.js
 comments: true
-cover: ''
+cover: 'http://drive.google.com/uc?export=view&id=1tzqWG8SozuBI9BZkjMpkLxG-T84MbHt2'
 ---
 
 ## 작업환경
