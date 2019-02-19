@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Sequelize.js 모델 정의'
+title: Sequelize.js 모델 정의하기
 author: Yangeok
 categories: Node.js
 comments: true

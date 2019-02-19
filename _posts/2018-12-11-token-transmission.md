@@ -1,6 +1,6 @@
 ---
 layout: post
-title: JWT 전송 방법 두 가지
+title: Koa.js JWT 두가지 방법으로 전송하기
 author: Yangeok
 categories: Node.js
 comments: true

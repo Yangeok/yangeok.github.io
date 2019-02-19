@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '테이블 컬럼 추가시 에러 해결하기'
+title: Sequelize.js 테이블 컬럼 추가시 에러 해결하기
 author: Yangeok
 categories: Node.js
 comments: true

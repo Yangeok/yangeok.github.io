@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Node.js에 Python 바인딩 하는방법'
+title: Node.js Python 바인딩 하기
 author: Yangeok
 categories: Node.js
 comments: true

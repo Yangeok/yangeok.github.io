@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '도커 빌드중 에러 메시지가 뜰때 해결 방법'
+title: Docker 빌드중 에러 메시지가 뜰때 해결하기
 author: Yangeok
 categories: DevOps
 comments: true

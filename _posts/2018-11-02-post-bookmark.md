@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '개발 포스트 북마크'
+title: 개발 포스트 북마크
 author: Yangeok
 categories: Bookmark
 comments: true

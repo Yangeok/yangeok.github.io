@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sequelize.js에서 테이블 별명 사용하는법
+title: Sequelize.js 테이블 별명 사용하기
 author: Yangeok
 categories: Node.js
 comments: true

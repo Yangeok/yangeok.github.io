@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '윈도우에서 PuTTY를 통해 AWS 인스턴스 접속하는 방법'
+title: 윈도우에서 PuTTY를 통해 AWS 인스턴스 접속하기
 author: Yangeok
 categories: DevOps
 comments: true

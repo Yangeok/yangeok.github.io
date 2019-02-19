@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '도커 컨테이너에서 깃 사용하는 방법'
+title: Docker 컨테이너에서 깃 사용하기
 author: Yangeok
 categories: DevOps
 comments: true

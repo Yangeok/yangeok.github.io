@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Javascript 배열 가공하기'
+title: Javascript 배열 가공하기
 author: Yangeok
 categories: Javascript
 comments: true

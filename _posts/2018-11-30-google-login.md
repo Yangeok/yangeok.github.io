@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Passport.js를 사용한 구글 로그인
+title: Passport.js 구글 로그인 가져오기
 author: Yangeok
 categories: Node.js
 comments: true

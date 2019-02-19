@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Koa.js로 가독성 좋게 재작성하기'
+title: Koa.js 가독성 좋게 재작성하기
 author: Yangeok
 categories: Node.js
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'MySQL 외부에서 접속할 수 있게 세팅하기'
+title: MySQL 외부에서 접속할 수 있게 세팅하기
 author: Yangeok
 categories: Database
 comments: true

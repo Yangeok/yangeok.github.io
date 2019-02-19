@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '깃헙 저장소 이슈 페이지를 댓글로 쓰는 방법'
+title: 깃헙 저장소 이슈 페이지를 댓글로 쓰기
 author: Yangeok
 categories: Blog
 comments: true
