@@ -19,7 +19,9 @@ cli로 `model:create` 명령어를 사용하면 `/migrations`, `/models`, `/seed
 
 우선 테이블 생성을 위해 다음과 같이 입력합니다. 테이블명은 단수로 입력하면 자동으로 복수로 저장됩니다.
 
-`sequelize model:create --name ProductColor --attributes productId:integer,productColor:string && seqeulize init:seeders && sequelize seed:create`
+```sh
+sequelize model:create --name ProductColor --attributes productId:integer,productColor:string && seqeulize init:seeders && sequelize seed:create
+```
 
 그럼 `/migration`, `/models`과 `/seeders`디렉토리에 테이블명을 가진 파일들이 생성될겁니다.
 
@@ -93,7 +95,9 @@ up: (queryInterface, Sequelize) => {
 
 하위 항목인 상품 색상의 `productId`는 상품 테이블의 `productId`를 참조하기 때문에 `references`객체를 썼고 `createdAt`, `updatedAt`컬럼은 필요가 없어서 삭제했습니다. 이제 두 파일을 마이그레이션합니다.
 
-`sequelize db:migrate`
+```sh
+sequelize db:migrate
+```
 
 ## 데이터 삽입
 
@@ -121,13 +125,14 @@ up: (queryInterface, Sequelize) => {
 
 입력을 다했으면 실제 데이터베이스에 데이터를 삽입할 차례입니다.
 
-`sequelize db:seed`
+```sh
+sequelize db:seed
+```
 
 를 입력하면 마이그레이션할 때와 마찬가지로 작업이 완료됐다는 메시지가 떠야하는데 아래와 같은 오류를 뱉어냅니다. 아까 `createdAt`, `updatedAt`은 분명히 지웠는데
 
 ```sh
-SequelizeDatabaseError: Unknown column 'createdAt' in
-'field list'
+SequelizeDatabaseError: Unknown column 'createdAt' in 'field list'
 ```
 
 라고 난다면 모델 정의 파일에서 객체에 `timestamp: false`를 하면 `createdAt`, `updatedAt`에 대한 오류가 나타나지 않고 성공적으로 데이터 삽입이 끝납니다.
