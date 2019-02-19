@@ -155,5 +155,5 @@ return ProductColors;
 
 ## 참조
 
-- https://stackoverflow.com/questions/29652538/sequelize-js-timestamp-not-datetime
-- https://stackoverflow.com/questions/50456128/unknown-column-in-field-list-sequelize
+- [sequelize.js TIMESTAMP not DATETIME](https://stackoverflow.com/questions/29652538/sequelize-js-timestamp-not-datetime)
+- [unknown column in field list sequelize](https://stackoverflow.com/questions/50456128/unknown-column-in-field-list-sequelize)
