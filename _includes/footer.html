@@ -40,7 +40,6 @@
 				</li>
 				{% endif %}
 				{% endfor %}
-
 			</ul>
 		</div>
 
@@ -49,8 +48,16 @@
 			<p class="text">{{ site.description }}</p>
 		</div>
 
+		
 	</div>
-
+	<div><p></p></div>
+	<div class="wrapper">
+		<p id="year" class="text"></p>
+		<script>
+			const p = document.getElementById("year");
+			p.innerHTML = `© ${new Date().getFullYear()}, Built by Yangeok`;;
+		</script>
+	</div>
 </footer>
 
 <!-- Scripts -->

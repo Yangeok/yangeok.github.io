@@ -4,7 +4,7 @@ title: Sequelize.js 테이블 컬럼 추가시 에러 해결하기
 author: Yangeok
 categories: Node.js
 comments: true
-cover: 'http://drive.google.com/uc?export=view&id=1tzqWG8SozuBI9BZkjMpkLxG-T84MbHt2'
+cover: http://drive.google.com/uc?export=view&id=1tzqWG8SozuBI9BZkjMpkLxG-T84MbHt2
 ---
 
 ## 작업환경
@@ -20,7 +20,11 @@ cli로 `model:create` 명령어를 사용하면 `/migrations`, `/models`, `/seed
 우선 테이블 생성을 위해 다음과 같이 입력합니다. 테이블명은 단수로 입력하면 자동으로 복수로 저장됩니다.
 
 ```sh
-sequelize model:create --name ProductColor --attributes productId:integer,productColor:string && seqeulize init:seeders && sequelize seed:create
+sequelize model:create\
+  --name ProductColor\
+  --attributes productId:integer,productColor:string &&\
+seqeulize init:seeders &&\
+sequelize seed:create
 ```
 
 그럼 `/migration`, `/models`과 `/seeders`디렉토리에 테이블명을 가진 파일들이 생성될겁니다.

@@ -4,9 +4,7 @@ title: 개발 포스트 북마크
 author: Yangeok
 categories: Bookmark
 comments: true
-# tags:
-#   ['bookmark', 'dev', 'development', 'technique', 'tutorial', 'full', 'stack']
-cover: 'http://drive.google.com/uc?export=view&id=1C7aA6GL0RiF3PX6eb8eP0RgV9j0Eq5CT'
+cover: http://drive.google.com/uc?export=view&id=1C7aA6GL0RiF3PX6eb8eP0RgV9j0Eq5CT
 ---
 
 개발 블로그에서 나중에 다시 봐야겠다 싶은 포스트들을 모아봤습니다.
@@ -56,6 +54,7 @@ cover: 'http://drive.google.com/uc?export=view&id=1C7aA6GL0RiF3PX6eb8eP0RgV9j0Eq
 - [깊이있는 리액트 개발환경 구축하기](http://sujinlee.me/webpack-react-tutorial/)
 - [공식 튜토리얼 한글 번역](https://brunch.co.kr/@hee072794/72)
 - [웹팩의 기본개념](http://blog.jeonghwan.net/js/2017/05/15/webpack.html)
+- [서버사이드 렌더링](https://www.popit.kr/react-%EC%84%9C%EB%B2%84%EC%82%AC%EC%9D%B4%EB%93%9C-%EB%A0%8C%EB%8D%94%EB%A7%81/)
 
 ### 리덕스
 
