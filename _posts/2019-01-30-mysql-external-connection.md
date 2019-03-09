@@ -88,6 +88,8 @@ GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'root의 패스워드';
 `*.*`는 `[모든 데이터베이스].[모든 테이블]`에 접근 가능하게 만든다는 의미입니다. 이걸 이용해서 원하는 데이터베이스나 원하는 테이블만 접근 가능하게 만들 수도 있습니다. 쿼리문으로 유저와 접근가능한 호스트 주소가 잘 설정이 되었는지 확인합니다.
 
 ```sql
+USE mysql;
+
 SELECT user, host FROM user;
 +------------------+-----------+
 | user             | host      |
@@ -110,7 +112,7 @@ EXIT;
 마지막으로 MySQL을 재시작하면 로컬에서도 인스턴스에 있는 MySQL에 접근할 수 있게 됩니다.
 
 ```sh
-$ sudo service mysqld restart
+$ sudo service mysql restart
 ```
 
 이제 커맨드라인에서 원격환경 MySQL에 접속이 잘 되는지 확인을 한번 해볼까요. 다음과 같이 잘되는 모습을 확인할 수 있습니다.

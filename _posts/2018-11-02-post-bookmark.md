@@ -79,6 +79,7 @@ cover: http://drive.google.com/uc?export=view&id=1C7aA6GL0RiF3PX6eb8eP0RgV9j0Eq5
 - [Passport via social login with JWT (영문)](https://www.sitepoint.com/spa-social-login-google-facebook/)
 - [Serverless backend with aws lambda and node.js (영문)](https://medium.com/crowdbotics/how-to-build-a-serverless-backend-with-aws-lambda-and-nodejs-e0d1257086b4)
 - [디버깅 하는방법 (영문)](https://medium.com/cleversonder/supercharge-your-debugging-experience-for-node-js-3f0ddfaffbb2)
+- [프론트 백간의 라우팅 설명](http://blog.jeonghwan.net/2018/08/19/express-travis-beanstalk.html)
 
 ## 데이터베이스
 
@@ -94,6 +95,8 @@ cover: http://drive.google.com/uc?export=view&id=1C7aA6GL0RiF3PX6eb8eP0RgV9j0Eq5
 - [SQL 트리형 테이블 구조 및 쿼리 (2)](http://hmjkor.tistory.com/472)
 
 ## DevOps
+
+### 네트워크
 
 ### FTP
 
