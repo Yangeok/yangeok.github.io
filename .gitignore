@@ -13,8 +13,8 @@ vendor/
 #
 LICENSE.md
 _posts/2019-02-07-java-in-vsc.md
-_posts/2019-02-07-image-hosting.md
 _posts/2019-02-18-s3-upload.md
 _posts/2019-03-05-netlify-bind-backend-api.md
 _posts/2019-03-05-nginx-configuration.md
 _posts/2019-03-07-heroku-trouble-shoot.md
+_posts/2019-03-12-netlify-backend-server-bind.md
