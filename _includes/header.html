@@ -2,24 +2,40 @@
 	<div class="navigation-wrapper">
 		<a href="{{ site.baseurl }}/" class="logo">
 			{% if site.logo %}
-			<img src="{{ site.logo | prepend: site.baseurl }}" alt="{{ site.title }}">
+			<img
+				src="{{ site.logo | prepend: site.baseurl }}"
+				alt="{{ site.title }}"
+			/>
 			{% else %}
 			<span>{{ site.title }}</span>
 			{% endif %}
 		</a>
-		<a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
+		<a
+			href="javascript:void(0)"
+			class="navigation-menu-button"
+			id="js-mobile-menu"
+		>
 			<i class="fa fa-bars"></i>
 		</a>
+
 		<nav role="navigation">
 			<ul id="js-navigation-menu" class="navigation-menu show">
 				<li class="nav-link"><a href="/about/">About</a></li>
 				<li class="nav-link"><a href="/posts/">Posts</a></li>
 				<li class="nav-link"><a href="/works">Works</a></li>
+				<li class="nav-link">
+					<a href="/search"
+						><img
+							src="http://drive.google.com/uc?export=view&id=1tpupjftg892tfsF6aw9PGp-ATOX7t1ym"
+							width="15"
+					/></a>
+				</li>
+
 				<!-- {% for page in site.pages %}
-          {% if page.title and page.main_nav != false %}
-          <li class="nav-link"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %} -->
+					{% if page.title and page.main_nav != false %}
+					<li class="nav-link"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+						{% endif %}
+						{% endfor %} -->
 			</ul>
 		</nav>
 	</div>

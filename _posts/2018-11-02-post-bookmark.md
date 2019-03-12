@@ -159,6 +159,10 @@ cover: http://drive.google.com/uc?export=view&id=1C7aA6GL0RiF3PX6eb8eP0RgV9j0Eq5
 - [쉘스크립트 치트시트](http://kukuta.tistory.com/85)
 - [정규표현식](https://poiemaweb.com/js-regexp)
 
+## 블로그
+
+- [Jekyll 검색기능 추가](http://www.halryang.net/simple-jekyll-search/)
+
 ## 취업
 
 - [프론트엔드 면접질문 핸드북](https://github.com/yangshun/front-end-interview-handbook/tree/master/Translations/Korean)
