@@ -4,21 +4,7 @@ title: Sequelize.js 중첩모델 쿼리 작성하기
 author: Yangeok
 categories: Node.js
 comments: true
-# tags:
-#   [
-#     'nested',
-#     'set',
-#     'model',
-#     'tree',
-#     'node',
-#     'parent',
-#     'child',
-#     'js',
-#     'javascript',
-#     'nodejs',
-#     'node.js',
-#   ]
-cover: 'http://drive.google.com/uc?export=view&id=1tzqWG8SozuBI9BZkjMpkLxG-T84MbHt2'
+cover: https://res.cloudinary.com/yangeok/image/upload/v1552474850/logo/posts/sequelize.jpg
 ---
 
 부모 밑에 자식이 자식 밑에 손자가 있는 구조로 JSON데이터를 뽑아줄겁니다. 여기서 정렬을 거는 방법을 확인해볼겁니다. 먼저 모델을 정의하고 제약을 걸어줍니다.

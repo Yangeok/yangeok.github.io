@@ -4,7 +4,7 @@ title: Sequelize.js 테이블 컬럼 추가시 에러 해결하기
 author: Yangeok
 categories: Node.js
 comments: true
-cover: http://drive.google.com/uc?export=view&id=1tzqWG8SozuBI9BZkjMpkLxG-T84MbHt2
+cover: https://res.cloudinary.com/yangeok/image/upload/v1552474850/logo/posts/sequelize.jpg
 ---
 
 ## 작업환경

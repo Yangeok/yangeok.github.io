@@ -5,7 +5,7 @@ author: Yangeok
 categories: Node.js
 comments: true
 # tags: ['OAuth', 'passport.js', 'passport']
-cover: 'https://drive.google.com/open?id=1SHwmxE7z3-kZof0sgPMW0rHUldn3gIKk'
+cover: https://res.cloudinary.com/yangeok/image/upload/v1552474850/logo/posts/passport.jpg
 ---
 
 작업환경은 NodeJS, KoaJS, koa-passport, [passport-google-oauth-jwt](https://www.npmjs.com/package/passport-google-oauth-jwt)입니다.

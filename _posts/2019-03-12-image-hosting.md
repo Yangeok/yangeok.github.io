@@ -4,7 +4,7 @@ title: Jekyll 블로그 이미지 호스팅하기
 author: Yangeok
 categories: Blog
 comments: true
-cover: http://drive.google.com/uc?export=view&id=1MFCb4w0Ws1VCZahiCPLAYMbQHO01omYu
+cover: https://res.cloudinary.com/yangeok/image/upload/v1552474849/logo/posts/jekyll-storage.jpg
 ---
 
 블로그에 코드만 올리다 점점 스크린샷을 찍어 올려야 할 일이 점점 많아집니다. 처음에는 [티스토리 블로그](https://yangwookee.tistory.com/)에 호스팅을 해서 이미지를 가져와서 사용했습니다. 물론 현재도 사용하고 있는 블로그에 비공개로 해서 올려놓기 때문에 3자가 본다면 아무것도 안보이겠죠. 제 눈에는 너무 지저분해보이고 티스토리가 날아간다면 이 블로그에 있는 이미지들도 다 날아가겠죠. 그래서 생각해냈던 방법이 다음과 같습니다.
@@ -100,13 +100,15 @@ cover: assets/cover-image.png
 
 하지만 본문 내용에서 `![](../assets/cover-image.jpg)`와 같이하면 마크다운 파일 작성시에는 읽을 수 있지만 HTML로 생성된 파일에서는 읽을 수가 없습니다.
 
-맞아요. 소스파일에 이미지를 포함시켜 저장소에 올리면 편합니다. Jekyll이 HTML로 빌드할때 마크다운에서 작성하는 이미지 주소와 실제 빌드파일에서 사용하는 이미지 주소가 일치하지 않아 빌드 중에 오류를 뿜어대더라구요.
-
 ```
 [2019-03-12 19:07:49] ERROR `/blog/assets/cover-image.png' not found.
 ```
 
-이미지 주소 문제만 없었다면 가장 편한 방법이 됐을텐데 아쉽게 됐습니다.
+맞아요. 소스파일에 이미지를 포함시켜 저장소에 올리면 편합니다. Jekyll이 HTML로 빌드할때 마크다운에서 작성하는 이미지 주소와 실제 빌드파일에서 사용하는 이미지 주소가 일치하지 않아 빌드 중에 오류를 뿜어대더라구요. 이미지 주소 문제만 없었다면 가장 편한 방법이 됐을텐데 아쉽게 됐습니다.
+
+(수정)
+
+다시해보니 `![](assets/image.jpg)`를 하니까 되는군요. 제 블로그에 포스팅이 얼마나 늘지는 모르겠지만 깃헙저장소에 올릴 수 있는 용량이 1gb라고 하니 언젠간 포화상태에 이르겠죠. 파일 빌드하는데도 시간이 오래걸릴테고요. 그래서 이 방법은 포기합니다.
 
 ## 구글 드라이브
 

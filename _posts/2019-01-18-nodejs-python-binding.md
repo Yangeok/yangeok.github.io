@@ -5,7 +5,7 @@ author: Yangeok
 categories: Node.js
 comments: true
 # tags: ['nodejs', 'node.js', 'python', 'binding', 'bind', 'connect']
-cover: 'http://drive.google.com/uc?export=view&id=1IhRnzezzJBUVznx5zWTsbEuHKNv2F-NR'
+cover: https://res.cloudinary.com/yangeok/image/upload/v1552474850/logo/posts/pynode.jpg
 ---
 
 데이터 관련 라이브러리를 쓰려면 역시 python이 필요합니다. python을 node.js에서 사용하려면 어떡하지 하고 `node.js python 바인딩`이란 키워드로 구글링하다보니 결국 이거더군요. `python-shell`이었습니다. 2014년에 만들어졌고 그전부터 생각을 해왔을텐데 선구자시네요.

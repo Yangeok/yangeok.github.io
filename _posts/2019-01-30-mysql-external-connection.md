@@ -2,10 +2,10 @@
 layout: post
 title: MySQL 외부에서 접속할 수 있게 세팅하기
 author: Yangeok
-categories: Database
+categories: DevOps
 comments: true
 # tags: ['sql', 'mysql', 'database', 'db', 'external', 'connection', 'access']
-cover: 'http://drive.google.com/uc?export=view&id=18w00LonsJDFKFndMWlEtmuTRgIfdSMuW'
+cover: https://res.cloudinary.com/yangeok/image/upload/v1552474850/logo/posts/mylightbuntu.jpg
 ---
 
 현재 Ubuntu 16.04가 설치된 AWS Lightsail에 MySQL을 설치한 상태이고 로컬에서 인스턴스에 설치된 MySQL로 접근을 하고자 합니다. 외부에서 접근을 허용하기 위해 4가지 일이 필요합니다.

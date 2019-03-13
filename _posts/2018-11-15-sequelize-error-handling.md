@@ -5,7 +5,7 @@ author: Yangeok
 categories: Node.js
 comments: true
 # tags: ['RDBM', 'sequelize', 'orm', 'sequelize.js']
-cover: 'http://drive.google.com/uc?export=view&id=1tzqWG8SozuBI9BZkjMpkLxG-T84MbHt2'
+cover: https://res.cloudinary.com/yangeok/image/upload/v1552474850/logo/posts/sequelize.jpg
 ---
 
 작업환경은 Node.js v8, Koa.js, Sequelize.js(MySQL)입니다. API 작성전 모듈을 작성합니다.

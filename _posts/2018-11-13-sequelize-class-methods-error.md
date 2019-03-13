@@ -5,7 +5,7 @@ author: Yangeok
 categories: Node.js
 comments: true
 # tags: ['RDBM', 'relational', 'database', 'ORM']
-cover: 'http://drive.google.com/uc?export=view&id=1tzqWG8SozuBI9BZkjMpkLxG-T84MbHt2'
+cover: https://res.cloudinary.com/yangeok/image/upload/v1552474850/logo/posts/sequelize.jpg
 ---
 
 본 포스팅은 `sequelize-cli`를 사용하였습니다. 디렉토리 구조는 아래와 같습니다.

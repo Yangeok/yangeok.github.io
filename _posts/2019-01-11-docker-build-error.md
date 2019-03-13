@@ -5,7 +5,7 @@ author: Yangeok
 categories: DevOps
 comments: true
 # tags: ['docker', 'build', 'error', 'err', 'msg', 'message']
-cover: 'http://drive.google.com/uc?export=view&id=1bDu_i5U5_tOEOf6BLhxy4p1H4mAZnq2A'
+cover: https://res.cloudinary.com/yangeok/image/upload/v1552474848/logo/posts/docker.jpg
 ---
 
 작업환경은 윈도우10, VSC를 이용했습니다. 도커 버전은 다음과 같습니다.

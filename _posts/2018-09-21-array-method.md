@@ -5,7 +5,7 @@ author: Yangeok
 categories: Javascript
 comments: true
 # tags: ['ES6', 'array', 'method']
-cover: 'http://drive.google.com/uc?export=view&id=1bruVEytwg8WRTy8b_st8-v-gdXzu1Fsd'
+cover: /assets/header_image.jpg
 ---
 
 ## array.forEach()
