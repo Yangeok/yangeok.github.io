@@ -17,19 +17,19 @@ cover: https://res.cloudinary.com/yangeok/image/upload/v1552474850/logo/posts/my
 
 첫번째부터 시작하겠습니다. 우선 인스턴스를 하나 만들고 인스턴스 설정으로 들어갑니다.
 
-![](http://drive.google.com/uc?export=view&id=1FlmWroP_f-t_07Ey15NnSgfzMjmSQ2wu)
+![](https://res.cloudinary.com/yangeok/image/upload/v1552474852/mysql/mysql_2.png)
 
 상단에 네트워킹 탭이 있습니다. 네트워킹 - 방화벽으로 갑니다.
 
-![](http://drive.google.com/uc?export=view&id=1c0o-RJNqBzN5-yRhY4ktVv8aJal2ESMG)
+![](https://res.cloudinary.com/yangeok/image/upload/v1552474852/mysql/mysql_3.png)
 
 다른 항목 추가를 눌러 `MySQL/Aurora`를 선택해주면 포트를 자동으로 MySQL이 쓰는 포트인 `3306`으로 만들어줍니다. 저장을 누릅니다.
 
-![](http://drive.google.com/uc?export=view&id=1V9i2Qz_DOz9Ojp6RYXTrmMJkSGi2gQI1)
+![](https://res.cloudinary.com/yangeok/image/upload/v1552474852/mysql/mysql_4.png)
 
 두번째, 인스턴스로 들어갑니다. 아직 로컬에서는 접근 못하니 AWS 웹페이지에서 브라우저를 이용한 연결을 합니다.
 
-![](http://drive.google.com/uc?export=view&id=1moYvNOFRLk9rutFPs9_6TUpcoNczYeyG)
+![](https://res.cloudinary.com/yangeok/image/upload/v1552474852/mysql/mysql_5.png)
 
 인스턴스 쉘에 접속했으면 MySQL에서 허용할 호스트주소를 설정하는 파일을 수정해야 합니다. 내가 설치한 MySQL버전이 어떻게 되는지에 따라 설정 방법이 다릅니다.
 
@@ -117,7 +117,7 @@ $ sudo service mysql restart
 
 이제 커맨드라인에서 원격환경 MySQL에 접속이 잘 되는지 확인을 한번 해볼까요. 다음과 같이 잘되는 모습을 확인할 수 있습니다.
 
-![](http://drive.google.com/uc?export=view&id=1VG-rzNHMVHA42IErDBpo-ofzWx7QxOke)
+![](https://res.cloudinary.com/yangeok/image/upload/v1552474852/mysql/mysql_1.png)
 
 참조:
 
