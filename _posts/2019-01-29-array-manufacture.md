@@ -4,7 +4,18 @@ title: Javascript 배열 가공하기
 author: Yangeok
 categories: Javascript
 comments: true
-cover: 'https://res.cloudinary.com/yangeok/image/upload/v1552453361/header_image.jpg'
+# tags:
+#   [
+#     'javascript',
+#     'ecmascript',
+#     'es6',
+#     'arr',
+#     'array',
+#     'obj',
+#     'object',
+#     'manufacture',
+#   ]
+cover: 'http://drive.google.com/uc?export=view&id=1bruVEytwg8WRTy8b_st8-v-gdXzu1Fsd'
 ---
 
 본 포스팅은 ES5 문법과 ES6 문법을 병용함을 참고하시길 바랍니다. 또한 의도하지 않은 객체의 변경이 생기는 것을 막기 위해 객체를 참조하는게 아니라 복사해서 불변객체를 만들어줘야 하지만 따로 객체를 복사해서 사용하진 않았음을 확인 부탁드립니다.
