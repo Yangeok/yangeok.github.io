@@ -34,9 +34,7 @@ cover: http://drive.google.com/uc?export=view&id=1MFCb4w0Ws1VCZahiCPLAYMbQHO01om
 
 다시 공유설정 창에 들어가 **링크 복사** 를 하고 메모장에 붙여넣기합니다.
 
-```
-https://www.dropbox.com/이미지주소?dl=0
-```
+`https://www.dropbox.com/이미지주소?dl=0`
 
 위 주소를 타고 들어가면 이미지 공유 페이지가 뜹니다.
 
