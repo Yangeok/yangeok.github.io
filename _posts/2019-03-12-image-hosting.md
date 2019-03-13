@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 블로그 이미지 호스팅하기
+title: Jekyll 블로그 이미지 호스팅하기
 author: Yangeok
 categories: Blog
 comments: true
