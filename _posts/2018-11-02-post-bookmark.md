@@ -4,7 +4,7 @@ title: 개발 포스트 북마크
 author: Yangeok
 categories: Bookmark
 comments: true
-cover: http://drive.google.com/uc?export=view&id=1C7aA6GL0RiF3PX6eb8eP0RgV9j0Eq5CT
+cover: https://res.cloudinary.com/yangeok/image/upload/v1552474848/logo/posts/bookmark.jpg
 ---
 
 개발 블로그에서 나중에 다시 봐야겠다 싶은 포스트들을 모아봤습니다.
