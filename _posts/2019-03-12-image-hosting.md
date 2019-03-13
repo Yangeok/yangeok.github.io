@@ -18,19 +18,19 @@ cover: http://drive.google.com/uc?export=view&id=1MFCb4w0Ws1VCZahiCPLAYMbQHO01om
 
 드롭박스 메인페이지에서 이미지 호스팅용 저장소로 쓸 폴더를 하나 새로 만듭니다.
 
-![](https://res.cloudinary.com/yangeok/image/upload/r_0/v1552475432/image-hosting/hosting_10.webp)
+![](https://res.cloudinary.com/yangeok/image/upload/v1552475432/image-hosting/hosting_1.jpg)
 
 드래그앤 드롭으로 이미지를 올린 후에 **팀원 - 본인만** 에 마우스를 올리면 그 우측에 **공유** 버튼이 떠오르면 클릭합니다.
 
-![](http://drive.google.com/uc?export=view&id=1T6ePdBtvMeBlyi1JmZN9SXgMqONOMsQt)
+![](https://res.cloudinary.com/yangeok/image/upload/v1552475432/image-hosting/hosting_2.jpg)
 
 공유설정 창에 들어가면 하단에 있는 **링크만들기** 를 누릅니다.
 
-![](http://drive.google.com/uc?export=view&id=13Qt7yTAwayH8d01ufrW928_Gf53FLThx)
+![](https://res.cloudinary.com/yangeok/image/upload/v1552475432/image-hosting/hosting_3.jpg)
 
 링크가 만들어졌다는 메시지가 뜹니다.
 
-![](http://drive.google.com/uc?export=view&id=1xjV9DQT9IgUbHvl-RdChi9LA67pU7zOJ)
+![](https://res.cloudinary.com/yangeok/image/upload/v1552475433/image-hosting/hosting_4.jpg)
 
 다시 공유설정 창에 들어가 **링크 복사** 를 하고 메모장에 붙여넣기합니다.
 
@@ -38,7 +38,7 @@ cover: http://drive.google.com/uc?export=view&id=1MFCb4w0Ws1VCZahiCPLAYMbQHO01om
 
 위 주소를 타고 들어가면 이미지 공유 페이지가 뜹니다.
 
-![](http://drive.google.com/uc?export=view&id=1Pn4coNZ9MdpUF44R0esehYy3JpZCt2ro)
+![](https://res.cloudinary.com/yangeok/image/upload/v1552475433/image-hosting/hosting_5.jpg)
 
 바로 파일이 다운로드 되게 설정을 바꿉니다. `dl=0`를 `dl=1`로 변경합니다. 이미지 파일이 바로 다운로드 되는 것을 이용해 `<img src="링크주소">`를 입력하면 이미지를 사용할 수 있습니다.
 
@@ -48,23 +48,23 @@ cover: http://drive.google.com/uc?export=view&id=1MFCb4w0Ws1VCZahiCPLAYMbQHO01om
 
 **버킷만들기** 를 눌러 새로운 저장소를 만듭니다.
 
-![](http://drive.google.com/uc?export=view&id=1K2H5cpFs0n1oMFTXwCAsHr7fb1IGnCCC)
+![](https://res.cloudinary.com/yangeok/image/upload/v1552475432/image-hosting/hosting_6.jpg)
 
 버킷 이름을 [DNS형식](https://docs.aws.amazon.com/ko_kr/AmazonS3/latest/dev/BucketRestrictions.html)으로 지정하고 리전을 거주지나 방문자들이 가장 많이 접속할 곳으로 골라줍니다. 저는 아시아 태평양(서울)을 선택했습니다.
 
-![](http://drive.google.com/uc?export=view&id=1LQRJ5C-HXj0c3GFbBbxnyMrhAfz9WnUk)
+![](https://res.cloudinary.com/yangeok/image/upload/v1552475432/image-hosting/hosting_7.jpg)
 
 2단계는 아무것도 체크하지 않고 넘어가고 외부접근 설정을 합니다. 4개의 체크박스를 전부 체크해제합니다. 오로지 이미지만을 쓰기 위해서 체크를 권장하는 박스의 체크를 해제한겁니다. 다른 중요한 파일이 있는 버킷설정을 아래와 같이 하시면 안됩니다.
 
-![](http://drive.google.com/uc?export=view&id=1zSmKGDCpWKMwbYged3ziDvG-hB85YvUj)
+![](https://res.cloudinary.com/yangeok/image/upload/v1552475432/image-hosting/hosting_8.jpg)
 
 버킷에 드래그앤 드롭으로 이미지를 올린 후에 사용하고자 하는 이미지 파일명을 클릭합니다.
 
-![](http://drive.google.com/uc?export=view&id=1b_Qmn3nIG6hr-9Uekq1tUYGK21WpJddD)
+![](https://res.cloudinary.com/yangeok/image/upload/v1552475432/image-hosting/hosting_9.jpg)
 
 가장 아래 **객체 URL** 에 있는 주소가 우리가 `<img src="링크주소">`태그에 넣어 사용할 수 있는 주소입니다.
 
-![](http://drive.google.com/uc?export=view&id=1a5jgHroCTfV8MeX_ulgN2RnZKRz_-ol2)
+![](https://res.cloudinary.com/yangeok/image/upload/v1552475432/image-hosting/hosting_10.jpg)
 
 이미지서버로 예전부터 쓸 생각을 했습니다. 1년간 무료로 쓸 수 있지만 1년이 지나면 돈이 나가서 망설였던 방법입니다. 자세히는 모르지만 S3가 이미지를 일정량 이상 GET요청을 하면 과금이 되는 구조더군요. 그렇지 않을지 몰라도 누군가 악의적으로 이미지를 무한로딩한다면 요금폭탄을 맞을 가능성도 있겠구나 싶어 사용하다 포기했습니다.
 
