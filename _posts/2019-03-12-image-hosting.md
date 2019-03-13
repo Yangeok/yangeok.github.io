@@ -18,7 +18,7 @@ cover: http://drive.google.com/uc?export=view&id=1MFCb4w0Ws1VCZahiCPLAYMbQHO01om
 
 드롭박스 메인페이지에서 이미지 호스팅용 저장소로 쓸 폴더를 하나 새로 만듭니다.
 
-![](http://drive.google.com/uc?export=view&id=1i6YTGrewgSkiDAqHh6Ow-p461f18RZiN)
+![](https://res.cloudinary.com/yangeok/image/upload/r_0/v1552475432/image-hosting/hosting_10.webp)
 
 드래그앤 드롭으로 이미지를 올린 후에 **팀원 - 본인만** 에 마우스를 올리면 그 우측에 **공유** 버튼이 떠오르면 클릭합니다.
 
