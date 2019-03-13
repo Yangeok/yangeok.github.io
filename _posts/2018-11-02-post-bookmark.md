@@ -55,6 +55,7 @@ cover: http://drive.google.com/uc?export=view&id=1C7aA6GL0RiF3PX6eb8eP0RgV9j0Eq5
 - [공식 튜토리얼 한글 번역](https://brunch.co.kr/@hee072794/72)
 - [웹팩의 기본개념](http://blog.jeonghwan.net/js/2017/05/15/webpack.html)
 - [서버사이드 렌더링](https://www.popit.kr/react-%EC%84%9C%EB%B2%84%EC%82%AC%EC%9D%B4%EB%93%9C-%EB%A0%8C%EB%8D%94%EB%A7%81/)
+- [Axios 통신방법 (영문)](https://alligator.io/react/axios-react/)
 
 ### 리덕스
 
