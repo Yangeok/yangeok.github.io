@@ -18,8 +18,9 @@ description: >
   Web Development Blog.
 baseurl: ''
 url: 'http://yangeok.github.io' # the base hostname & protocol for your site
-cover: 'http://drive.google.com/uc?export=view&id=1bruVEytwg8WRTy8b_st8-v-gdXzu1Fsd'
-logo: 'http://drive.google.com/uc?export=view&id=1lVlEUEYtnHGeP3eNEn_-yx_NprKIAcVZ'
+cover: '/assets/header_image.jpg'
+logo: '/assets/logo.png'
+search: '/assets/search.png'
 
 # Build settings
 markdown: kramdown
