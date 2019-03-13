@@ -25,17 +25,17 @@ logo: 'http://drive.google.com/uc?export=view&id=1lVlEUEYtnHGeP3eNEn_-yx_NprKIAc
 markdown: kramdown
 paginate: 5
 paginate_path: '/page:num/'
-inter_post_navigation: false
+inter_post_navigation: true
 highlightjs_theme: 'monokai-sublime'
 
 # Archive settings (see https://github.com/jekyll/jekyll-archives/)
 jekyll-archives:
   enabled:
-    - categories
-    # - tags
+  # - categories
+  # - tags
   layout: 'archive'
   permalinks:
-    category: '/category/:name/'
+    # category: '/category/:name/'
     # tag: '/tag/:name/'
 
 # Disqus comments
@@ -46,11 +46,11 @@ ga_tracking_id: 'UA-125441608-1'
 
 # Category descriptions (for archive pages)
 # descriptions:
-#   - cat: jekyll
-#     desc: "Posts describing Jekyll setup techniques."
+# - cat: jekyll
+#   desc: "Posts describing Jekyll setup techniques."
 
-#   - cat: JAVASCRIPT
-#     desc: "JAVASCRIPT"
+# - cat: JAVASCRIPT
+# desc: "JAVASCRIPT"
 
 # Social icons and sharing options
 #
