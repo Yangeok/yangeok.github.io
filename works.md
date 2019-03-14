@@ -21,4 +21,5 @@ permalink: /works/
 
 - 2019:
   - [Jan. 2019](https://github.com/Yangeok/Today-I-learned/blob/master/diary/01-2019.md)
-  - [Feb. 2019](https://github.com/Yangeok/Today-I-learned/blob/master/diary/02.2019.md)
+  - [Feb. 2019](https://github.com/Yangeok/Today-I-learned/blob/master/diary/02-2019.md)
+  - [Mar. 2019](https://github.com/Yangeok/Today-I-learned/blob/master/diary/03-2019.md)
