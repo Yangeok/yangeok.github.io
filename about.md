@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<img src="http://drive.google.com/uc?export=view&id=1a-jqeWFzugtREEuBOvLmwo6QpfTUF080" title="" class="profile">
+<img src="{{ site.about | prepend: site.baseurl }}" title="{{ site.title }}" class="profile">
 
 ## Yangwook Jeong
 
