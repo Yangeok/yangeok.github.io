@@ -80,6 +80,9 @@ cover: https://res.cloudinary.com/yangeok/image/upload/v1552474848/logo/posts/bo
 - [Serverless backend with aws lambda and node.js (영문)](https://medium.com/crowdbotics/how-to-build-a-serverless-backend-with-aws-lambda-and-nodejs-e0d1257086b4)
 - [디버깅 하는방법 (영문)](https://medium.com/cleversonder/supercharge-your-debugging-experience-for-node-js-3f0ddfaffbb2)
 - [프론트 백간의 라우팅 설명](http://blog.jeonghwan.net/2018/08/19/express-travis-beanstalk.html)
+- [Sequelize 가이드 1](https://real-dongsoo7.tistory.com/63)
+- [Sequelize 가이드 2](https://real-dongsoo7.tistory.com/62)
+- [Sequelize Hooks 한글번역](https://pjt3591oo.github.io/blog/node.js/2017/04/09/sequelize_hooks.html)
 
 ## 데이터베이스
 
