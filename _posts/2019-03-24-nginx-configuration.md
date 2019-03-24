@@ -11,10 +11,10 @@ node.js 웹서버 포트를 숨기기 위해 프록시 서버를 사용하고 �
 
 ## 작업환경
 
-aws lightsail
-linux ubuntu 16.04
-nginx 1.10.3
-nodejs 8.11.3
+- aws lightsail
+- linux ubuntu 16.04
+- nginx 1.10.3
+- nodejs 8.11.3
 
 ## 작업순서
 
