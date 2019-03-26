@@ -70,11 +70,25 @@ ga_tracking_id: 'UA-125441608-1'
 #     desc: Follow me on Twitter            # Description to display as link title, etc
 #     share: true                           # Include in the "Share" section of posts
 social:
+  - name: Kakaotalk
+    icon: xi-kakaotalk
+    username: wooky92
+    url: kakao:wooky92
+    desc: Friend me on Kakaotalk
+    share: true
+
   - name: Tistory blog
-    icon: tumblr
+    icon: fa fa-tumblr
     username: Yangeok
     url: https://yangwookee.tistory.com
     desc: Visit my daily life
+    share: true
+
+  - name: Stackoverflow
+    icon: xi-stack-overflow
+    username: Yangeok
+    url: https://stackoverflow.com/users/10353639/%EC%96%91%EC%96%B5yangeok?tab=profile
+    desc: Connect with me on Stackoverflow
     share: true
 
   # - name: Facebook
@@ -85,7 +99,7 @@ social:
   #   share: true
 
   - name: GitHub
-    icon: github
+    icon: fa fa-github
     username: Yangeok
     url: https://github.com/yangeok
     desc: Fork me on GitHub
@@ -113,7 +127,7 @@ social:
   #   share: false
 
   - name: Instagram
-    icon: instagram
+    icon: fa fa-instagram
     username: wooo_kee
     url: https://instagram.com/wooo_kee
     desc: Follow me on Instagram
