@@ -96,6 +96,7 @@ cover: https://res.cloudinary.com/yangeok/image/upload/v1552474848/logo/posts/bo
 - [SQL WITH/CTE 정리 및 예제](http://developerking.tistory.com/48)
 - [SQL 트리형 테이블 구조 및 쿼리](https://wooriworld2006.tistory.com/417)
 - [SQL 트리형 테이블 구조 및 쿼리 (2)](http://hmjkor.tistory.com/472)
+- [MongoDB 스키마 디자인을 위한 6가지 규칙 요약](https://edykim.com/ko/post/summary-of-six-rules-for-designing-a-mongodb-schema/)
 
 ## DevOps
 
