@@ -48,6 +48,11 @@ cover: https://res.cloudinary.com/yangeok/image/upload/v1552474848/logo/posts/bo
 - [코드 성능 올리는 방법](https://joshuajangblog.wordpress.com/2016/11/21/javascript-coding-pattern-for-junior-web-developer/)
 - [배열 메서드 설명 및 사용법](https://bblog.tistory.com/300)
 - [jsDoc 가이드라인 (영문)](http://usejsdoc.org/)
+- [forEach, for in, for of 특징 및 성능 비교](https://medium.com/sjk5766/foreach-for-in-for-of-%ED%8A%B9%EC%A7%95-%EB%B0%8F-%EC%84%B1%EB%8A%A5-%EB%B9%84%EA%B5%90-47a77464b034)
+- [자바스크립트의 유용한 배열 메소드 사용하기... map(), filter(), find(), reduce()](https://bblog.tistory.com/300)
+- [배열에 요소 추가하기 push(),concat(),unshift()](https://steemit.com/kr-newbie/@qweqwe9ab/jstips-push-concat-unshift)
+- [콜백지옥 해결(1) Promise](https://victorydntmd.tistory.com/49)
+- [콜백지옥 해결(2) async와 await](https://victorydntmd.tistory.com/87)
 
 ### 리액트
 
