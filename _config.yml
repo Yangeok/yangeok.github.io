@@ -91,6 +91,13 @@ social:
     desc: Connect with me on Stackoverflow
     share: true
 
+  - name: Hashcode
+    icon: xi-hlz
+    username: Yangwook Jeong
+    url: https://hashcode.co.kr/users/71379/yangwook-jeong
+    desc: Connect with me on Hashcode
+    share: true
+
   # - name: Facebook
   #   icon: facebook
   #   username: theyangeok
