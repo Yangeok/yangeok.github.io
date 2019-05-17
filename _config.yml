@@ -98,9 +98,16 @@ social:
     desc: Connect with me on Hashcode
     share: true
 
+  - name: Okky
+    icon: xi-full-moon
+    username: Yangeok
+    url: https://okky.kr/user/info/69364
+    desc: Connect with me on Okky
+    share: true
+
   # - name: Facebook
   #   icon: facebook
-  #   username: theyangeok
+  #   username: yangeok
   #   url:
   #   desc: Friend me on Facebook
   #   share: true
