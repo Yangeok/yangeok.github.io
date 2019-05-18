@@ -54,6 +54,10 @@ cover: https://res.cloudinary.com/yangeok/image/upload/v1552474848/logo/posts/bo
 - [콜백지옥 해결(1) Promise](https://victorydntmd.tistory.com/49)
 - [콜백지옥 해결(2) async와 await](https://victorydntmd.tistory.com/87)
 
+### 타입스크립트
+
+- [TypeScript와 함께하는 Fullstack Development](https://medium.com/querypie/typescript%EC%99%80-%ED%95%A8%EA%BB%98%ED%95%98%EB%8A%94-fullstack-development-501835592b1d)
+
 ### 리액트
 
 - [깊이있는 리액트 개발환경 구축하기](http://sujinlee.me/webpack-react-tutorial/)
