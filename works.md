@@ -56,8 +56,8 @@ permalink: /works/
 
 - DESCRIPTION
 - 깃헙 저장소는 아래와 같습니다.
-  - [mall-front]()
-  - [mall-back]()
+  - [mall-front](): 프론트엔드 코드 저장소입니다.
+  - [mall-back](): 백엔드 코드 저장소입니다.
 - 기술스택은 다음과 같습니다.
   - front-end
     - [![](https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png){: width="16px" height="16px" }{: .icon } react](https://reactjs.org/)
