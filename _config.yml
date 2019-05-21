@@ -8,6 +8,7 @@ plugins:
 
 exclude:
   - '/vendor/'
+  - .jekyll-cache
 
 # Site settings
 title: Yangeok
@@ -28,7 +29,6 @@ markdown: kramdown
 paginate: 5
 paginate_path: '/page:num/'
 inter_post_navigation: true
-highlightjs_theme: 'monokai-sublime'
 
 # Archive settings (see https://github.com/jekyll/jekyll-archives/)
 jekyll-archives:
@@ -52,7 +52,7 @@ ga_tracking_id: 'UA-125441608-1'
 #   desc: "Posts describing Jekyll setup techniques."
 
 # - cat: JAVASCRIPT
-# desc: "JAVASCRIPT"
+#   desc: "JAVASCRIPT"
 
 # Social icons and sharing options
 #
@@ -69,6 +69,7 @@ ga_tracking_id: 'UA-125441608-1'
 #     url:                                  # URL of your profile (leave blank to not display in footer)
 #     desc: Follow me on Twitter            # Description to display as link title, etc
 #     share: true                           # Include in the "Share" section of posts
+
 social:
   - name: Kakaotalk
     icon: xi-kakaotalk

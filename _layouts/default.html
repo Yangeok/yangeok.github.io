@@ -1,30 +1,14 @@
 <!DOCTYPE html>
 <html>
-	{% include head.html %}
-
+	{% include_cached google_analytics.html %} {% include_cached head.html %}
+	<title>
+		{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
+	</title>
 	<body>
-		{% include header.html %}
-
+		{% include_cached header.html %}
 		<div class="page-content">
 			{{ content }}
 		</div>
-
-		{% include_cached footer.html %}
-
-		<!--Start of Tawk.to Script-->
-		<script type="text/javascript">
-			var Tawk_API = Tawk_API || {},
-				Tawk_LoadStart = new Date();
-			(function() {
-				var s1 = document.createElement('script'),
-					s0 = document.getElementsByTagName('script')[0];
-				s1.async = true;
-				s1.src = 'https://embed.tawk.to/5c3874a7361b3372892f9de7/default';
-				s1.charset = 'UTF-8';
-				s1.setAttribute('crossorigin', '*');
-				s0.parentNode.insertBefore(s1, s0);
-			})();
-		</script>
-		<!--End of Tawk.to Script-->
+		{% include_cached footer.html %} {% include_cached tawk_to.html %}
 	</body>
 </html>

@@ -4,15 +4,10 @@ title: Works
 permalink: /works/
 ---
 
-<!-- ## [Portfolio](https://yangeok-private.github.io/portfolio/) -->
-
 ## [Training Log](https://training-front.netlify.com/)
 
 - 운동 관련 블로그, 유튜브를 수집해서 포스팅, 영상을 수집해 보기좋게 제공하고 있습니다. 데이터베이스가 날아가더라도 재수집을 통해 수 분 안에 복구됩니다. 아래 이미지는 서비스의 전체적인 구조입니다.
-
-[![](https://res.cloudinary.com/yangeok/image/upload/v1554888938/training-log/11.jpg)](https://res.cloudinary.com/yangeok/image/upload/v1554888938/training-log/11.jpg){:target="\_blank"}
-
-- 깃헙 저장소는 아래와 같습니다.
+- 깃허브 저장소는 아래와 같습니다.
   - [training-front](https://github.com/Yangeok/training-front): 프론트엔드 코드 저장소입니다.
   - [training-back](https://github.com/Yangeok/training-back): 백엔드 API서버 코드 저장소입니다.
   - [training-rss-feed](https://github.com/Yangeok/training-rss-feed): 백엔드 피드컬렉터 코드 저장소입니다.
@@ -28,11 +23,12 @@ permalink: /works/
     - [![](https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2018-08-28/424668624724_3d9a8923cf9349adcb2c_230.png){: width="16px" height="16px" }{: .icon } koa](https://koajs.com/)
     - [![](https://www.worksonarm.com/wp-content/uploads/2017/03/mongodb-logo-1.png){: width="16px" height="16px" }{: .icon } mongodb](https://www.mongodb.com/)
     - [![](http://docs.sequelizejs.com/image/brand_logo.png){: width="16px" height="16px" }{: .icon } sequelize](http://docs.sequelizejs.com/)
+- 프로젝트 구조는 아래와 같습니다.
 
 ## [Turing Backend API Server](https://turing-back.herokuapp.com/)
 
 - 프리랜서 에이전트 서비스인 [turing.com](https://turing.com/)에서 테스트 문제로 내주는 백엔드 웹서버입니다.
-- 다음은 [깃헙 저장소](https://github.com/Yangeok/turing-back)입니다.
+- 다음은 [깃허브 저장소](https://github.com/Yangeok/turing-back)입니다.
 - 기술스택은 아래와 같습니다.
   - [![](https://jaystack.com/wp-content/uploads/2015/12/nodejs-logo-e1497443346889.png){: width="16px" height="16px" }{: .icon } node.js](https://nodejs.org/en/)
   - [![](https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2018-08-28/424668624724_3d9a8923cf9349adcb2c_230.png){: width="16px" height="16px" }{: .icon } koa](https://koajs.com/)
@@ -45,20 +41,19 @@ permalink: /works/
 ## [Github Pages 개발블로그](https://yangeok.github.io/)
 
 - Jekyll 테마 [Centrarium](https://github.com/bencentra/centrarium)을 이용해서 만들었습니다. 시작한지는 얼마 안됐고 막힌부분을 풀어나가면서 잊어먹을 것같은 내용이나 한글로 포스팅이 올라오지 않은 내용을 주로 포스팅하고 있습니다. 또한 [TIL](https://github.com/Yangeok/Today-I-learned/tree/master/diary)에 정리한 내용 중 포스팅할만큼 내용이 정리가 된 경우에도 글을 쓰고 있습니다.
-- 다음은 [깃헙 저장소](https://github.com/Yangeok/yangeok.github.io)입니다.
+- 다음은 [깃허브 저장소](https://github.com/Yangeok/yangeok.github.io)입니다.
 - 설치 플러그인은 다음과 같습니다.
   - [🔮 utterences](https://utteranc.es/)
   - [![](https://www.tawk.to/wp-content/uploads/2014/03/tawky-email-big.png){: width="16px" height="16px" }{: .icon } tawk.to](https://www.tawk.to/)
 
-[![](https://res.cloudinary.com/yangeok/image/upload/v1558355128/portfolio/blog-full-screen.jpg)](https://res.cloudinary.com/yangeok/image/upload/v1558355128/portfolio/blog-full-screen.jpg){: taget="\_blank" }
+## [Shopping Mall](https://mall-front.netlify.com)
 
-## [Shopping Mall Team Project](https://mall-front.netlify.com)
-
-- DESCRIPTION
-- 깃헙 저장소는 아래와 같습니다.
+- 첫 팀프로젝트입니다. 천천히 같이 공부하며 진행한 프로젝트라 기능구현하는데 시간이 많이 지체되었고 현재 중단된 프로젝트입니다.
+- 깃허브 저장소는 아래와 같습니다.
   - [mall-front](): 프론트엔드 코드 저장소입니다.
   - [mall-back](): 백엔드 코드 저장소입니다.
 - 기술스택은 다음과 같습니다.
+
   - front-end
     - [![](https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png){: width="16px" height="16px" }{: .icon } react](https://reactjs.org/)
     - [![](https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png){: width="16px" height="16px" }{: .icon } redux](https://redux.js.org/)
@@ -66,6 +61,7 @@ permalink: /works/
     - [![](https://cdn-images-1.medium.com/max/1200/1*mn6bOs7s6Qbao15PMNRyOA.png){: width="16px" height="16px" }{: .icon } typescript](https://www.typescriptlang.org/)
     - [![](https://cdn.worldvectorlogo.com/logos/sass-1.svg){: width="16px" height="16px" }{: .icon } scss](https://sass-lang.com/)
   - back-end
+
     - [![](https://jaystack.com/wp-content/uploads/2015/12/nodejs-logo-e1497443346889.png){: width="16px" height="16px" }{: .icon } node.js](https://nodejs.org/en/)
     - [![](https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2018-08-28/424668624724_3d9a8923cf9349adcb2c_230.png){: width="16px" height="16px" }{: .icon } koa](https://koajs.com/)
     - [![](http://www.stickpng.com/assets/images/5848104fcef1014c0b5e4950.png){: width="16px" height="16px" }{: .icon } mysql](https://www.mysql.com/)
@@ -74,7 +70,12 @@ permalink: /works/
     - [![](https://logrocket.com/blog/content/images/2018/10/Screen-Shot-2018-10-11-at-1.40.06-PM.png){: width="16px" height="16px" }{: .icon } jwt](https://jwt.io/)
     - [![](https://cdn.worldvectorlogo.com/logos/amazon-lightsail.svg){: width="16px" height="16px" }{: .icon } aws](https://aws.amazon.com/lightsail/)
 
-[![](https://res.cloudinary.com/yangeok/image/upload/v1558362038/portfolio/mall-full-screen.jpg)](https://res.cloudinary.com/yangeok/image/upload/v1558362038/portfolio/mall-full-screen.jpg){: target="\_blank" }
+      <!-- - 프로젝트 구조는 아래와 같습니다.
+        [![](https://res.cloudinary.com/yangeok/image/upload/v1558406432/portfolio/mall-project-structure.jpg)](https://res.cloudinary.com/yangeok/image/upload/v1558406432/portfolio/mall-project-structure.jpg){: target="\_blank" }
+        - 데이터베이스 구조는 아래와 같습니다.
+          [![](https://res.cloudinary.com/yangeok/image/upload/v1558406432/portfolio/mall-db.jpg)](https://res.cloudinary.com/yangeok/image/upload/v1558406432/portfolio/mall-db.jpg){: target="\_blank" }
+
+        [![](https://res.cloudinary.com/yangeok/image/upload/v1558362038/portfolio/mall-full-screen.jpg)](https://res.cloudinary.com/yangeok/image/upload/v1558362038/portfolio/mall-full-screen.jpg){: target="\_blank" } -->
 
 ## [GitHub Repository](https://github.com/yangeok/)
 
