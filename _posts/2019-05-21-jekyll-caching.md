@@ -15,8 +15,8 @@ cover: https://res.cloudinary.com/yangeok/image/upload/v1552474849/logo/posts/je
 - jekyll-include-cache
 - google analytics 파일로 분리하기
 - liquid 조건, 반복문 사용 줄이기
-- 실행시 --incremental 플래그 붙이기
-- 실행시 --limit_posts 1 플래그 붙이기
+- 실행시 `--incremental` 플래그 붙이기
+- 실행시 `--limit_posts 1` 플래그 붙이기
 
 ## liquid-c
 
