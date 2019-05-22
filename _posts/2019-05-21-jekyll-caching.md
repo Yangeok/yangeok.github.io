@@ -48,13 +48,15 @@ bundle install
 gem jekyll-include-cache
 ```
 
-설치 후 `_layouts`디렉토리에 있는 파일들을 열어봅니다. before에 있는 부분을 after처럼 바꿔줍니다.
+설치 후 `_layouts`디렉토리에 있는 파일들을 열어봅니다. 아래의 코드를
 
 ```html
-<!-- before -->
 {{ "{% include head.html " }}%}
+```
 
-<!-- after -->
+아래와 같이 고쳐줍니다.
+
+```html
 {{ "{% include_cached head.html " }}%}
 ```
 
