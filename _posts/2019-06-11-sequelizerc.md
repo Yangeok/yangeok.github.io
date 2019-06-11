@@ -2,7 +2,7 @@
 layout: post
 title: Sequelize 환경변수 관리 및 CLI명령어 관리하기
 author: Yangeok
-categories: Java
+categories: Node.js
 comments: true
 cover: https://res.cloudinary.com/yangeok/image/upload/v1552474849/logo/posts/sequelize.jpg
 ---
