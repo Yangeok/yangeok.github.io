@@ -65,7 +65,7 @@ cover: https://res.cloudinary.com/yangeok/image/upload/v1552474849/logo/posts/se
 ## 작업환경
 
 - [mysql2](https://www.npmjs.com/package/mysql2): 1.6.5
-- [sequelize](https://www.npmjs.com/package/sequelize): 5.1.0
+- [sequelize](https://www.npmjs.com/package/sequelize): 5.8.8
 - [sequelize-cli](https://www.npmjs.com/package/sequelize-cli): 5.4.0
 
 ---
@@ -185,7 +185,7 @@ sequelize = new Sequelize(
 
 위와 같이 수정을 마친상태에서 서버를 돌리면 db에 성공적으로 접근할 수 있습니다. 간혹 가다
 
-> Dialect needs to be explicitly supplied as of v4.0.0
+> \> Dialect needs to be explicitly supplied as of v4.0.0
 
 에러가 발생한다면 `.env`파일과 `package.json`에서 문자열을 잘못 입력하지 않았나 확인해보시면 해결할 수 있습니다.
 
