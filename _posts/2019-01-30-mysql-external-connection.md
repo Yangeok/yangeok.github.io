@@ -119,6 +119,8 @@ $ sudo service mysql restart
 
 ![](https://res.cloudinary.com/yangeok/image/upload/v1552474852/mysql/mysql_1.png)
 
-참조:
+---
+
+## 참조
 
 - [Remote Connections Mysql Ubuntu](https://stackoverflow.com/questions/15663001/remote-connections-mysql-ubuntu)

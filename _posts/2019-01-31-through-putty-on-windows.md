@@ -49,7 +49,9 @@ PuTTYgen에서 **Conversions - Import key** 를 통해 아까 인스턴스에서
 
 (chmod가 필요할 수도 있다는 내용을 작성할 것)
 
-참조:
+---
+
+## 참조
 
 - [Login via putty - server refused our key](https://forums.aws.amazon.com/thread.jspa?threadID=76569#jive-message-280133)
 - [uTTYGen 프로그램으로 비공개키와 공개키쌍 생성](https://wikidocs.net/7368)

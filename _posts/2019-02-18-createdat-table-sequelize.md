@@ -13,6 +13,8 @@ cover: https://res.cloudinary.com/yangeok/image/upload/v1552474850/logo/posts/se
 - sequelize-cli
 - mysql
 
+---
+
 ## 테이블 정의
 
 cli로 `model:create` 명령어를 사용하면 `/migrations`, `/models`, `/seeders` 폴더에 각각 파일이 하나씩 생성됩니다. 우선 우리가 다룰 파일은 `/migrations`, `/models`에 있는 파일들입니다.
@@ -103,6 +105,8 @@ up: (queryInterface, Sequelize) => {
 sequelize db:migrate
 ```
 
+---
+
 ## 데이터 삽입
 
 콘솔에 작업이 완료됐다는 메시지가 뜨면 데이터를 추가할 차례입니다. `/seeders`에 있는 파일을 열어 삽입하고자 하는 데이터를 컬럼형식에 맞게 입력합니다.
@@ -161,6 +165,8 @@ const ProductColors = sequelize.define(
 );
 return ProductColors;
 ```
+
+---
 
 ## 참조
 

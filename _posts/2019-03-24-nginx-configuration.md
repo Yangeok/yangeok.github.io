@@ -9,12 +9,16 @@ cover: https://res.cloudinary.com/yangeok/image/upload/v1552491150/logo/posts/ng
 
 node.js 웹서버 포트를 숨기기 위해 프록시 서버를 사용하고 프록시를 이용해 다른 인스턴스에서 작동하는 각각의 서버를 사용해 서버에 가해지는 부하를 줄이는데 로드밸런싱을 사용합니다. nginx로 로드밸런서를 설정하는 방법을 정리해보고자 합니다.
 
+---
+
 ## 작업환경
 
 - aws lightsail
 - linux ubuntu 16.04
 - nginx 1.10.3
 - nodejs 8.11.3
+
+---
 
 ## 작업순서
 
@@ -215,6 +219,8 @@ PORT 3001 /test2
 ```
 
 로드밸런싱을 사용하기 위해서는 분산서버 응답이 똑같아야 오류가 나질 않을겁니다.
+
+---
 
 ## 참조
 

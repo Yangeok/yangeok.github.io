@@ -9,6 +9,8 @@ cover: https://res.cloudinary.com/yangeok/image/upload/v1552474849/logo/posts/je
 
 마크다운으로 글을 작성하면서 VSC플러그인으로 미리보기를 할 수도 있지만 Jekyll서버를 켜놓고 브라우저에서 글을 미리보기하는게 훨씬 편하더라구요. live-reload까지 바라지도 않지만 html파일 빌드가 조금 빨라졌으면 하는 마음에 몇가지를 알아냈습니다. 효과가 적은 것부터 큰 순서로 작성했으니 참고해주세요.
 
+---
+
 ## 작업순서
 
 - liquid-c
@@ -17,6 +19,8 @@ cover: https://res.cloudinary.com/yangeok/image/upload/v1552474849/logo/posts/je
 - liquid 조건, 반복문 사용 줄이기
 - 실행시 `--incremental` 플래그 붙이기
 - 실행시 `--limit_posts 1` 플래그 붙이기
+
+---
 
 ## liquid-c
 
@@ -39,6 +43,8 @@ Gemfile에 작성된 gem을 아래와 같은 명령어로 설치하는 방법이
 ```sh
 bundle install
 ```
+
+---
 
 ## jekyll-include-cache
 
@@ -86,6 +92,8 @@ gem jekyll-include-cache
 </title>
 ```
 
+---
+
 ## google analytics 파일로 분리하기
 
 head.html에 붙어있던 스크립트를 `_includes`에 파일로 따로 만들어 `include`합니다. 다음은 분리시킨 코드입니다.
@@ -115,6 +123,8 @@ head.html에 붙어있던 스크립트를 `_includes`에 파일로 따로 만들
 
 google analytics뿐만 아니라 다른 플러그인 코드가 있다면 똑같이 코드를 쪼갤 수 있습니다.
 
+---
+
 ## liquid 조건, 반복문 사용 줄이기
 
 템플릿에 있는 liquid로 작성된 조건, 반복문을 줄이는 방법도 빌드 속도를 개선하는 방법 중에 하나입니다. 아래 코드를
@@ -137,6 +147,8 @@ page.main_nav!=false " }} %}
 <li><a href="/works">Works</a></li>
 ```
 
+---
+
 ## 실행시 --incremental 플래그 붙이기
 
 리액트 컴포넌트처럼 포스트나 페이지가 바뀔때 바뀐 부분만 빌드를 하기때문에 빌드 속도가 올라가는 방법입니다.
@@ -154,6 +166,8 @@ bundle exec jekyll serve -I
 혹은
 `_config.yml`에서 `incremental: true`옵션을 만들어줍니다.
 
+---
+
 ## 실행시 --limit_posts 1 플래그 붙이기
 
 마지막으로 포스팅 작성할때 쓰면 좋은 옵션입니다. 단점도 있겠지만 빌드 속도를 올리기 위해 다른 파일은 감시하지 않고 (보통 현재) 작성 중인 포스팅만 리-빌드할 수 있게 해줍니다.
@@ -169,6 +183,8 @@ bundle exec jekyll serve --limit_posts 1
 ```
 
 이라고 하면 됩니다.
+
+---
 
 ## 정리
 
@@ -269,6 +285,8 @@ Regenerating: 1 file(s) changed at 2019-05-21 23:42:03
 ```
 
 아까 나왔던 2.52초보다는 **0.94 / 2.52** 를 해보니 **37.65%** 가 빨라졌습니다. 결론은 빌드될 파일을 최대한 줄여야한다가 되겠습니다.
+
+---
 
 ## 참조
 

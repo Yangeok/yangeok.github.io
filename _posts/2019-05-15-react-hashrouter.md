@@ -7,7 +7,9 @@ comments: true
 cover: https://res.cloudinary.com/yangeok/image/upload/v1557918359/logo/posts/retlify.jpg
 ---
 
-영문이 많이 들어가니 제목이 [보그체](https://namu.wiki/w/%EB%B3%B4%EA%B7%B8%EC%B2%B4)같군요..
+영문이 많이 들어가니 제목이 [보그체](https://namu.wiki/w/%EB%B3%B4%EA%B7%B8%EC%B2%B4)같군요.
+
+---
 
 ## 작업환경
 
@@ -15,6 +17,8 @@ cover: https://res.cloudinary.com/yangeok/image/upload/v1557918359/logo/posts/re
 - react
 - react-router v4
 - netlify
+
+---
 
 ## 작업순서
 
@@ -73,6 +77,8 @@ ReactDOM.render(
 이렇게 하면 웹페이지가 뒤로가기, 새로고침을 해도 api서버로 리디렉트 되지않고 잘 돌아가는 것을 확인할 수 있었습니다.
 
 근데 이상하게도 어썸 데브블로그는 루트페이지만 `#`이 붙어있는데 제 프로젝트에는 모든 라우터에 `#`이 붙어있는데 이것은 좀 더 연구를 해봐야 알 것 같습니다. 혹시라도 아시는 분은 댓글 남겨주시길 바랍니다. 허접하지만 저장소 [링크](https://github.com/Yangeok/training-front)는 여기를 눌러주세요.
+
+---
 
 ## 참조
 
