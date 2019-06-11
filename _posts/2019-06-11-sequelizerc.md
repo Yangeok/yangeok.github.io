@@ -191,9 +191,9 @@ sequelize = new Sequelize(
 
 ---
 
-### `/db`에서 뿐만 아니라 루트에서도 migrating, seeding하기
+### `db/`에서 뿐만 아니라 루트에서도 migrating, seeding하기
 
-`sequelize db:migrate`, `sequelize db:seed`같이 데이터나 테이블 마이그레이션을 할때 가장 불편했던 점은 `/db` 디렉토리까지 가서 명령을 실행해야 한다는 점이었습니다. 참고로 `sequelize-cli` 명령어는 콘솔에 `sequelize --help`를 입력하면 확인할 수 있습니다.
+`sequelize db:migrate`, `sequelize db:seed`같이 데이터나 테이블 마이그레이션을 할때 가장 불편했던 점은 `db/` 디렉토리까지 가서 명령을 실행해야 한다는 점이었습니다. 참고로 `sequelize-cli` 명령어는 콘솔에 `sequelize --help`를 입력하면 확인할 수 있습니다.
 
 그렇게 생각해낸 대안이 아래와 같았습니다만 좋지 않은 방법이었습니다.
 
