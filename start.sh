@@ -1,12 +1,6 @@
-start_limit="bundle exec jekyll serve --limit_posts 1"
-start="bundle exec jekyll serve"
+# docker rm `docker ps -a -q`
 
-# 인자가 0이면 start를 실행하고 아니면 start_limit을 실행한다.
+docker run --rm --name blog -v "C:/dev/record/blog:/srv/jekyll" -p 4000:4000 -it jekyll/jekyll jekyll serve --force_polling --livereload 
 
-if [ -z "$1" ]; then
-    echo $start
-    $start
-else
-    echo $start_limit
-    $start_limit
-fi
+# 아래 옵션은 노노~
+# --watch --drafts
