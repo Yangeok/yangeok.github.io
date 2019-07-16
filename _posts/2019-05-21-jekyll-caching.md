@@ -24,7 +24,7 @@ cover: https://res.cloudinary.com/yangeok/image/upload/v1552474849/logo/posts/je
 
 ## liquid-c
 
-liquid는 Shopify에서 만든 `{{ "{% include head.html " }}%}`형식으로 html 위에 작성하는 템플릿 언어입니다. liquid를 C로 처리하면서 빌드 속도를 올려준다고 합니다. 사용방법은 아래와 같습니다.
+liquid는 Shopify에서 만든 `{% raw %}{% include head.html%}{% endraw %}` 형식으로 html 위에 작성하는 템플릿 언어입니다. liquid를 C로 처리하면서 빌드 속도를 올려준다고 합니다. 사용방법은 아래와 같습니다.
 
 쉘에 아래와 같이 입력합니다.
 
@@ -57,13 +57,13 @@ gem jekyll-include-cache
 설치 후 `_layouts`디렉토리에 있는 파일들을 열어봅니다. 아래의 코드를
 
 ```html
-{{ "{% include head.html " }}%}
+{% raw %}{% include head.html%}{% endraw %}
 ```
 
 아래와 같이 고쳐줍니다.
 
 ```html
-{{ "{% include_cached head.html " }}%}
+{% raw %}{% include_cached head.html%}{% endraw %}
 ```
 
 저같은 경우에는 `head.html`에 타이틀이 들어있었습니다.
@@ -78,17 +78,17 @@ gem jekyll-include-cache
 
 ```html
 <head>
-  {{ "{{ page.title " }}}}
+  {% raw %}{{ page.title }}{% endraw %}
 </head>
 ```
 
 는 같은 말입지요. 저 liquid문이 캐싱을 할때 같이 해버리면 문제가 생겼습니다. 루트페이지에서는 타이틀이 `Yangeok`으로 나와야 하는데 제 첫 포스팅인 `JSON.stringify() 와 JSON.parse() 의 차이`로 나옵니다. 아래와 같이 타이틀만 제외하고 캐싱하니 페이지 타이틀도 올바르게 잘나왔습니다.
 
 ```html
-{{ "{% include_cached head.html "}} %}
+{% raw %}{% include_cached head.html%}{% endraw %}
+
 <title>
-  {{"{% if page.title "}}%}{{"{{ page.title "}}}}{{"{% else "}}%}{{"{{
-  site.title "}}}}{{"{% endif "}}%}
+  {% raw %} {% if page.title %} {{ page.title }} {% endif %} {% endraw %}
 </title>
 ```
 
@@ -99,7 +99,7 @@ gem jekyll-include-cache
 head.html에 붙어있던 스크립트를 `_includes`에 파일로 따로 만들어 `include`합니다. 다음은 분리시킨 코드입니다.
 
 ```html
-{{ " {% if site.ga_tracking_id " }} %}
+{% raw %}{% if site.ga_tracking_id%}{% endraw %}
 <script
   async
   src="https://www.googletagmanager.com/gtag/js?id={{ site.ga_tracking_id }}"
@@ -110,15 +110,15 @@ head.html에 붙어있던 스크립트를 `_includes`에 파일로 따로 만들
     dataLayer.push(arguments);
   }
   gtag('js', new Date());
-  gtag('config', '{{"{{ site.ga_tracking_id"}}}}');
+  gtag('config', '{% raw %}{{ site.ga_tracking_id}}{% endraw %}');
 </script>
-{{ " {% endif " }} %}
+{% raw %}{% endif%}{% endraw %}
 ```
 
 캐싱해도 이상없기떄문에 `_cached` 옵션을 추가해서 include합니다.
 
 ```html
-{{ " {% include_cached google_analytics.html " }} %}
+{% raw %}{% include_cached google_analytics.html %}{% endraw %}
 ```
 
 google analytics뿐만 아니라 다른 플러그인 코드가 있다면 똑같이 코드를 쪼갤 수 있습니다.
@@ -130,12 +130,11 @@ google analytics뿐만 아니라 다른 플러그인 코드가 있다면 똑같�
 템플릿에 있는 liquid로 작성된 조건, 반복문을 줄이는 방법도 빌드 속도를 개선하는 방법 중에 하나입니다. 아래 코드를
 
 ```html
-{{ " {% for page in site.pages " }} %} {{ " {% if page.title and
-page.main_nav!=false " }} %}
+{% raw %}{% for page in site.pages %}{% if page.title and page.main_nav!=false
+%}
 <li class="nav-link">
-  <a href="{{ '{{ page.url | prepend: site.baseurl'}}}}">
-    {{"{{ page.title "}}}} </a
-  >{{"{% endif "}}%}{{"{% endfor "}}%}
+  <a href="{{ '{{ page.url | prepend: site.baseurl'}}}}"> {{ page.title }} </a
+  >{% endif %}{% endfor %}{% endraw %}
 </li>
 ```
 

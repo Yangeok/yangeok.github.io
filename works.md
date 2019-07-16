@@ -7,6 +7,7 @@ permalink: /works/
 ## [Training Log](https://training-front.netlify.com/)
 
 - 운동 관련 블로그, 유튜브를 수집해서 포스팅, 영상을 수집해 보기좋게 제공하고 있습니다. 데이터베이스가 날아가더라도 재수집을 통해 수 분 안에 복구됩니다. 아래 이미지는 서비스의 전체적인 구조입니다.
+- 모바일 버전으로도 볼 수 있습니다.
 - 깃허브 저장소는 아래와 같습니다.
   - [training-front](https://github.com/Yangeok/training-front): 프론트엔드 코드 저장소입니다.
   - [training-back](https://github.com/Yangeok/training-back): 백엔드 API서버 코드 저장소입니다.
