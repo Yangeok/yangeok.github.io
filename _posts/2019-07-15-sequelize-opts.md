@@ -9,12 +9,32 @@ cover: https://res.cloudinary.com/yangeok/image/upload/v1552474849/logo/posts/se
 
 ## 목차
 
+- [콘솔에 뜨는 쿼리 로그가 보기 싫을 때](#콘솔에-뜨는-쿼리-로그가-보기-싫을-때)
 - [테이블명 plural 옵션을 끄고 싶을 때](#테이블명-plural-옵션을-끄고-싶을-때)
 - [FULLTEXT 인덱싱을 하고 싶을 때](#fulltext-인덱싱을-하고-싶을-때)
 - [substr 함수를 사용하고 싶을 때](#substr-함수를-사용하고-싶을-때)
 - [카운터 형태로 기존 값에 새로운 값을 더하고 싶을 때](#카운터-형태로-기존-값에-새로운-값을-더하고-싶을-때)
 - [raw, plain 옵션을 사용하고 싶을 때](#raw-plain-옵션을-사용하고-싶을-때)
 - [참조](#참조)
+
+## 콘솔에 뜨는 쿼리 로그가 보기 싫을 때
+
+```sql
+SELECT `attribute_id`, `name`, `createdAt`, `updatedAt` FROM `attributes` AS `attribute` WHERE `attribute`.`attribute_id` = '1';
+```
+
+데이터 탈취나 리소스 절약을 위해서 위같은 쿼리는 개발모드일 때에만 콘솔에 찍히는게 좋을겁니다. `config` 파일에 `logging` 옵션을 작성합니다.
+
+```json
+"development": {
+    "database": "database",
+    "username": "root",
+    "password": "root",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "logging": false
+}
+```
 
 ## 테이블명 plural 옵션을 끄고 싶을 때
 
@@ -253,7 +273,9 @@ await product.findAll({}).map(o => o.get({ raw: true }));
 
 ## 참조
 
+- [Prevent Sequelize from outputting SQL to the console on execution of query?
+  ](https://stackoverflow.com/questions/28927836/prevent-sequelize-from-outputting-sql-to-the-console-on-execution-of-query)
 - [Performing FULLTEXT search after JOIN operation in sequelize](https://stackoverflow.com/questions/40571881/performing-fulltext-search-after-join-operation-in-sequelize)
 - [Is there a way do MySQL FullText search in Sequelize 4?](https://stackoverflow.com/questions/47742180/is-there-a-way-do-mysql-fulltext-search-in-sequelize-4)
 - [How to update and increment?](https://github.com/sequelize/sequelize/issues/7268)
-- [https://github.com/sequelize/sequelize/issues/6950](Can findAll() directly get plain objects?)
+- [Can findAll() directly get plain objects?](https://github.com/sequelize/sequelize/issues/6950)
