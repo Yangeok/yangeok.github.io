@@ -4,7 +4,6 @@ title: JSON.stringify() 와 JSON.parse() 의 차이
 author: Yangeok
 categories: Javascript
 comments: true
-# tags: ['json', 'stringify', 'parse']
 cover: /assets/header_image.jpg
 ---
 
@@ -48,5 +47,3 @@ let obj = { name: "John", today: new Date(), city; "New York" }
 ```javascript
 obj.toString() == JSON.stringify(obj);
 ```
-
-똑같은 표현이니 참고하시길 바랍니다.

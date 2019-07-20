@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Koa.js 가독성 좋게 재작성하기
+title: Koa 가독성 좋게 재작성하기
 author: Yangeok
 categories: Node.js
 comments: true
-# tags: ['RDBM', 'sequelize', 'orm', 'sequelize.js']
 cover: https://res.cloudinary.com/yangeok/image/upload/v1552474850/logo/posts/sequelize.jpg
 ---
 

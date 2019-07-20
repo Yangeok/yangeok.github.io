@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Node.js Python 바인딩 하기
+title: Node.js와 Python 바인딩 하기
 author: Yangeok
 categories: Node.js
 comments: true
-# tags: ['nodejs', 'node.js', 'python', 'binding', 'bind', 'connect']
 cover: https://res.cloudinary.com/yangeok/image/upload/v1552474850/logo/posts/pynode.jpg
 ---
 

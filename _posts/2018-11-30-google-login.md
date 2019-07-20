@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Passport.js 구글 로그인 가져오기
+title: Passport 구글 로그인 가져오기
 author: Yangeok
 categories: Node.js
 comments: true
-# tags: ['OAuth', 'passport.js', 'passport']
 cover: https://res.cloudinary.com/yangeok/image/upload/v1552474850/logo/posts/passport.jpg
 ---
 

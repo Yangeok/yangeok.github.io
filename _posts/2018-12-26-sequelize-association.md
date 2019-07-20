@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Sequelize.js 테이블 별명 사용하기
+title: Sequelize 테이블 별명 사용하기
 author: Yangeok
 categories: Node.js
 comments: true
-# tags: ['join', 'self', 'left', 'outer', 'alias', 'nickname', 'as']
 cover: https://res.cloudinary.com/yangeok/image/upload/v1552474850/logo/posts/sequelize.jpg
 ---
 

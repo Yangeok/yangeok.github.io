@@ -90,6 +90,8 @@ product_category.associate = function(models) {
 };
 ```
 
+---
+
 참고로 각각의 테이블 모델 파일에서 설정할 수도 있고 `index.js`에 sequelize-cli가 만들어준 `db`객체 안에서 설정할 수도 있습니다. 만약 association을 `index.js` 파일에서 설정해주고 싶다면 아래와 같은 식으로 표현할 수 있습니다.
 
 ```js
@@ -106,9 +108,15 @@ db.product.belongsToMany(models.category, {
 });
 
 // product_category
-db.product_category.belongsTo(models.product, { foreignKey: 'product_id' });
-db.product_category.belongsTo(models.category, { foreignKey: 'category_id' });
+db.product_category.belongsTo(models.product, {
+  foreignKey: 'product_id'
+});
+db.product_category.belongsTo(models.category, {
+  foreignKey: 'category_id'
+});
 ```
+
+---
 
 테이블 정의가 다 됐으면 테이블 및 데이터 마이그레이션을 진행한 후 아래와 같이 쿼리를 날려봅니다. 위에서 언급했다시피 연결 테이블을 쿼리문에 사용하지 않습니다. 아래와 같이 `product_id`가 1인 상품의 카테고리명을 뽑는 쿼리를 입력합니다.
 
@@ -133,6 +141,8 @@ await product.findOne({
   }
 }
 ```
+
+---
 
 연결 테이블이 노출되고 객체가 지저분해졌습니다. 그럴경우 쿼리에 아래와 같은 옵션을 추가합니다.
 

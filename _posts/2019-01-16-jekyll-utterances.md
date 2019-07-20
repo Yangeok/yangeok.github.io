@@ -4,7 +4,6 @@ title: 깃헙 저장소 이슈 페이지를 댓글로 쓰기
 author: Yangeok
 categories: Blog
 comments: true
-# tags: ['github', 'page', 'blog', 'jekyll', 'utterances', 'comments', 'comment']
 cover: https://res.cloudinary.com/yangeok/image/upload/v1552474848/logo/posts/gitkyll.jpg
 ---
 

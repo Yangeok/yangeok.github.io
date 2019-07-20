@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Koa.js JWT 두가지 방법으로 전송하기
+title: Koa JWT 두가지 방법으로 전송하기
 author: Yangeok
 categories: Node.js
 comments: true
-# tags: ['jwt', 'token', 'json', 'web', 'transfer']
 cover: https://res.cloudinary.com/yangeok/image/upload/v1552474849/logo/posts/jwt.jpg
 ---
 

@@ -4,7 +4,6 @@ title: MySQL 외부에서 접속할 수 있게 세팅하기
 author: Yangeok
 categories: DevOps
 comments: true
-# tags: ['sql', 'mysql', 'database', 'db', 'external', 'connection', 'access']
 cover: https://res.cloudinary.com/yangeok/image/upload/v1552474850/logo/posts/mylightbuntu.jpg
 ---
 

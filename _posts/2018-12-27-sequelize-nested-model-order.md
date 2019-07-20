@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sequelize.js 중첩모델 쿼리 작성하기
+title: Sequelize 중첩모델 쿼리 작성하기
 author: Yangeok
 categories: Node.js
 comments: true

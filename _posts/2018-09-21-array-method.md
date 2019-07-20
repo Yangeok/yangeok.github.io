@@ -4,7 +4,6 @@ title: ES6 배열 메서드
 author: Yangeok
 categories: Javascript
 comments: true
-# tags: ['ES6', 'array', 'method']
 cover: /assets/header_image.jpg
 ---
 

@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Sequelize.js 모델 정의하기
+title: Sequelize 모델 정의하기
 author: Yangeok
 categories: Node.js
 comments: true
-# tags: ['RDBM', 'relational', 'database', 'ORM']
 cover: https://res.cloudinary.com/yangeok/image/upload/v1552474850/logo/posts/sequelize.jpg
 ---
 
