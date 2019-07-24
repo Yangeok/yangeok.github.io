@@ -176,6 +176,10 @@ cover: https://res.cloudinary.com/yangeok/image/upload/v1552474848/logo/posts/bo
 - [쉘스크립트 치트시트](http://kukuta.tistory.com/85)
 - [정규표현식](https://poiemaweb.com/js-regexp)
 
+## 웹개발
+
+- [2018년에 있어서 웹개발이란?](https://blog.kesuskim.com/2018/09/web-development-in-2018/)
+
 ## 취업
 
 - [프론트엔드 면접질문 핸드북](https://github.com/yangshun/front-end-interview-handbook/tree/master/Translations/Korean)
