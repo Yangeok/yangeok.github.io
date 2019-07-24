@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sequelize 쿼리 미세먼지 꿀팁 사용하기
+title: Sequelize 쿼리 미세먼지 꿀팁
 author: Yangeok
 categories: Node.js
 comments: true
