@@ -7,6 +7,7 @@ group:jekyll_plugins do
     gem 'jekyll-sitemap'
     gem 'jekyll-paginate'
     gem 'jekyll-include-cache'
+    gem 'jekyll-livereload'
 end
 
 gem 'wdm', '~> 0.1.0'

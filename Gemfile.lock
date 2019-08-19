@@ -33,6 +33,9 @@ GEM
       jekyll (>= 3.6, < 5.0)
     jekyll-include-cache (0.2.0)
       jekyll (>= 3.7, < 5.0)
+    jekyll-livereload (0.2.2)
+      em-websocket (~> 0.5)
+      jekyll (~> 3.0)
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
@@ -73,6 +76,7 @@ DEPENDENCIES
   jekyll
   jekyll-archives
   jekyll-include-cache
+  jekyll-livereload
   jekyll-paginate
   jekyll-sitemap
   liquid-c
