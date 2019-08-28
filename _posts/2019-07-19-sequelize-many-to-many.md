@@ -7,7 +7,7 @@ comments: true
 cover: https://res.cloudinary.com/yangeok/image/upload/v1552474849/logo/posts/sequelize.jpg
 ---
 
-## 작업환경d
+## 작업환경
 
 - [mysql2](https://www.npmjs.com/package/mysql2): 1.6.5
 - [sequelize](https://www.npmjs.com/package/sequelize): 5.8.8
