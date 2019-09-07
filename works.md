@@ -58,6 +58,8 @@ permalink: /works/
 - 쓸데 있는 꾸준한 커밋으로 잔디밭을 만드는 것을 목표로 하고 있습니다.
 - [Github TIL](https://github.com/Yangeok/Today-I-learned/tree/master/diary)을 아래에서 연월 별로 확인할 수 있습니다.
   - 2019
+    - [Sep. 2019](https://github.com/Yangeok/Today-I-learned/blob/master/diary/09-2019.md)
+    - [Aug. 2019](https://github.com/Yangeok/Today-I-learned/blob/master/diary/08-2019.md)
     - [Jul. 2019](https://github.com/Yangeok/Today-I-learned/blob/master/diary/07-2019.md)
     - [Jun. 2019](https://github.com/Yangeok/Today-I-learned/blob/master/diary/06-2019.md)
     - [May. 2019](https://github.com/Yangeok/Today-I-learned/blob/master/diary/05-2019.md)
