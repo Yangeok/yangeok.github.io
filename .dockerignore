@@ -4,4 +4,4 @@ docker-compose*
 Dockerfile*
 .gitignore
 .git
-start.example.sh
+start.sh
