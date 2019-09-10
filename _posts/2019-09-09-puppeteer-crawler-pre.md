@@ -3,7 +3,7 @@ layout: post
 title: Puppeteer로 크롤러 만들기 - 준비
 author: Yangeok
 categories: Node.js
-date: 2019-09-10 10:25
+date: 2019-09-09 09:52
 comments: true
 cover: https://res.cloudinary.com/yangeok/image/upload/v1566999441/logo/posts/puppeteer.jpg
 ---
@@ -11,7 +11,7 @@ cover: https://res.cloudinary.com/yangeok/image/upload/v1566999441/logo/posts/pu
 ## 시리즈
 
 - [Puppeteer로 크롤러 만들기 - 준비](#)
-- [Puppeteer로 크롤러 만들기 - 페이지네이션](https://yangeok.github.io/node.js/2019/09/10/puppeteer-crawler-page.html)
+- [Puppeteer로 크롤러 만들기 - 페이지네이션](/node.js/2019/09/10/puppeteer-crawler-page.html)
 - [Puppeteer로 크롤러 만들기 - 무한스크롤]()
 
 ---
