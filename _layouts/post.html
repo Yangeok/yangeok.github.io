@@ -2,13 +2,18 @@
 layout: default
 ---
 
+<head> </head>
 <div class="post">
-	<div class="post-header-container {% if page.cover %}has-cover{% endif %}" {%
+	<div
+		class="post-header-container {% if page.cover %}has-cover{% endif %}"
+		{%
 		if
 		page.cover
-		%}style="background-image: url({{ page.cover | prepend: site.baseurl }});" {%
+		%}style="background-image: url({{ page.cover | prepend: site.baseurl }});"
+		{%
 		endif
-		%}>
+		%}
+	>
 		<div class="scrim {% if page.cover %}has-cover{% endif %}">
 			<header class="post-header">
 				<h1 class="title">{{ page.title }}</h1>
@@ -35,26 +40,31 @@ layout: default
 
 		<article class="post-content">
 			{{ content }}
+			<!-- google adsense start -->
+			<script
+				async
+				src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+			></script>
+			<ins
+				class="adsbygoogle"
+				style="display:block; text-align:center;"
+				data-ad-layout="in-article"
+				data-ad-format="fluid"
+				data-ad-client="ca-pub-2713910386733232"
+				data-ad-slot="8097147562"
+			></ins>
+			<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+			<!-- google adsense end -->
 		</article>
-
-		<!-- google adsense start -->
-		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<script>
-			(adsbygoogle = window.adsbygoogle || []).push({
-				google_ad_client: "ca-pub-2713910386733232",
-				enable_page_level_ads: true
-			});
-
-		</script>
-		<script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
-		</script>
-
-		<!-- google adsense end -->
 
 		{% if site.jekyll-archives %} {% if page.tags.size > 0 %}
 		<section class="tags">
 			<strong>Tags:</strong> {% for tag in page.tags %}<a
-				href="{{ site.baseurl }}/tag/{{ tag }}">{{ tag }}</a>{% if forloop.last == false %},&nbsp;{% endif %}{% endfor %}
+				href="{{ site.baseurl }}/tag/{{ tag }}"
+				>{{ tag }}</a
+			>{% if forloop.last == false %},&nbsp;{% endif %}{% endfor %}
 		</section>
 		{% endif %} {% endif %} {% if site.inter_post_navigation == true %}
 		<section class="post-navigation">
@@ -84,8 +94,14 @@ layout: default
 		{% endif %}
 
 		<section class="disqus">
-			<script src="https://utteranc.es/client.js" repo="Yangeok/blog-comments" issue-term="pathname"
-				theme="github-light" crossorigin="anonymous" async></script>
+			<script
+				src="https://utteranc.es/client.js"
+				repo="Yangeok/blog-comments"
+				issue-term="pathname"
+				theme="github-light"
+				crossorigin="anonymous"
+				async
+			></script>
 		</section>
 	</div>
 </div>
