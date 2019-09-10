@@ -30,7 +30,7 @@ cover: https://res.cloudinary.com/yangeok/image/upload/v1566999441/logo/posts/pu
 커뮤니티, 포털, SNS는 게시판의 형태가 상이하기때문에 어떤 식으로 크롤할지 전략을 수립하는게 크롤러개발 시간을 단축하는데 큰 도움을 준다고 봅니다. 그래서 아래와 같이 체크리스트를 작성해봤습니다.
 
 ![](https://s3.amazonaws.com/checkli.com/featured/old-school.png)
-출처: [https://www.checkli.com/checklists/terces/-1](https://www.checkli.com/checklists/terces/-1)
+출처: [나의 자존감 체크리스트](https://www.checkli.com/checklists/terces/-1)
 
 #### 통합검색이 구글검색인지 아닌지 확인한다.
 
@@ -47,7 +47,7 @@ cover: https://res.cloudinary.com/yangeok/image/upload/v1566999441/logo/posts/pu
 무한스크롤인 경우, 화면 안에 들어있는 게시물 수만큼 루프를 돈 다음 루프를 돌지 않은 게시물이 0개일때, 더보기 버튼을 누르거나 스크롤을 하면서 크롤합니다.
 
 ![](https://www.knowband.com/blog/wp-content/uploads/2019/05/infinite-scroll-and-pagination.jpg)
-출처: [https://www.knowband.com/blog/de/ecommerce-blog-de/pagination-vs-infinite-scrolling/](https://www.knowband.com/blog/de/ecommerce-blog-de/pagination-vs-infinite-scrolling/)
+출처: [Pagination vs Infinite Scrolling](https://www.knowband.com/blog/de/ecommerce-blog-de/pagination-vs-infinite-scrolling/)
 
 #### 총 게시물 수 혹은 총 페이지 수가 명시되었는지 확인한다.
 
@@ -84,7 +84,7 @@ for (const frame of page.mainFrame().childFrames()) {
 날짜 필터링을 하려면 조건문을 여러개 작성해야하는 불편함이 따를 수 있습니다. 네이버나 구글같이 필터링이 가능하다면 개발하는 입장에서는 세상 편합니다.
 
 ![](https://howto.caspio.com/wp-content/uploads/2016/12/creating_query_strings1.png)
-출처: [https://howto.caspio.com/parameters/parameters-as-query-string-values/](https://howto.caspio.com/parameters/parameters-as-query-string-values/)
+출처: [Parameters as Query String Values](https://howto.caspio.com/parameters/parameters-as-query-string-values/)
 
 #### jQuery가 적용되었는지 확인한다.
 
