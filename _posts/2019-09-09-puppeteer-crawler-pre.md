@@ -10,7 +10,7 @@ cover: https://res.cloudinary.com/yangeok/image/upload/v1566999441/logo/posts/pu
 ## 시리즈
 
 - [Puppeteer로 크롤러 만들기 - 준비](#)
-- [Puppeteer로 크롤러 만들기 - 페이지네이션](https://yangeok.github.io/node.js/2019/09/09/puppeteer-crawler-pre.html)
+- [Puppeteer로 크롤러 만들기 - 페이지네이션](https://yangeok.github.io/node.js/2019/09/09/puppeteer-crawler-page.html)
 - [Puppeteer로 크롤러 만들기 - 무한스크롤]()
 
 ---
