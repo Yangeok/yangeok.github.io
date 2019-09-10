@@ -3,6 +3,7 @@ layout: post
 title: Puppeteer로 크롤러 만들기 - 페이지네이션
 author: Yangeok
 categories: Node.js
+date: 2019-09-10 09:52
 comments: true
 cover: https://res.cloudinary.com/yangeok/image/upload/v1565253692/logo/posts/puppeteer.jpg
 ---
