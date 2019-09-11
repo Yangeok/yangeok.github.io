@@ -12,7 +12,7 @@ cover: https://res.cloudinary.com/yangeok/image/upload/v1566999441/logo/posts/pu
 
 - [Puppeteer로 크롤러 만들기 - 준비](#)
 - [Puppeteer로 크롤러 만들기 - 페이지네이션](/node.js/2019/09/10/puppeteer-crawler-page.html)
-- [Puppeteer로 크롤러 만들기 - 무한스크롤]()
+- [Puppeteer로 크롤러 만들기 - 무한스크롤](/node.js/2019/09/11/puppeteer-crawler-scroll.html)
 
 ---
 
@@ -284,6 +284,8 @@ await page.setJavaScriptEnabled(false)
 다음편부터는 본격적으로 코드를 짜면서 이야기하도록 하겠습니다. 페이지네이션 형태는 뽐뿌를, 무한스크롤 형태는 인스타그램을 크롤하도록 하겠습니다.
 
 ---
+
+{{ include google_adsense.html }}
 
 ## 참조
 
