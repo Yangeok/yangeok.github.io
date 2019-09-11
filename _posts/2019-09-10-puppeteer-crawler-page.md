@@ -19,7 +19,7 @@ cover: https://res.cloudinary.com/yangeok/image/upload/v1565253692/logo/posts/pu
 
 - [Puppeteer로 크롤러 만들기 - 준비](/node.js/2019/09/09/puppeteer-crawler-pre.html)
 - [Puppeteer로 크롤러 만들기 - 페이지네이션](#)
-- [Puppeteer로 크롤러 만들기 - 무한스크롤]()
+- [Puppeteer로 크롤러 만들기 - 무한스크롤](/node.js/2019/09/11/puppeteer-crawler-scroll.html)
 
 ---
 
@@ -486,3 +486,5 @@ const item = {
 한개의 함수 안에서 코드를 쓰려니 호흡이 조금 길어진 것 같습니다. 여기서 브라우저 옵션과 스트림하는 부분을 다른 파일로 분리해서 사용한다면 다른 모델을 개발할때 훨씬 편할 수 있습니다.
 
 혹시라도 코드를 보시다 오류가 있거나 궁금한 점이 있으시면 댓글 혹은 메일 주시면 감사하겠습니다.
+
+{{ include google_adsense.html }}
