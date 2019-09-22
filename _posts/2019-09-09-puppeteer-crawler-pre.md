@@ -94,7 +94,7 @@ puppeteer 내장 함수 혹은 cheerio로 html 요소를 가져올때 참고하�
 
 [Chrome Develeopers Tools documentation](https://developers.google.com/web/tools/chrome-devtools/console/?utm_source=dcc&utm_medium=redirect&utm_campaign=2016q3#selecting-elements)에서 아래와 같이 `$`마크가 용도 별로 있음을 알려줍니다.
 
-{% include google_adsense.html %}
+{% include google_adsense_mid_text.html %}
 
 > ### Selecting Elements
 >

@@ -233,7 +233,7 @@ puppeteer 내장 함수가 나은지 cheerio가 나은지는 아직 잘 모르�
 
 #### 루프 돌고 날짜 필터링하는 함수
 
-{% include google_adsense.html %}
+{% include google_adsense_mid_text.html %}
 
 ```js
 const getItems = ($, page) => {
