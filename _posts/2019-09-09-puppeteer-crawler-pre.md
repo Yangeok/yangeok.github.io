@@ -65,16 +65,16 @@ cover: https://res.cloudinary.com/yangeok/image/upload/v1566999441/logo/posts/pu
 `$`로 셀렉터를 찍어봐도 html요소가 반환되지 않는다면 Iframe이 적용됐는지를 의심해볼 수 있습니다. 하지만 걱정하지 않아도 됩니다. puppeteer에서는 프레임 이름만 안다면 Iframe을 뚫고 들어갈 수 있습니다. 다음과 같은 식으로 할 수 있습니다.
 
 ```js
-const frame = page.frames().find((frame) => frame.name() === 'frameName')
+const frame = page.frames().find(frame => frame.name() === 'frameName');
 ```
 
 프레임 이름을 정확히 모르는 경우에는 아래와 같이 찾는 방법도 있습니다.
 
 ```js
-const page = await browser.newPage()
+const page = await browser.newPage();
 for (const frame of page.mainFrame().childFrames()) {
   if (frame.url().includes('partialFrameName')) {
-    console.log(`frameName: ${frame}`)
+    console.log(`frameName: ${frame}`);
   }
 }
 ```
@@ -94,6 +94,8 @@ puppeteer 내장 함수 혹은 cheerio로 html 요소를 가져올때 참고하�
 
 [Chrome Develeopers Tools documentation](https://developers.google.com/web/tools/chrome-devtools/console/?utm_source=dcc&utm_medium=redirect&utm_campaign=2016q3#selecting-elements)에서 아래와 같이 `$`마크가 용도 별로 있음을 알려줍니다.
 
+{% include google_adsense.html %}
+
 > ### Selecting Elements
 >
 > There are a few shortcuts for selecting elements. These save you valuable time when compared to typing out their standard counterparts.
@@ -105,17 +107,17 @@ puppeteer 내장 함수 혹은 cheerio로 html 요소를 가져올때 참고하�
 만, 작동은 똑같이 하는 것 같습니다. 더 헷갈리기만 하더라구요. 브라우저에서 `$()`를 먼저 사용해보고 안된다면 `$$()`를 사용하는 편입니다. 같은 셀렉터를 읽어옴에도 `$()`와 `$$()`는 뒤에 붙는 메서드 혹은 객체 이름이 다름을 참고해주세요. 아래는 어떤 요소 안에 들어있는 텍스트만 가져오기 위한 코드입니다.
 
 ```js
-$('selector').text()
+$('selector').text();
 // something
 
-$$('selector')[0].innerText
+$$('selector')[0].innerText;
 // something
 ```
 
 아래처럼 puppeteer 내장 함수를 사용한다면 아래와 같은 여러가지 메서드가 있습니다.
 
 ```js
-const item = await page.$('selector')
+const item = await page.$('selector');
 ```
 
 `page.$()`는 `document.querySelector()`를 페이지에서 실행합니다. 일치하는 셀렉터가 없다면 `null`을 반환합니다.
@@ -123,7 +125,7 @@ const item = await page.$('selector')
 `page.mainFrame().$(selector)`와 같습니다.
 
 ```js
-const item = await page.$eval('selector', (el) => el)
+const item = await page.$eval('selector', el => el);
 ```
 
 `page.$()`는 `document.querySelector()`를 페이지에서 실행하고 콜백함수의 1번째 인자로 들어갑니다. 일치하는 셀렉터가 없다면 에러를 반환합니다.
@@ -131,7 +133,7 @@ const item = await page.$eval('selector', (el) => el)
 `page.mainFrame().$eval(selector, pageFunction)`와 같습니다.
 
 ```js
-const items = await page.$$('selector')
+const items = await page.$$('selector');
 ```
 
 `page.$$()`는 `document.querySelectorAll()`를 페이지에서 실행합니다. 일치하는 셀렉터가 없다면 빈 배열 `[]`을 반환합니다.
@@ -139,18 +141,18 @@ const items = await page.$$('selector')
 `page.mainFrame().$$(selector)`와 같습니다.
 
 ```js
-const items = await page.$$eval('selector', (el) => el)
+const items = await page.$$eval('selector', el => el);
 ```
 
 `page.$$eval()`는 `Array.from(document.querySelectorAll(selector))`를 페이지에서 실행합니다. 일치하는 셀렉터가 없다면 빈 배열 `[]`을 반환합니다.
 
 ```js
-const fn = await page.evaluate('pageFunction')
+const fn = await page.evaluate('pageFunction');
 
 const item = await page.evaluate(() => {
-  const $ = window.$
-  return $('selector')
-})
+  const $ = window.$;
+  return $('selector');
+});
 ```
 
 스크롤바 이동같은 함수를 바로 사용하거나 콜백으로 html요소를 반환합니다.
@@ -159,7 +161,7 @@ const item = await page.evaluate(() => {
 
 ```js
 const item = await page.evaluate(() => {
-  const $ = window.$
+  const $ = window.$;
   return {
     date: $('dateSelector'),
     title: $('titleSelector'),
@@ -167,22 +169,22 @@ const item = await page.evaluate(() => {
     content: $('contentSelector'),
     click: $('clickSelector'),
     link: $('linkSelector')
-  }
-})
+  };
+});
 
-const date = filter(item.date)
-const title = filter(item.title)
-const user = filter(item.user)
-const content = filter(item.content)
-const click = filter(item.click)
-const link = filter(item.link)
+const date = filter(item.date);
+const title = filter(item.title);
+const user = filter(item.user);
+const content = filter(item.content);
+const click = filter(item.click);
+const link = filter(item.link);
 ```
 
 이런 불편함이 없고자 cheerio를 사용할 수 있습니다.
 
 ```js
-const content = await page.content()
-const $ = await cheerio.load(content)
+const content = await page.content();
+const $ = await cheerio.load(content);
 const item = {
   date: filter($('dateSelector')),
   title: filter($('titleSelector')),
@@ -190,7 +192,7 @@ const item = {
   content: filter($('contentSelector')),
   click: filter($('clickSelector')),
   link: filter($('linkSelector'))
-}
+};
 ```
 
 코드가 훨씬 짧아짐을 알 수 있습니다. 하지만 cheerio는 한 페이지에 있는 html요소만 가져오기때문에 다른 페이지로 넘어가면 `$`를 다시 선언해줘야 하는 불편함이 따를 수 있습니다. 목적에 맞는 선택을 하는게 아주 중요합니다.
@@ -232,47 +234,47 @@ headless, 디바이스, 뷰포트 설정, 자바스크립트, 폰트, 이미지,
 참고로 headless는 cli로 브라우징을 할 수 있는 것을 의미합니다. 코딩 시에는 브라우저가 어떤 식으로 작동하는지 모니터링하면서 하다가 크롤을 할 때에는 성능 향상을 위해서 `headless` 옵션을 `true`로 바꿉니다. headless 옵션은 다음과 같이 작성합니다.
 
 ```js
-const browser = await puppeteer.launch({ headless: true })
+const browser = await puppeteer.launch({ headless: true });
 ```
 
 [여기](https://github.com/GoogleChrome/puppeteer/blob/master/lib/DeviceDescriptors.js)에서 디바이스 종류를 선택할 수 있습니다. 디바이스를 선택하면 해당 크기에 맞는 뷰를 브라우저가 제공합니다. 디바이스 옵션은 다음과 같이 작성합니다.
 
 ```js
-const device = puppeteer.devices['deviceName']
-await page.emulate(device)
+const device = puppeteer.devices['deviceName'];
+await page.emulate(device);
 ```
 
 대신 브라우저 창 크기는 제어해주지 않아 [이런](https://github.com/GoogleChrome/puppeteer/issues/1183) 일이 생기기도 합니다. 그래서 뷰포트를 제어해주는 옵션은 다음과 같이 두 가지 방법으로 작성합니다.
 
 ```js
 const width = 400,
-  height = 900
+  height = 900;
 
 // 이 방법
 const browser = await puppeteer.launch({
   args: [`--window-size${width},${height}`]
-})
+});
 
 // 혹은
-await page.setViewport({ width, height })
+await page.setViewport({ width, height });
 ```
 
 자바스크립트, 폰트, 이미지, 스타일 로딩은 다음과 같이 작성합니다. 폰트, 이미지, 스타일 로딩은 브라우저에서 서버로 보내는 요청을 중간에 방해한다는 것을 메서드명 `.setRequestInterception()`을 보면 알 수 있습니다.
 
 ```js
-await page.setRequestInterception(true)
-await page.on('request', (req) => {
+await page.setRequestInterception(true);
+await page.on('request', req => {
   if (
     req.resourceType() == 'stylesheet' ||
     req.resourceType() == 'font' ||
     req.resourceType() == 'image'
   ) {
-    req.abort()
+    req.abort();
   } else {
-    req.continue()
+    req.continue();
   }
-})
-await page.setJavaScriptEnabled(false)
+});
+await page.setJavaScriptEnabled(false);
 ```
 
 위에서 언급한 옵션들은 개발 중에 활성화하고 개발할 시에 크롤이 제대로 되지 않는 경우들을 접할 수 있습니다. 그러니 개발이 끝난 후 성능 향상을 위한 목적으로 사용하시길 바라겠습니다.
@@ -284,8 +286,6 @@ await page.setJavaScriptEnabled(false)
 다음편부터는 본격적으로 코드를 짜면서 이야기하도록 하겠습니다. 페이지네이션 형태는 뽐뿌를, 무한스크롤 형태는 인스타그램을 크롤하도록 하겠습니다.
 
 ---
-
-{{ include google_adsense.html }}
 
 ## 참조
 

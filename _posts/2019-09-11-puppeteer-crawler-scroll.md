@@ -42,10 +42,10 @@ cover: https://res.cloudinary.com/yangeok/image/upload/v1565253692/logo/posts/pu
 
 ```js
 // instagram.js
-const fs = require('fs')
-const path = require('path')
-const moment = require('moment')
-const puppeteer = require('puppeteer')
+const fs = require('fs');
+const path = require('path');
+const moment = require('moment');
+const puppeteer = require('puppeteer');
 ```
 
 이번에도 모바일뷰로 할지 데스크톱뷰로 할지 결정합니다.
@@ -55,15 +55,15 @@ const puppeteer = require('puppeteer')
 데스크톱에서는 리스트에서 게시물로 들어갈때 url이 변경되지만 리스트 목록이 사라지지 않고 뒤에 남아있습니다. 결정했습니다. 데스크톱뷰로 긁어오겠습니다.
 
 ```js
-const keyword = '구글'
-const channel = 'instagram'
-const host = 'http://www.instagram.com'
-const startDate = '2019-08-01'
-const endDate = '2019-08-31'
-const filename = `${keyword}_${channel}_${startDate}_${endDate}.txt`
-const fields = ['date', 'title', 'user', 'content', 'click', 'link']
-const logs = fs.createWriteStream(path.join(__dirname, filename))
-logs.write(`${fields.join(',')}\n`)
+const keyword = '구글';
+const channel = 'instagram';
+const host = 'http://www.instagram.com';
+const startDate = '2019-08-01';
+const endDate = '2019-08-31';
+const filename = `${keyword}_${channel}_${startDate}_${endDate}.txt`;
+const fields = ['date', 'title', 'user', 'content', 'click', 'link'];
+const logs = fs.createWriteStream(path.join(__dirname, filename));
+logs.write(`${fields.join(',')}\n`);
 ```
 
 키워드, 채널, 호스트명, 파일명, 컬럼명을 지정합니다. 크롤 함수가 실행되기 전에 미리 파일에 컬럼명만 작성합니다.
@@ -73,22 +73,26 @@ logs.write(`${fields.join(',')}\n`)
 ## 브라우저 옵션 설정하기
 
 ```js
-const width = 400
-const height = 900
+const width = 400;
+const height = 900;
 const options = {
   // headless: false,
   slowMo: true,
-  args: [`--window-size=${width},${height}`, '--no-sandbox', '--disable-setuid-sandbox']
-}
-const device = puppeteer.devices['iPhone X']
+  args: [
+    `--window-size=${width},${height}`,
+    '--no-sandbox',
+    '--disable-setuid-sandbox'
+  ]
+};
+const device = puppeteer.devices['iPhone X'];
 
 const init = async () => {
-  const browser = await puppeteer.launch(options)
-  const page = await browser.newPage()
+  const browser = await puppeteer.launch(options);
+  const page = await browser.newPage();
   await page.setViewport({
     width,
     height
-  })
+  });
   // await page.emulate(device);
   // await page.setRequestInterception(true);
   // await page.on('request', req => {
@@ -103,7 +107,7 @@ const init = async () => {
   //   }
   // });
   // await page.setJavaScriptEnabled(false);
-}
+};
 ```
 
 브라우저를 띄워놓고 테스트해야하므로 나머지 옵션은 켜지 않고 주석처리하도록 하겠습니다.
@@ -116,10 +120,10 @@ const init = async () => {
 
 ```js
 const generateURL = async () => {
-  const url = `${host}/explore/tags/${encodeURI(keyword)}`
-  console.log(url)
-  return url
-}
+  const url = `${host}/explore/tags/${encodeURI(keyword)}`;
+  console.log(url);
+  return url;
+};
 ```
 
 페이지를 `page.click()`으로 들어가는 것보다 url을 타고 들어가는게 성능이 훨씬 뛰어나기때문에 url을 만들어주는 함수를 작성합니다. 여기서는 한 번밖에 쓸 일이 없는 함수지만 만들어둔게 아까워 사용합니다.
@@ -127,26 +131,28 @@ const generateURL = async () => {
 #### 페이지 스크롤하는 함수
 
 ```js
-const pageDown = async (page) => {
-  const scrollHeight = 'document.body.scrollHeight'
-  let previousHeight = await page.evaluate(scrollHeight)
-  await page.evaluate(`window.scrollTo(0, ${scrollHeight})`)
+const pageDown = async page => {
+  const scrollHeight = 'document.body.scrollHeight';
+  let previousHeight = await page.evaluate(scrollHeight);
+  await page.evaluate(`window.scrollTo(0, ${scrollHeight})`);
   await page.waitForFunction(`${scrollHeight} > ${previousHeight}`, {
     timeout: 30000
-  })
-}
+  });
+};
 ```
 
 더 이상 리스트에 루프 돌지 않은 게시물이 없는 경우에 실행할 함수입니다.
 
 #### 게시물 내용을 크롤하는 함수
 
+{% include google_adsense.html %}
+
 ```js
-const goToPostPageAndGetInfo = async (page) => {
+const goToPostPageAndGetInfo = async page => {
   const result = await page.evaluate(() => {
-    const $ = window.$
-    const targetPost = $($('._9AhH0:not(.done)')[0])
-    targetPost.addClass('done')
+    const $ = window.$;
+    const targetPost = $($('._9AhH0:not(.done)')[0]);
+    targetPost.addClass('done');
     return {
       date: $('._1o9PC.Nzb55')
         .attr('datetime')
@@ -160,10 +166,10 @@ const goToPostPageAndGetInfo = async (page) => {
         .find('span')
         .text(),
       link: targetPost.closest('a').attr('href')
-    }
-  })
-  return result
-}
+    };
+  });
+  return result;
+};
 ```
 
 1편에서도 언급했듯이 puppeteer 내장함수를 쓰면 커스텀함수를 그 안에 적용시킬 수가 없고, 셀렉터를 다른 객체로 빼낼 수가 없습니다. 셀렉터를 관리하려면 모델 파일에 셀렉터가 있는 함수블럭까지 직접 찾아가야하는 번거로움이 생길 수가 있습니다.
@@ -176,16 +182,16 @@ const goToPostPageAndGetInfo = async (page) => {
 const init = async () => {
   // (...)
 
-  await page.goto(await this.generateURL())
+  await page.goto(await this.generateURL());
   await page.waitFor('._9AhH0', {
     timeout: 30000
-  })
+  });
   await page.evaluate(() => {
-    const $ = window.$
-    $('.EZdmt').remove()
-  })
-  await getItem(page)
-}
+    const $ = window.$;
+    $('.EZdmt').remove();
+  });
+  await getItem(page);
+};
 ```
 
 클래스명이 `EZdmt`인 요소는 리스트에 있는 인기게시물입니다. 루프 안에서 지우면 안되기때문에 루프가 시작하기 전에 요소를 삭제해줬습니다.
@@ -193,22 +199,22 @@ const init = async () => {
 #### 루프 돌고 날짜 필터링하는 함수
 
 ```js
-const loopThroughPosts = async (page) => {
+const loopThroughPosts = async page => {
   try {
   } catch (err) {
-    console.log(err)
+    console.log(err);
   } finally {
-    await page.close()
-    process.exit()
+    await page.close();
+    process.exit();
   }
-}
+};
 ```
 
 기본형을 위와 같은 `try-catch-finally`형태로 에러가 나면 바로 크롤을 중단하고 프로그램이 종료되도록 하겠습니다. 주의하실게 `catch`블록에서 멍청하게 `throw err`로만 해놓고 하루종일 에러가 어디서 난지 몰라 삽질한 기억이 납니다. 부디 콘솔에 에러를 찍어주시길 바랍니다.
 
 ```js
 try {
-  let currentPostDate = moment()
+  let currentPostDate = moment();
 
   while (moment(this.startDate).isSameOrBefore(currentPostDate)) {}
 } catch (err) {}
@@ -223,17 +229,17 @@ try {
 
 while (moment(this.startDate).isSameOrBefore(currentPostDate)) {
   const findTargetPostResult = await page.evaluate(() => {
-    const $ = window.$
-    const leftPostsCountOnTheScreen = $('._9AhH0:not(.done)').length
-    console.log(leftPostsCountOnTheScreen)
+    const $ = window.$;
+    const leftPostsCountOnTheScreen = $('._9AhH0:not(.done)').length;
+    console.log(leftPostsCountOnTheScreen);
     if (leftPostsCountOnTheScreen === 0) {
-      return false
+      return false;
     }
 
-    const currentWorkingPost = $('._9AhH0:not(.done)')[0]
-    $(currentWorkingPost).click()
-    return true
-  })
+    const currentWorkingPost = $('._9AhH0:not(.done)')[0];
+    $(currentWorkingPost).click();
+    return true;
+  });
 }
 ```
 
@@ -257,16 +263,16 @@ while(
 if (!findTargetPostResult) {
   // (...)
 } else {
-  await page.waitForSelector('.Ppjfr')
-  const result = await goToPostPageAndGetInfo(page)
+  await page.waitForSelector('.Ppjfr');
+  const result = await goToPostPageAndGetInfo(page);
 
-  currentPostDate = moment(result.date)
+  currentPostDate = moment(result.date);
   if (moment(this.endDate).isSameOrAfter(currentPostDate)) {
     this.logs.write(
-      `${result.date},${result.title},${filter(result.user)},${filter(result.content)},${filter(
-        result.click
-      )},${result.link}\n`
-    )
+      `${result.date},${result.title},${filter(result.user)},${filter(
+        result.content
+      )},${filter(result.click)},${result.link}\n`
+    );
   }
 }
 ```
@@ -278,8 +284,6 @@ if (!findTargetPostResult) {
 혹시라도 코드를 보시다 오류가 있거나 궁금한 점이 있으시면 댓글 혹은 메일 주시면 감사하겠습니다.
 
 ---
-
-{{ include google_adsense.html }}
 
 ## 참조
 

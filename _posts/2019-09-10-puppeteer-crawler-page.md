@@ -38,11 +38,11 @@ cover: https://res.cloudinary.com/yangeok/image/upload/v1565253692/logo/posts/pu
 
 ```js
 // ppomppu.js
-const fs = require('fs')
-const path = require('path')
-const moment = require('moment')
-const puppeteer = require('puppeteer')
-const cheerio = require('cheerio')
+const fs = require('fs');
+const path = require('path');
+const moment = require('moment');
+const puppeteer = require('puppeteer');
+const cheerio = require('cheerio');
 ```
 
 `fs`에는 스트림 저장을 하기 위해, `moment`는 날짜 검증을 하기 위해 사용합니다. 잠깐, 호스트명을 지정하기에 앞서 모바일뷰에서 긁어오는게 나을지, 데스크톱뷰에서 긁어오는게 나을지 직접 웹페이지에 들어가 확인해봅니다.
@@ -52,15 +52,15 @@ const cheerio = require('cheerio')
 모바일에서는 전체 게시물 목록, 전체 페이지 수가 전부 다 나옵니다. 결정했습니다. 모바일뷰로 긁어오겠습니다.
 
 ```js
-const keyword = '구글'
-const channel = 'ppomppu'
-const host = 'http://m.ppomppu.co.kr'
-const startDate = '2019-08-01'
-const endDate = '2019-08-31'
-const filename = `${keyword}_${channel}_${startDate}_${endDate}.txt`
-const fields = ['date', 'title', 'user', 'content', 'click', 'link']
-const logs = fs.createWriteStream(path.join(__dirname, filename))
-logs.write(`${fields.join(',')}\n`)
+const keyword = '구글';
+const channel = 'ppomppu';
+const host = 'http://m.ppomppu.co.kr';
+const startDate = '2019-08-01';
+const endDate = '2019-08-31';
+const filename = `${keyword}_${channel}_${startDate}_${endDate}.txt`;
+const fields = ['date', 'title', 'user', 'content', 'click', 'link'];
+const logs = fs.createWriteStream(path.join(__dirname, filename));
+logs.write(`${fields.join(',')}\n`);
 ```
 
 키워드, 채널, 호스트명, 파일명, 컬럼명을 지정합니다. 크롤 함수가 실행되기 전에 미리 파일에 컬럼명만 작성합니다.
@@ -70,22 +70,26 @@ logs.write(`${fields.join(',')}\n`)
 ## 브라우저 옵션 설정하기
 
 ```js
-const width = 400
-const height = 900
+const width = 400;
+const height = 900;
 const options = {
   // headless: false,
   slowMo: true,
-  args: [`--window-size=${width},${height}`, '--no-sandbox', '--disable-setuid-sandbox']
-}
-const device = puppeteer.devices['iPhone X']
+  args: [
+    `--window-size=${width},${height}`,
+    '--no-sandbox',
+    '--disable-setuid-sandbox'
+  ]
+};
+const device = puppeteer.devices['iPhone X'];
 
 const init = async () => {
-  const browser = await puppeteer.launch(options)
-  const page = await browser.newPage()
+  const browser = await puppeteer.launch(options);
+  const page = await browser.newPage();
   await page.setViewport({
     width,
     height
-  })
+  });
   // await page.emulate(device);
   // await page.setRequestInterception(true);
   // await page.on('request', req => {
@@ -100,7 +104,7 @@ const init = async () => {
   //   }
   // });
   // await page.setJavaScriptEnabled(false);
-}
+};
 ```
 
 브라우저를 띄워놓고 테스트해야하므로 나머지 옵션은 켜지 않고 주석처리하도록 하겠습니다.
@@ -115,10 +119,10 @@ const init = async () => {
 const generateURL = async (currentPage = 1) => {
   const url = `${host}/new/search_result.php?search_type=sub_memo&page_size=20&bbs_id=&order_type=date&bbs_cate=2&page_no=${currentPage}&keyword=${encodeURI(
     keyword
-  )}`
-  console.log(url)
-  return url
-}
+  )}`;
+  console.log(url);
+  return url;
+};
 ```
 
 페이지를 `page.click()`으로 들어가는 것보다 url을 타고 들어가는게 성능이 훨씬 뛰어나기때문에 url을 만들어주는 함수를 작성합니다.
@@ -144,7 +148,7 @@ const getPageCount = async (totalPosts, pageSize) => {
 #### 게시물 페이지 목록을 가져오는 함수
 
 ```js
-const getPostsInfoInListPage = async ($) => {
+const getPostsInfoInListPage = async $ => {
   const infoInListPage = $(infoInListPageSelector)
     .toArray()
     .map((row, index) => {
@@ -155,11 +159,11 @@ const getPostsInfoInListPage = async ($) => {
             .find(aTagSelector)
             .attr('href'),
         index
-      }
-    })
-  console.log(infoInListPage)
-  return infoInListPage
-}
+      };
+    });
+  console.log(infoInListPage);
+  return infoInListPage;
+};
 ```
 
 브라우저 콘솔에서 `$('.bbsList > li').length`를 해보면, 페이지당 20개씩 게시물이 있는 것을 확인할 수 있습니다. 위 함수가 반환하는 객체에 `index` 값이 있으니 확인할 수 있습니다. 셀렉터 자리에 들어가는 변수들은 따로 객체로 빼서 모아서 관리하려고 합니다.
@@ -193,7 +197,7 @@ const goToPostPageAndGetInfo = async (page, link) => {
 #### 문자열 필터 함수
 
 ```js
-const filter = (text) =>
+const filter = text =>
   text.trim
     .replace()
     .trim()
@@ -203,7 +207,7 @@ const filter = (text) =>
     .replace(/\,/gi, '')
     .replace(/\,/g, '')
     .replace(/@+/g, '')
-    .replace(/(<([^>]+)>)/gi, '')
+    .replace(/(<([^>]+)>)/gi, '');
 ```
 
 정규식으로 문자열을 바꿔주는 함수를 작성했습니다. 쓸 일이 많을겁니다.
@@ -218,16 +222,18 @@ const filter = (text) =>
 const init = async () => {
   // (...)
 
-  await page.goto(await generateURL())
-  const content = await page.content()
-  const $ = await cheerio.load(content)
-  getItems($, page)
-}
+  await page.goto(await generateURL());
+  const content = await page.content();
+  const $ = await cheerio.load(content);
+  getItems($, page);
+};
 ```
 
 puppeteer 내장 함수가 나은지 cheerio가 나은지는 아직 잘 모르겠습니다. 페이지네이션은 cheerio로 해보고 무한스크롤은 puppeteer 내장 함수를 사용할 예정입니다.
 
 #### 루프 돌고 날짜 필터링하는 함수
+
+{% include google_adsense.html %}
 
 ```js
 const getItems = ($, page) => {
@@ -247,11 +253,11 @@ const getItems = ($, page) => {
 try {
   const totalPostCount = filter($(totalPostCountSelector).text())
     .split('[')[1]
-    .split('건')[0]
-  const totalPages = await getPageCount(totalPostCount, 20)
+    .split('건')[0];
+  const totalPages = await getPageCount(totalPostCount, 20);
 
-  console.log(totalPostCount) // 624181
-  console.log(totalPages) // 31210
+  console.log(totalPostCount); // 624181
+  console.log(totalPages); // 31210
 } catch (err) {}
 ```
 
@@ -263,13 +269,17 @@ try {
 try {
   // (...)
 
-  let hasMetStart = false
-  let doneCrawlFirstMetPage = false
-  let firstMetPostIndex = 0
-  let crawlEnd = false
+  let hasMetStart = false;
+  let doneCrawlFirstMetPage = false;
+  let firstMetPostIndex = 0;
+  let crawlEnd = false;
 
-  for (let currentPage = 1; currentPage <= totalPages && !crawlEnd; currentPage++) {
-    console.log(currentPage)
+  for (
+    let currentPage = 1;
+    currentPage <= totalPages && !crawlEnd;
+    currentPage++
+  ) {
+    console.log(currentPage);
   }
 } catch (err) {
   // (...)
@@ -279,14 +289,18 @@ try {
 위와 같이 변수들을 선언하고, 페이지 수만큼, `crawlEnd`가 `true`가 될 때까지 루프를 돌도록 합니다. 콘솔에 `currentPage`를 찍어 반복문이 잘 돌고 있나 확인합니다. 조금 후에 `crawlEnd`를 날짜 필터링하는 부분에서 `startDate`가 아이템의 날짜보다 이후일때 `true`로 바꾸는 부분을 작성하도록 할겁니다.
 
 ```js
-for (let currentPage = 1; currentPage <= totalPages && !crawlEnd; currentPage++) {
+for (
+  let currentPage = 1;
+  currentPage <= totalPages && !crawlEnd;
+  currentPage++
+) {
   // (...)
 
-  await page.goto(await generateURL(currentPage))
-  const content = await page.content()
-  const $$ = cheerio.load(content)
+  await page.goto(await generateURL(currentPage));
+  const content = await page.content();
+  const $$ = cheerio.load(content);
 
-  console.log(hasMetStart)
+  console.log(hasMetStart);
   if (!hasMetStart) {
   }
 
@@ -301,7 +315,7 @@ for (let currentPage = 1; currentPage <= totalPages && !crawlEnd; currentPage++)
 
 ```js
 if (!hasMetStart) {
-  const postsOnPage = await getPostsInfoInListPage($$)
+  const postsOnPage = await getPostsInfoInListPage($$);
 }
 ```
 
@@ -322,7 +336,10 @@ if (!hasMetStart) {
 if (!hasMetStart) {
   // (...)
 
-  const firstPostInfoOnPage = await goToPostPageAndGetInfo(page, postsOnPage[0].link)
+  const firstPostInfoOnPage = await goToPostPageAndGetInfo(
+    page,
+    postsOnPage[0].link
+  );
 }
 ```
 
@@ -342,12 +359,12 @@ if (moment(startDate, 'YYYY-MM-DD').isAfter(firstPostInfoOnPage.date)) {
 // (...)
 
 for (let i = 1; i < postsOnPage.length - 1; i++) {
-  const postInfo = await goToPostPageAndGetInfo(page, postsOnPage[i].link)
+  const postInfo = await goToPostPageAndGetInfo(page, postsOnPage[i].link);
 
   if (moment(endDate, 'YYYY-MM-DD').isAfter(postInfo.date)) {
-    hasMetStart = true
-    firstMetPostIndex = i
-    break
+    hasMetStart = true;
+    firstMetPostIndex = i;
+    break;
   }
 }
 ```
@@ -358,14 +375,14 @@ for (let i = 1; i < postsOnPage.length - 1; i++) {
 // (...)
 
 if (hasMetStart) {
-  await page.goto(await generateURL(currentPage))
-  const nextPageContent = await page.content()
-  const $$$ = await cheerio.load(nextPageContent)
+  await page.goto(await generateURL(currentPage));
+  const nextPageContent = await page.content();
+  const $$$ = await cheerio.load(nextPageContent);
 
-  let postsOnPage = await getPostsInfoInListPage($$$)
+  let postsOnPage = await getPostsInfoInListPage($$$);
   if (!doneCrawlFirstMetPage) {
-    postsOnPage = postsOnPage.slice(firstMetPostIndex - 1)
-    doneCrawlFirstMetPage = true
+    postsOnPage = postsOnPage.slice(firstMetPostIndex - 1);
+    doneCrawlFirstMetPage = true;
   }
 }
 ```
@@ -378,15 +395,15 @@ if (hasMetStart) {
 // (...)
 
 for (const post of postsOnPage) {
-  const item = await goToPostPageAndGetInfo(page, post.link)
+  const item = await goToPostPageAndGetInfo(page, post.link);
 
   if (!moment(startDate).isAfter(item.date)) {
     await logs.write(
       `${item.date},${item.title},${item.user},${item.content},${item.click},${item.link}\n`
-    )
+    );
   } else {
-    crawlEnd = true
-    break
+    crawlEnd = true;
+    break;
   }
 }
 ```
@@ -410,7 +427,7 @@ const selector = {
   userSelector: '.info > .ct',
   contentSelector: 'div.cont',
   clickSelector: 'div.info'
-}
+};
 ```
 
 셀렉터를 브라우저에서 뽑아오는 과정에서 브라우저 콘솔에 `$()`로 테스트하면서 뽑아보잖아요? 그 과정에서 커스텀 함수인 `filter()`를 쓰기 전에 가공할 수 있는 부분은 아래와 같이 가공해봅니다.
@@ -442,10 +459,10 @@ const goToPostPageAndGetInfo = async (page, link) => {
       .split(' / ')[0]
       .split('조회 : ')[1],
     link
-  }
-  console.log(item)
-  return item
-}
+  };
+  console.log(item);
+  return item;
+};
 ```
 
 위와 같은 모습이 될겁니다. 하지만 여기서 멈추기엔 뭔가 찝찝합니다. 저는 `.csv`형태를 띈 `.txt`파일로 추출하고 싶기때문에 데이터 중간에 구분자인 컴마가 포함되거나 개행이 되면 안됩니다. 그래서 아래처럼 `filter()`를 씌워줍니다.
@@ -476,7 +493,7 @@ const item = {
       .split('조회 : ')[1]
   ),
   link
-}
+};
 ```
 
 다 끝났습니다. 파일째로 실행해 크롤이 완료되면 `구글_ppomppu_2019-08-01_2019-08-31.txt`이란 파일명으로 프로젝트 루트 디렉토리에 저장이 될겁니다.
@@ -486,5 +503,3 @@ const item = {
 한개의 함수 안에서 코드를 쓰려니 호흡이 조금 길어진 것 같습니다. 여기서 브라우저 옵션과 스트림하는 부분을 다른 파일로 분리해서 사용한다면 다른 모델을 개발할때 훨씬 편할 수 있습니다.
 
 혹시라도 코드를 보시다 오류가 있거나 궁금한 점이 있으시면 댓글 혹은 메일 주시면 감사하겠습니다.
-
-{{ include google_adsense.html }}
