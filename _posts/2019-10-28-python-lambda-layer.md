@@ -32,7 +32,9 @@ cover: https://res.cloudinary.com/yangeok/image/upload/v1572139949/logo/posts/py
 
 조금 방향을 틀어 [python-lambda-local](https://pypi.org/project/python-lambda-local/)로 로컬환경에서 aws lambda를 실행할 수 있다는 것을 확인했습니다. 로컬 실행중 오류가 발생합니다. [여기](https://github.com/HDE/python-lambda-local/issues/45)에서 확인할 수 있듯이 `fork`메서드가 필요한데, 윈도우에서는 `spawn`메서드밖에 지원하지 않는다는군요.
 
-> On Windows only 'spawn' is available. On Unix 'fork' and 'spawn' are always supported, with 'fork' being the default.
+```
+On Windows only 'spawn' is available. On Unix 'fork' and 'spawn' are always supported, with 'fork' being the default.
+```
 
 ### python-lambda-local
 
@@ -85,7 +87,9 @@ def handler(event, context):
 
 가상환경에서 실행하면 좀 다르겠다는 생각으로 conda prompt에서 가상환경을 만들어 모듈을 설치합니다. 가상환경 생성은 아래와 같이 입력합니다.
 
-`conda create -n <venvname> python=<version>`
+```
+conda create -n <venvname> python=<version>
+```
 
 패키지 설치도 마찬가지로 `pip` 대신 `conda`를 사용합니다. 가상환경에 진입 시에는 `activate <venvname>`, 빠져나올 때에는 `deactivate <venvname>`을 입력합니다. 그냥 `deactivate`는 이제 deprecated라고 합니다. 패키지들을 일일이 설치합니다. **로컬**에서 코드를 실행해보니 코드가 돌아갑니다. 기분이 좋아졌어요.
 
@@ -107,11 +111,15 @@ venv가 문제인가봅니다. layer에 모듈 종류별로 올리니 10개는 �
 
 venv가 왜 프로젝트 폴더 안에 들어있는지는 잘 모르겠지만 지우고나니 용량제한에 걸리지 않을 것같아 모듈을 한데 모아서 업로드해서 불러오니 layer를 잘 읽어옵니다. 테스트를 합니다. 하지만 에러가 발생합니다.
 
-> ImportError: No module named
+```
+ImportError: No module named
+```
 
 공식문서를 찾아보니 layer에 업로드된 파일은 압축을 풀었을 시에 `python` 폴더 안에 모듈들이 들어가 있어야 한다고 합니다. lambda 내부적으로는 `opt/python` 내부에 모듈들이 얹혀진다고 합니다. 폴더구조를 바꿔준 다음 업로드하자 아래와 같은 에러가 나옵니다.
 
-> cannot import name 'WinDLL' from 'ctypes'
+```
+cannot import name 'WinDLL' from 'ctypes'
+```
 
 드디어 처음 언급한 환경차이를 인지하지 못한 대가를 치루는군요. [이 곳](https://stackoverflow.com/questions/57333103/aws-lambda-python3-7-function-numpy-cannot-import-name-windll)에서 발췌한 내용입니다.
 
@@ -152,7 +160,9 @@ lambci/lambda:build-python3.7 bash
 
 리눅스 컨테이너에서 실행하기 때문에 lambda 함수와 똑같은 환경을 사용하고 있습니다. 때문에 기존에 설치한 모듈을 사용하면 위에서 언급한 `WinDLL`이 없다는 에러가 발생합니다. 컨테이너 내부에서 `requirements.txt`를 사용해 패키지를 설치하고 실행해봅니다.
 
-> Unable to locate credentials
+```
+Unable to locate credentials
+```
 
 aws 인증을 하지 않았습니다. lambci/lambda 이미지는 aws-cli가 설치되어 있기 때문에 계정정보를 바로 `aws configure` 명령어로 연동이 가능합니다.
 
@@ -164,7 +174,7 @@ Default region name [None]: <region_name>
 Default output format [None]:
 ```
 
-위와 같이 연결후 코드를 실행해보니 코드가 잘 작동합니다. lambda 함수에 파일을 배포해줄 차례입니다. 제 코드에는 파일을 저장하는 부분이 있어 에러가 터집니다.
+위와 같이 연결후 코드를 실행해보니 코드가 잘 작동합니다. lambda 함수에 파일을 배포해줄 차례입니다. 제 코드에는 파일을 저장하는 부분이 있어 에러가 납니다. [여기](https://stackoverflow.com/questions/39383465/python-read-only-file-system-error-with-s3-and-lambda-when-opening-a-file-for-re)에서 확인할 수 있듯 lambda 함수 안에서는 오로지 `/tmp`폴더에만 파일을 쓸 수 있다고 합니다.
 
 > Only `/tmp` seems to be writable in AWS Lambda.
 
@@ -188,3 +198,4 @@ Default output format [None]:
 - [AWS 람다(Lambda)로 Python 서버 API 구현하기 ③ Lambda Layers를 이용해 공통 라이브러리 관리하기](https://ndb796.tistory.com/293)
 - [Getting Started with AWS Lambda Layers](https://dev.to/vealkind/getting-started-with-aws-lambda-layers-4ipk)
 - [lambci/docker-lambda](https://github.com/lambci/docker-lambda)
+- [AWS Lambda Python3.7 Function - numpy: cannot import name 'WinDLL'](https://stackoverflow.com/questions/57333103/aws-lambda-python3-7-function-numpy-cannot-import-name-windll)
