@@ -15,11 +15,11 @@ timezone: Asia/Seoul
 
 # Site settings
 title: Yangeok
-subtitle: 'Web Development Blog'
+subtitle: 'Dev Blog'
 email: wooky92@naver.com
 name: Yangwook Jeong
 description: >
-  Web Development Blog.
+  Dev Blog
 baseurl: ''
 url: 'http://yangeok.github.io' # the base hostname & protocol for your site
 cover: '/assets/header_image.jpg'
