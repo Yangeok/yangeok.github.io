@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AWS Lambda에서 Python 코드 배포 삽질기
+title: AWS Lambda에서 Python 코드 배포하기
 author: Yangeok
 categories: DevOps
 date: 2019-10-28 07:45
