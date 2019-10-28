@@ -12,6 +12,7 @@ cover: https://res.cloudinary.com/yangeok/image/upload/v1572139949/logo/posts/py
 
 - windows 10
 - python 3.7
+- docker for windows
 
 ## 목차
 
