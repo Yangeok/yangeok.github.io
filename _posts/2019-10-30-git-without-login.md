@@ -81,5 +81,5 @@ Retype new password:
 
 ## 참조
 
-- [deploy keys](https://developer.github.com/v3/guides/managing-deploy-keys/)를 사용하거나
+- [Github Developer: Managing Deploy Keys](https://developer.github.com/v3/guides/managing-deploy-keys/)
 - [SSH를 사용하여 EC2 인스턴스에 로그인할 때 키 페어 대신 암호 로그인을 활성화하려면 어떻게 해야 합니까?](https://aws.amazon.com/ko/premiumsupport/knowledge-center/ec2-password-login)
