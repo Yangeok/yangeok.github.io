@@ -44,7 +44,7 @@ New password:
 Retype new password:
 ```
 
-하지만 root 사용자로 들어가서 <username>의 비밀번호를 설정할 경우 설정이 되지 않으니 root 계정에서 나온 다음에 진행하시길 바랍니다.
+루트에서 해당 사용자의 비밀번호를 설정하려면 위와 같이하면 되며, 어떤 유저로 로그인된 상태에서는 그냥 `passwd`만 입력해주면 해당 계정의 비밀번호를 설정할 수 있습니다.
 
 비밀번호 설정에 성공하면 아래와 같은 로그가 찍힙니다.
 
@@ -54,9 +54,9 @@ Retype new password:
 
 `sudo service ssh restart`
 
-인스턴스를 빠져나와 비밀번호 없이 인스턴스에 접속할 수 있게 되었습니다.
+인스턴스를 빠져나와 아래와 같이 비밀번호로 인스턴스에 접속할 수 있게 되었습니다.
 
-`ssh <username>@<host>
+`ssh <username>@<host>`
 
 ---
 
