@@ -2,7 +2,8 @@
 layout: post
 title: Javascript 유사배열을 배열로 바꾸기
 author: Yangeok
-categories: 
+categories: Javascript
+date: 2019-12-22 11:17
 comments: true
 cover: /assets/header_image.jpg
 ---
@@ -26,7 +27,11 @@ cover: /assets/header_image.jpg
 </ul>
 ```
 
+<br>
+
 ---
+
+<br>
 
 document 객체나 jquery 둘 중 아무거나 써도 상관 없습니다. 어차피 같은 javascript잖아요? 성능은 좋지 않아도 빠르게 데이터를 뽑아내야 할 경우엔 jquery를 사용하는 것을 더 선호한답니다. 두 가지 경우 모두 예시를 보도록 하겠습니다.
 
@@ -48,7 +53,11 @@ $('#list').children
 // HTMLCollection(10) [li.item, li.item, li.item, li.item, li.item, li.item, li.item, li.item, li.item, li.item]
 ```
 
+<br>
+
 ---
+
+<br>
 
 둘 다 배열이 아니라서 배열 메서드를 사용하려고 하면 에러가 발생하거나 자식 요소를 볼 수 없게 됩니다.
 
@@ -67,7 +76,11 @@ $('#list > .item').children().map(el => el)
 
 > C.fn.init [prevObject: C.fn.init(0)]
 
+<br>
+
 ---
+
+<br>
 
 때문에 유사배열인 `HTMLCollection`과 `NodeList`를 진짜 배열로 바꿔줘야 다음 작업이 진행가능합니다. 물론 jquery에서는 다음과 같은 경우라면 `toArray()` 메서드만 사용하면 바로 배열로 변경도 가능합니다. 아래와 같은 경우들을 제외하고 말하는거에요.
 
@@ -91,7 +104,11 @@ $$('.item')
 // (10) [li.item, li.item, li.item, li.item, li.item, li.item, li.item, li.item, li.item, li.item]
 ```
 
+<br>
+
 ---
+
+<br>
 
 이제부터 배열 메서드나 트릭을 사용해서 간단하게 유사배열을 배열로 바꿔볼겁니다. 
 
@@ -121,9 +138,11 @@ Array.slice(document.querySelectorAll('#list > .item'))
 
 // (10) [li.item, li.item, li.item, li.item, li.item, li.item, li.item, li.item, li.item, li.item]
 ```
+<br>
 
 ---
 
+<br>
 ES6 이전이었다면 다음과 같은 구문을 사용했을테지만 매번 배열로 변경할때마다 아래와 같은 방법을 사용하지 않아도 된다는 것은 정말 ECMA재단에 정말 감사할 일입니다. 특히 마지막에 함수를 한 번 돌리는 구문은 눈물납니다 ㅠㅠ
 
 ```js
@@ -136,7 +155,6 @@ Array.prototype.slice.call(document.querySelectorAll('#list > .item'))
 function toArray(x) {
     for(var i = 0, a = []; i < x.length; i++)
         a.push(x[i]);
-
     return a
 }
 toArray(document.querySelectorAll('#list > .item'))
