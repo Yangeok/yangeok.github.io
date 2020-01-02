@@ -7,7 +7,7 @@ plugins:
   - jekyll-include-cache
 
 exclude:
-  - '/vendor/'
+  - "/vendor/"
   - .jekyll-cache
 
 # Timezone setting
@@ -15,22 +15,22 @@ timezone: Asia/Seoul
 
 # Site settings
 title: Yangeok
-subtitle: 'Dev Blog'
+subtitle: "Dev Blog"
 email: wooky92@naver.com
 name: Yangwook Jeong
 description: >
   Dev Blog
-baseurl: ''
-url: 'http://yangeok.github.io' # the base hostname & protocol for your site
-cover: '/assets/header_image.jpg'
-logo: '/assets/logo_round_script.png'
-search: '/assets/search.png'
-about: '/assets/profile-placeholder.jpg'
+baseurl: ""
+url: "http://yangeok.github.io" # the base hostname & protocol for your site
+cover: "/assets/header_image.jpg"
+logo: "/assets/logo_round_script.png"
+search: "/assets/search.png"
+about: "/assets/profile-placeholder.jpg"
 
 # Build settings
 markdown: kramdown
 paginate: 5
-paginate_path: '/page:num/'
+paginate_path: "/page:num/"
 inter_post_navigation: true
 
 # Archive settings (see https://github.com/jekyll/jekyll-archives/)
@@ -38,16 +38,16 @@ jekyll-archives:
   enabled:
     - categories
   # - tags
-  layout: 'archive'
+  layout: "archive"
   permalinks:
-    category: '/category/:name/'
+    category: "/category/:name/"
     # tag: '/tag/:name/'
 
 # Disqus comments
 disqus_shortname: yangeok
 
 # Google analytics
-ga_tracking_id: 'UA-125441608-1'
+ga_tracking_id: "UA-125441608-1"
 
 # Category descriptions (for archive pages)
 # descriptions:
@@ -81,12 +81,12 @@ social:
     desc: Friend me on Kakaotalk
     share: true
 
-  - name: Tistory blog
-    icon: fa fa-tumblr
-    username: Yangeok
-    url: https://yangwookee.tistory.com
-    desc: Visit my daily life
-    share: true
+  # - name: Tistory blog
+  #   icon: fa fa-tumblr
+  #   username: Yangeok
+  #   url: https://yangwookee.tistory.com
+  #   desc: Visit my daily life
+  #   share: true
 
   - name: Stackoverflow
     icon: xi-stack-overflow
@@ -102,12 +102,12 @@ social:
     desc: Connect with me on Hashcode
     share: true
 
-  - name: Okky
-    icon: xi-full-moon
-    username: Yangeok
-    url: https://okky.kr/user/info/69364
-    desc: Connect with me on Okky
-    share: true
+  # - name: Okky
+  #   icon: xi-full-moon
+  #   username: Yangeok
+  #   url: https://okky.kr/user/info/69364
+  #   desc: Connect with me on Okky
+  #   share: true
 
   # - name: Facebook
   #   icon: facebook
