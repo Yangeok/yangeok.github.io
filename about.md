@@ -8,4 +8,6 @@ permalink: /about/
 
 ## Yangwook Jeong
 
-A Person who wants to learn constantly.
+A Person who enjoy learning and organizing constantly.
+
+Javascript, Python, AWS, ELK stack
