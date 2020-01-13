@@ -4,15 +4,24 @@ title: Works
 permalink: /works/
 ---
 
-## [Date Pipeline]
+## [Data Pipeline]
+
+- 크롤러로 시작해서 데이터 축적의 필요성을 느껴 잡 스케쥴링을 통해 추출한 데이터를 ElasticSearch로 보내는 파이프라인을 구축했습니다.
 - 깃허브 저장소는 아래와 같습니다.
   - [pipeline-crawler](https://github.com/Yangeok/nodejs-crawler)
-  - [pipeline-lambdas]
-  - [pipeline-elk-docker]
+  - [pipeline-lambdas](https://github.com/Yangeok/nodejs-lambdas)
 - 기술스택은 아래와 같습니다.
-  - pipeline-crawler: aws-sdk, express, moment, puppeteer, pug, socket.io, react, eslint, prettier
-  - pipeline-lambdas: aws ec2, aws lambda, aws sqs, aws-sdk, typescript, serverless
-  - pipeline-elk-docer: docker-compose
+
+  - pipeline-crawler: [aws-sdk](https://aws.amazon.com/ko/developer/language/javascript/), [express](https://expressjs.com/ko/), [moment](https://momentjs.com/), [puppeteer](https://pptr.dev/), [pug](https://pugjs.org/api/getting-started.html), [socket.io](https://socket.io/), [react](https://ko.reactjs.org/)
+  - pipeline-lambdas: [aws lambda](https://aws.amazon.com/ko/lambda/), [aws sqs](https://aws.amazon.com/ko/sqs/), [aws-sdk](https://aws.amazon.com/ko/developer/language/javascript/), [typescript](https://www.typescriptlang.org/), [serverless](https://serverless.com/)
+
+  - 프로젝트 구조는 아래와 같습니다.
+
+    ![](./assets/images/pl-01.jpg)
+
+  - 크롤러 데모페이지는 아래와 같습니다.
+
+    ![](./assets/images/pl-02.jpg)
 
 ## [Training Log](https://training-front.netlify.com/)
 
@@ -28,6 +37,12 @@ permalink: /works/
   - back-end: [node.js](https://nodejs.org/en/), [koa](https://koajs.com/), [mongodb](https://www.mongodb.com/), [mongoose](https://mongoosejs.com/)
   - devops: [lightsail](https://aws.amazon.com/lightsail/), [ubuntu](https://www.ubuntu.com/), [nginx](https://www.nginx.com/),[heroku](https://dashboard.heroku.com/), [netlify](https://www.netlify.com/)
 - 프로젝트 구조는 아래와 같습니다.
+
+  ![](./assets/images/tr-01.jpg)
+
+- 데모페이지는 아래와 같습니다.
+
+  ![](./assets/images/tr-02.jpg)
 
 ## [Turing Backend API Server](https://turing-back.herokuapp.com/)
 
@@ -48,8 +63,8 @@ permalink: /works/
 
 - 첫 팀프로젝트입니다. 천천히 같이 공부하며 진행한 프로젝트라 기능구현하는데 시간이 많이 지체되었고 현재 중단된 프로젝트입니다.
 - 깃허브 저장소는 아래와 같습니다.
-  - [mall-front](): 프론트엔드 코드 저장소입니다.
-  - [mall-back](): 백엔드 코드 저장소입니다.
+  - [mall-front](https://github.com/Yangeok/mall-front/settings): 프론트엔드 코드 저장소입니다.
+  - [mall-back](https://github.com/Yangeok/mall-back): 백엔드 코드 저장소입니다.
 - 기술스택은 다음과 같습니다.
 
   - front-end: [react](https://reactjs.org/), [redux](https://redux.js.org/), [redux-saga](https://redux-saga.js.org/), [typescript](https://www.typescriptlang.org/), [scss](https://sass-lang.com/)
@@ -57,16 +72,21 @@ permalink: /works/
   - devops: [lightsail](https://aws.amazon.com/lightsail/), [ubuntu](https://www.ubuntu.com/), [nginx](https://www.nginx.com/), [heroku](https://dashboard.heroku.com/), [netlify](https://www.netlify.com/), [travis ci](https://travis-ci.org/)
 
   - 프로젝트 구조는 아래와 같습니다.
-    [![](https://res.cloudinary.com/yangeok/image/upload/v1558406432/portfolio/mall-project-structure.jpg)](https://res.cloudinary.com/yangeok/image/upload/v1558406432/portfolio/mall-project-structure.jpg)
-    - 데이터베이스 구조는 아래와 같습니다.
-      [![](https://res.cloudinary.com/yangeok/image/upload/v1558406432/portfolio/mall-db.jpg)](https://res.cloudinary.com/yangeok/image/upload/v1558406432/portfolio/mall-db.jpg)
+
+    ![](./assets/images/sm-01.jpg)
+
+  - 데이터베이스 구조는 아래와 같습니다.
+
+    ![](./assets/images/sm-02.jpg)
 
   - 데모페이지는 아래와 같습니다.
-    [![](https://res.cloudinary.com/yangeok/image/upload/v1558362038/portfolio/mall-full-screen.jpg)](https://res.cloudinary.com/yangeok/image/upload/v1558362038/portfolio/mall-full-screen.jpg)
+
+    ![](./assets/images/sm-03.jpg)
 
 ## [GitHub Repository](https://github.com/yangeok/)
 
-![](https://res.cloudinary.com/yangeok/image/upload/v1578905567/portfolio/repo.jpg)
+![](./assets/images/repo-01.jpg)
+
 - 쓸데 있는 꾸준한 커밋으로 잔디밭을 만드는 것을 목표로 하고 있습니다.
 - [Github TIL](https://github.com/Yangeok/Today-I-learned/tree/master/diary)을 아래에서 연월 별로 확인할 수 있습니다.
   - 2020
