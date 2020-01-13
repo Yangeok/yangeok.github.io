@@ -8,6 +8,4 @@ permalink: /about/
 
 ## Yangwook Jeong
 
-A Person who enjoy learning and organizing constantly.
-
-Javascript, Python, AWS, ELK stack
+뚝심을 가지고 꾸준히 배우는 것과 기록하는 것을 즐깁니다. 컨테이너 환경과 클라우드 환경, 데이터 파이프라인에 관심이 많습니다.

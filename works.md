@@ -4,7 +4,7 @@ title: Works
 permalink: /works/
 ---
 
-## [Data Pipeline]
+## Data Pipeline
 
 - 크롤러로 시작해서 데이터 축적의 필요성을 느껴 잡 스케쥴링을 통해 추출한 데이터를 ElasticSearch로 보내는 파이프라인을 구축했습니다.
 - 깃허브 저장소는 아래와 같습니다.
@@ -17,11 +17,11 @@ permalink: /works/
 
   - 프로젝트 구조는 아래와 같습니다.
 
-    ![](./assets/images/pl-01.jpg)
+    ![](/assets/images/pl-01.jpg)
 
   - 크롤러 데모페이지는 아래와 같습니다.
 
-    ![](./assets/images/pl-02.jpg)
+    ![](/assets/images/pl-02.jpg)
 
 ## [Training Log](https://training-front.netlify.com/)
 
@@ -38,11 +38,11 @@ permalink: /works/
   - devops: [lightsail](https://aws.amazon.com/lightsail/), [ubuntu](https://www.ubuntu.com/), [nginx](https://www.nginx.com/),[heroku](https://dashboard.heroku.com/), [netlify](https://www.netlify.com/)
 - 프로젝트 구조는 아래와 같습니다.
 
-  ![](./assets/images/tr-01.jpg)
+  ![](/assets/images/tr-01.jpg)
 
 - 데모페이지는 아래와 같습니다.
 
-  ![](./assets/images/tr-02.jpg)
+  ![](/assets/images/tr-02.jpg)
 
 ## [Turing Backend API Server](https://turing-back.herokuapp.com/)
 
@@ -73,19 +73,19 @@ permalink: /works/
 
   - 프로젝트 구조는 아래와 같습니다.
 
-    ![](./assets/images/sm-01.jpg)
+    ![](/assets/images/sm-01.jpg)
 
   - 데이터베이스 구조는 아래와 같습니다.
 
-    ![](./assets/images/sm-02.jpg)
+    ![](/assets/images/sm-02.jpg)
 
   - 데모페이지는 아래와 같습니다.
 
-    ![](./assets/images/sm-03.jpg)
+    ![](/assets/images/sm-03.jpg)
 
 ## [GitHub Repository](https://github.com/yangeok/)
 
-![](./assets/images/repo-01.jpg)
+![](/assets/images/repo-01.jpg)
 
 - 쓸데 있는 꾸준한 커밋으로 잔디밭을 만드는 것을 목표로 하고 있습니다.
 - [Github TIL](https://github.com/Yangeok/Today-I-learned/tree/master/diary)을 아래에서 연월 별로 확인할 수 있습니다.
