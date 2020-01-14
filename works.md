@@ -8,8 +8,12 @@ permalink: /works/
 
 - 크롤러로 시작해서 데이터 축적의 필요성을 느껴 잡 스케쥴링을 통해 추출한 데이터를 ElasticSearch로 보내는 파이프라인을 구축했습니다.
 - 깃허브 저장소는 아래와 같습니다.
-  - [pipeline-crawler](https://github.com/Yangeok/nodejs-crawler)
-  - [pipeline-lambdas](https://github.com/Yangeok/nodejs-lambdas)
+
+  - [pipeline-crawler](https://github.com/Yangeok/nodejs-crawler): 크롤엔진 코드와 사용법에 관한 문서 저장소입니다.
+  - [pipeline-lambdas](https://github.com/Yangeok/nodejs-lambdas): Serverless 프레임워크로 레이어된 Lambda 함수와 사용법에 관한 문서 저장소입니다.
+  - [pipeline-elk](https://github.com/Yangeok/nodejs-elk): ELK스택으로 데이터를 넣고 빼는 기능과 사용법에 관한 문서 저장소입니다.
+  - [pipeline-pipeline-detail](https://github.com/Yangeok/nodejs-pipeline-detail): Lambda 함수부터 크롤엔진을 거쳐 ElasticSearch로 흐르는 워크플로우에 관한 문서 저장소입니다.
+
 - 기술스택은 아래와 같습니다.
 
   - pipeline-crawler: [aws-sdk](https://aws.amazon.com/ko/developer/language/javascript/), [express](https://expressjs.com/ko/), [moment](https://momentjs.com/), [puppeteer](https://pptr.dev/), [pug](https://pugjs.org/api/getting-started.html), [socket.io](https://socket.io/), [react](https://ko.reactjs.org/)
