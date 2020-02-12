@@ -37,7 +37,7 @@ inter_post_navigation: true
 jekyll-archives:
   enabled:
     - categories
-  # - tags
+    - tags
   layout: "archive"
   permalinks:
     category: "/category/:name/"
