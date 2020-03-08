@@ -14,6 +14,12 @@ cover:
 - MacOS 10.15
 - Github
 
+<br>
+
+---
+
+<br>
+
 ## 목차
 - [목표](#목표)
 - [ssh key란](#ssh-key란)
@@ -23,6 +29,12 @@ cover:
 - [ssh config 작성하기](#ssh-config-작성하기)
 - [gitconfig, gitconfig-* 작성하기](#gitconfig,-gitconfig-*-작성하기)
 - [참조](#참조)
+
+<br>
+
+---
+
+<br>
 
 ## 목표
 
@@ -46,6 +58,12 @@ fatal: repository 'https://github.com/Yangeok/test-for-posting.git/' not found
 
 계정 두 개를 동시에 한 대의 머신에서 사용할 수 있으면 private 저장소때문에 머리아플 일도 없겠군요. 거기다 미리 정해둔 폴더마다 원하는 계정으로 커밋을 찍어내 push할 수도 있습니다. 그러기 위해서는 ssh key를 만들어서 github 계정에 등록해주는 작업이 필요합니다. 작업에 앞서 ssh key가 뭔지 간단하게 알아보고 넘어가자구요.
 
+<br>
+
+---
+
+<br>
+
 ## ssh key란
 
 ssh 통신을 하기 위해 client와 server가 서로를 식별하기 위해 가지고 있는 public, private key 쌍입니다. 
@@ -59,7 +77,14 @@ ssh 통신을 하기 위해 client와 server가 서로를 식별하기 위해 �
 2. client가 server에 ssh 연결을 요청한다.
 3. server는 임의의 메시지를 client에게 보낸다.
 4. client는 server로부터 받은 메시지를 자신이 가지고 있는 private key로 암호화해서 암호화된 메시지를 server로 보낸다.
-5. server는 client에서 받은 암호화된 메시지를 public key로 해석한 결과를 2에서 자신이 client에게 보낸 임의의 메시지와 일치하는지 확인하고 일치한다면, client는 인증된다.
+5. server는 client에서 받은 암호화된 메시지를 public key로 검증한다.
+6. 2에서 자신이 client에게 보낸 임의의 메시지와 일치하는지 확인하고 일치한다면, client는 인증된다.
+
+<br>
+
+---
+
+<br>
 
 ## ssh key 생성하기
 
@@ -112,21 +137,38 @@ id_rsa_work
 id_rsa_work.pub
 ```
 
+<br>
+
+---
+
+<br>
+
 ## ssh key 복사하기
 
 [Adding a new SSH key to your GitHub account](https://help.github.com/en/enterprise/2.15/user/articles/adding-a-new-ssh-key-to-your-github-account)에 설명이 너무 자세히 나와있으므로 링크로 대체하겠습니다. 각 운영체제 별로 설명이 있습니다.
 
-public key를 복사해 github에서 붙여넣어주는 과정입니다만, 아래의 명령어를 사용하면 파일을 콘솔에 찍어보거나 직접 열어서 복사할 필요가 없어집니다.
+public key를 복사해 github에서 붙여넣어주는 과정입니다만, 아래의 명령어를 사용하면 파일을 콘솔에 찍어보거나 직접 열어서 복사할 필요가 없어집니다. 
 
+맥을 사용한다면, 
 ```sh
-# using macos
 $ cat id_rsa_personal.pub | pbcopy
+```
 
+혹은 
+```sh
 $ pbcoby < id_rsa_personal.pub
+```
 
-# using windows
+윈도우를 사용한다면 아래와 같이 복사할 수 있습니다.
+```sh
 $ clip < id_rsa_personal.pub
 ```
+
+<br>
+
+---
+
+<br>
 
 ## ssh key daemon 추가 및 권한 확인
 
@@ -145,13 +187,19 @@ $ ssh-add -l
 
 생성한 private key는 시스템 내의, 그룹 내의 다른 사용자가 봐서는 안됩니다. 즉, 소유자만 `rw-`를 가져야하므로, 권한 번호는 `600`이 되겠군요. key 쌍의 권한이 파일들의 권한이 `600`인지 확인합니다.
 
-```sh
+```
 $ ls -l
 -rw------- 1 wookee staff 3381 Mar 8 15:08 id_rsa_personal
 -rw------- 1 wookee staff  743 Mar 8 15:08 id_rsa_personal.pub
 -rw------- 1 wookee staff 1823 Mar 8 15:08 id_rsa_work
 -rw------- 1 wookee staff  397 Mar 8 15:08 id_rsa_work.pub
 ```
+
+<br>
+
+---
+
+<br>
 
 ## ssh config 작성하기
 
@@ -173,10 +221,10 @@ Host work
 
 위의 것 외의 옵션은 [여기](https://www.ssh.com/ssh/config)에서 확인하실 수 있습니다.
 
-- `Host`: profile별 식별자명을 입력합니다. 
-- `HostName`: 실제 호스트명을 로그로 입력합니다. 이것은 호스트에 닉네임이나 약어로 사용될 수 있습니다. ip주소도 사용할 수 있습니다. 
-- `User`: 사용자명을 입력합니다.
-- `IdentityFile`: private key 파일의 위치를 입력합니다.
+- `Host`: profile별 식별자명을 입력한다.
+- `HostName`: 실제 호스트명을 로그로 입력한다. 이것은 호스트에 닉네임이나 약어로 사용될 수 있으며, ip주소도 사용할 수 있다. 
+- `User`: 사용자명을 입력한다.
+- `IdentityFile`: private key 파일의 위치를 입력한다.
 
 `config` 파일 작성을 마쳤으면 아래와 같이 테스트해봅니다.
 
@@ -200,6 +248,12 @@ git@{Host}:{User}/{Repository}.git
 ```
 
 지금까지 온 상태에서는 git에 push, pull까지는 가능하지만, 로컬머신에서 맨 처음 로그인한 계정으로 push, pull이 될거에요. 이제 거의 다 왔어요.
+
+<br>
+
+---
+
+<br>
 
 ## gitconfig, gitconfig-* 작성하기
 
@@ -241,6 +295,12 @@ git@{Host}:{User}/{Repository}.git
 ```
 
 자, 모든 여정을 다 왔습니다. 이제 여러분은 한 대의 머신에서 두 개의 계정을 자유롭게 왔다갔다하면서 커밋 로그를 남길 수 있게 되었습니다. 혹시라도 push, pull을 하는데 문제가 생긴다면 안된다면 `~/.ssh`의 권한이 `700`이 맞나 확인해봅니다. 잘못된 내용이 있다면 댓글이나 메일 주시면 감사하겠습니다 :)
+
+<br>
+
+---
+
+<br>
 
 ## 참조
 
