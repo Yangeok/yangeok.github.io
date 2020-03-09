@@ -11,8 +11,8 @@ cover:
 
 ## 작업환경
 
-- MacOS 10.15
-- Github
+- macos 10.15
+- github
 
 <br>
 
