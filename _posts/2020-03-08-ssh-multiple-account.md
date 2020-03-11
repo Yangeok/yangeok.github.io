@@ -113,7 +113,7 @@ Enter same passphrase again:
 Your identification has been saved in ~/.ssh/id_rsa_personal.
 Your public key has been saved in ~/.ssh/id_rsa_personal.pub.
 The key fingerprint is:
-SHA256:7guBGmNZUorbRfiwhpePtkcawmO1TjAVikzCl5EXAA8 foo@example.com
+SHA256:7guBGmNZUorbRfiwhpePtkcawmO1TjAVikzCl5EXAA8 yangwookee@gmail.com
 The key's randomart image is:
 +---[RSA 4096]----+
 |oE.=O..          |
