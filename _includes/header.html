@@ -24,11 +24,20 @@
 				<li class="nav-link"><a href="/posts/">Posts</a></li>
 				<li class="nav-link"><a href="/works">Works</a></li>
 				<li class="nav-link">
-					<a href="/search">
-						<i class="xi-search"></i>
+					<a href="#">
+						<i class="xi-search" onclick="searchBar()"></i>
 					</a>
 				</li>
 			</ul>
 		</nav>
 	</div>
+
+	<!-- Html Elements for Search -->
+	<div id="search-container" style="display: none; color: #278187;">
+		<input type="text" id="search-input" placeholder="Enter the keyword" />
+		<ul id="results-container"></ul>
+	</div>
+
+	<!-- Search bar -->
+	{% include search-bar.html %}
 </header>
