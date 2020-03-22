@@ -111,7 +111,7 @@ pre code.hljs {
 *	Header
 */
 .navigation {
-	box-shadow: 0 2px $highlight-color;
+	// box-shadow: 0 2px $highlight-color;
 	padding: 0 1em;
 	margin: 0;
 
@@ -154,6 +154,19 @@ pre code.hljs {
 
 		span {
 			font-size: 1.25em;
+		}
+	}
+
+	#search-container {
+		display: none;
+		color: $highlight-color;
+
+		@include media($desktop) {
+			margin: 2em 25% 0 25%;
+		}
+
+		@include media($tablet) {
+
 		}
 	}
 
