@@ -6,7 +6,7 @@ categories: Network
 date: 2020-03-08 16:08
 comments: true
 tags: [ssh, github, multiple account]
-cover:
+cover: https://res.cloudinary.com/yangeok/image/upload/v1591531187/logo/posts/git.png
 ---
 
 ## 작업환경
@@ -21,13 +21,15 @@ cover:
 <br>
 
 ## 목차
+- [작업환경](#작업환경)
+- [목차](#목차)
 - [목표](#목표)
 - [ssh key란](#ssh-key란)
 - [ssh key 생성하기](#ssh-key-생성하기)
 - [ssh key 복사하기](#ssh-key-복사하기)
 - [ssh key daemon 추가 및 권한 확인](#ssh-key-daemon-추가-및-권한-확인)
 - [ssh config 작성하기](#ssh-config-작성하기)
-- [gitconfig, gitconfig-* 작성하기](#gitconfig,-gitconfig-*-작성하기)
+- [gitconfig, gitconfig-* 작성하기](#gitconfig-gitconfig--작성하기)
 - [참조](#참조)
 
 <br>
