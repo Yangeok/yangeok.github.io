@@ -45,7 +45,8 @@ Expo 푸시 알림을 사용하면 별도의 인증작업이 필요없지만, `e
 
 FCM, APNS로 따로 나눠서 푸시 알림을 관리하는 것도 불편해보였습니다. FCM에서는 자체적으로 안드로이드와 iOS뿐만 아니라 웹까지도 지원하는 것을 확인했습니다. 웹 확장성까지도 갖는 FCM을 선택하는게 가장 최선이라고 생각해 FCM만으로 안드로이드, iOS 푸시 알림을 구현하게 되었습니다.
 
-<img src="https://res.cloudinary.com/yangeok/image/upload/v1591490911/fcm-push-notification/04.png" width="500">
+<!-- <img src="https://res.cloudinary.com/yangeok/image/upload/v1591490911/fcm-push-notification/04.png" width="500"> -->
+![](https://res.cloudinary.com/yangeok/image/upload/v1591490911/fcm-push-notification/04.png)
 
 위의 이미지에서 FCM/APNS 바깥에 Invertase의 `react-native-firebase`가 한 번 감싸져 있는 형태이며 백엔드에서 메시지 제공자로 메시지를 전달하는 과정에는 FCM HTTP v1 API를 사용해서 진행할 예정입니다.
 
@@ -74,7 +75,8 @@ FCM, APNS로 따로 나눠서 푸시 알림을 관리하는 것도 불편해보�
 
 ## FCM 콘솔 설정
 
-<img src="https://res.cloudinary.com/yangeok/image/upload/v1591490805/fcm-push-notification/03.gif" width="500">
+<!-- <img src="https://res.cloudinary.com/yangeok/image/upload/v1591490805/fcm-push-notification/03.gif" width="500"> -->
+![](https://res.cloudinary.com/yangeok/image/upload/v1591490805/fcm-push-notification/03.gif)
 
 프로젝트를 생성하고 **성장 > Cloud Messaging**으로 들어가 추가하고자 하는 앱을 추가합니다. 
 
@@ -82,7 +84,8 @@ FCM, APNS로 따로 나눠서 푸시 알림을 관리하는 것도 불편해보�
 
 ### iOS
 
-<img src="https://res.cloudinary.com/yangeok/image/upload/v1591453080/fcm-push-notification/02.gif" width="500">
+<!-- <img src="https://res.cloudinary.com/yangeok/image/upload/v1591453080/fcm-push-notification/02.gif" width="500"> -->
+![](https://res.cloudinary.com/yangeok/image/upload/v1591453080/fcm-push-notification/02.gif)
 
 `app.json`에서 `expo.iOS.bundleIdentifier`를 번들 ID에 입력하고 하기 과정대로 따라하면 푸시 알림 기능을 디바이스에서 사용할 수 있습니다. FCM 콘솔에서 앱추가를 해줘야 정상적으로 알림을 수신할 수 있습니다.
 
@@ -101,7 +104,8 @@ FCM, APNS로 따로 나눠서 푸시 알림을 관리하는 것도 불편해보�
 }
 ```
 
-<img src="https://res.cloudinary.com/yangeok/image/upload/v1591507063/fcm-push-notification/07.gif" width="500">
+<!-- <img src="https://res.cloudinary.com/yangeok/image/upload/v1591507063/fcm-push-notification/07.gif" width="500"> -->
+![](https://res.cloudinary.com/yangeok/image/upload/v1591507063/fcm-push-notification/07.gif)
 
 `/ios/<app_name>/Info.plist`파일은 xcode에서 설정을 통해 수정할 수 있습니다.  **Targets > Signing & Capabilities > Capability**에 Debug, Release 모드 둘 다 Push Notification을 추가합니다. 그 전에 앱스토어 커넥트<sup>Appstore Connect</sup>에서 인증서에 푸시 알림 기능을 추가시켜줘야 합니다.
 
@@ -109,7 +113,8 @@ FCM, APNS로 따로 나눠서 푸시 알림을 관리하는 것도 불편해보�
 
 ### 안드로이드
 
-<img src="https://res.cloudinary.com/yangeok/image/upload/v1591491917/fcm-push-notification/05.gif" width="500">
+<!-- <img src="https://res.cloudinary.com/yangeok/image/upload/v1591491917/fcm-push-notification/05.gif" width="500"> -->
+![](https://res.cloudinary.com/yangeok/image/upload/v1591491917/fcm-push-notification/05.gif)
 
 iOS와 마찬가지로 `app.json`에서 `expo.android.package`를 가져와서 패키지 이름에 입력하고 Firebase 콘솔에서 시키는 과정대로 따라합니다. FCM 프로젝트, 클라이언트 정보가 담긴 `google-service.json` 파일을 `/android/app`에 넣습니다. 아래의 파일들을 적절히 수정해줍니다.
 
@@ -384,7 +389,8 @@ SDK와 v1 API를 제외한 아래 두가지 방법은 레거시로 분류되고 
 POST https://fcm.googleapis.com/fcm/send
 ```
 
-<img src="https://res.cloudinary.com/yangeok/image/upload/v1591501485/fcm-push-notification/06.png" width="500">
+<!-- <img src="https://res.cloudinary.com/yangeok/image/upload/v1591501485/fcm-push-notification/06.png" width="500"> -->
+![](https://res.cloudinary.com/yangeok/image/upload/v1591501485/fcm-push-notification/06.png)
 
 인증 헤더에 콘솔에서 확인할 수 있는 **서버 키**를 집어넣어주면 요청을 할 수 있습니다.
 
