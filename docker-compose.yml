@@ -5,6 +5,6 @@ services:
     image: jekyll/jekyll
     command: jekyll serve --force_polling --livereload
     ports:
-      - 4001:4000
+      - 4000:4000
     volumes:
       - .:/srv/jekyll

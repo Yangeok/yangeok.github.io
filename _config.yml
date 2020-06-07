@@ -21,7 +21,7 @@ name: Yangwook Jeong
 description: >
   Dev Blog
 baseurl: ""
-url: "http://yangeok.github.io" # the base hostname & protocol for your site
+url: "https://yangeok.github.io" # the base hostname & protocol for your site
 cover: "/assets/header_image.jpg"
 logo: "/assets/logo_round_script.png"
 search: "/assets/search.png"
