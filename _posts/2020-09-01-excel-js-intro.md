@@ -170,9 +170,6 @@ import XLSX from 'xlsx'
  사용편의성 | 👍 | 👎
 
 <br>
-
----
-
 <br>
 
 ## 결론
