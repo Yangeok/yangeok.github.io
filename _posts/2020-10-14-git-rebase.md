@@ -9,6 +9,8 @@ tags: [rebase, git]
 cover:
 ---
 
+## 목차
+- [목차](#목차)
 - [들어가기 앞서](#들어가기-앞서)
 - [대화형 rebase 사용하기](#대화형-rebase-사용하기)
   - [pick, p](#pick-p)
