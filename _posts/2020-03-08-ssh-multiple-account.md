@@ -2,7 +2,7 @@
 layout: post
 title: 머신 한 대에서 GIT 계정 여러개 사용하기
 author: Yangeok
-categories: Network
+categories: Git
 date: 2020-03-08 16:08
 comments: true
 tags: [ssh, github, multiple account]
