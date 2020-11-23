@@ -5,7 +5,7 @@ author: Yangeok
 categories: Node.js
 date: 2020-11-23 12:05
 comments: true
-tags: []
+tags: [orm, sequelize, typeorm, typescript, n+1, migration, lazy, eager, 타입스크립트, 마이그레이션, 로딩]
 cover:
 ---
 
