@@ -15,11 +15,10 @@ timezone: Asia/Seoul
 
 # Site settings
 title: Yangeok
-subtitle: "Dev Blog"
+subtitle: Dev Blog
 email: yangwookee@gmail.com
 name: Yangwook Jeong
-description: >
-  Dev Blog
+description: Dev Blog
 baseurl: ""
 url: "https://yangeok.github.io" # the base hostname & protocol for your site
 cover: "/assets/header_image.jpg"
