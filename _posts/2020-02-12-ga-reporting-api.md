@@ -5,7 +5,7 @@ author: Yangeok
 categories: Python
 date: 2020-02-12 15:00
 comments: true
-tags: [구글, gcp, 애널리틱스, 구글애널리틱스, 보고서]
+tags: [구글, gcp, 애널리틱스, 구글애널리틱스, 보고서, v4, api]
 cover: https://res.cloudinary.com/yangeok/image/upload/v1581487337/logo/posts/pyga.jpg
 ---
 
@@ -19,15 +19,21 @@ cover: https://res.cloudinary.com/yangeok/image/upload/v1581487337/logo/posts/py
 
 ## 목차
 
+- [환경](#환경)
+- [목차](#목차)
 - [목적](#목적)
-- [API 미리보기](#API-미리보기)
+- [API 미리보기](#api-미리보기)
 - [프로젝트 구조](#프로젝트-구조)
 - [도커라이징](#도커라이징)
 - [라이브러리 세팅](#라이브러리-세팅)
-- [OAuth 인증](#OAuth-인증)
+- [OAuth 인증](#oauth-인증)
+    - [인증을 위한 api key 파일](#인증을-위한-api-key-파일)
+    - [view id 가져오기](#view-id-가져오기)
 - [사용자 활동내역 수집](#사용자-활동내역-수집)
+    - [client id 수집](#client-id-수집)
+    - [api 요청보내기](#api-요청보내기)
 - [제한 및 할당량](#제한-및-할당량)
-- [TL;DR](#TL;DR)
+- [TL;DR](#tldr)
 
 <br>
 <br>

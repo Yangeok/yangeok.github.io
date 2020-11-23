@@ -5,7 +5,7 @@ author: Yangeok
 categories: Git
 date: 2020-03-08 16:08
 comments: true
-tags: [ssh, github, multiple account]
+tags: [ssh, github, multiple-account, key, git]
 cover: https://res.cloudinary.com/yangeok/image/upload/v1591531187/logo/posts/git.png
 ---
 

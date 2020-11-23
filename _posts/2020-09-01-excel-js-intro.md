@@ -5,7 +5,7 @@ author: Yangeok
 categories: Node.js
 date: 2020-09-05 19:30
 comments: true
-tags: [excel, xlsx, sheetjs]
+tags: [excel, xlsx, sheetjs, exceljs, automation]
 cover: https://res.cloudinary.com/yangeok/image/upload/v1599281839/logo/posts/excel.jpg
 ---
 

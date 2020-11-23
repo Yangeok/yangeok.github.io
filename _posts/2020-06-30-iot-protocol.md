@@ -5,7 +5,7 @@ author: Yangeok
 categories: IoT
 date: 2020-06-30 09:36
 comments: true
-tags: [iot, protocol]
+tags: [iot, protocol, ble, bluetooth, wifi, zigbee, z-wave, 6lowpan, nfc, gsm, lte, lora, nb-iot, lte-m]
 cover: https://res.cloudinary.com/yangeok/image/upload/v1593160497/logo/posts/iot-protocol.jpg
 ---
 

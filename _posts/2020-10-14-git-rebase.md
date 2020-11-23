@@ -5,7 +5,7 @@ author: Yangeok
 categories: Git
 date: 2020-10-24 18:05
 comments: true
-tags: [rebase, git]
+tags: [rebase, git, interactive, coworking, pair, 페어, 코워킹]
 cover: https://res.cloudinary.com/yangeok/image/upload/v1591531187/logo/posts/git.png
 ---
 
