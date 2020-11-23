@@ -4,7 +4,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="description" content="{% if page.title %}{{ page.title }}{% else %}{{ site.description }}{% endif %}" />
 	<meta name="keywords" content="{{ page.tags | join: ', ' }}" />
-	<meta name="thumbnail" content="{% if page.cover %}{{ page.cover }}{% else %}{{site.cover}}{% endif %}" />
 	{% if site.name %}
 	<meta name="author" content="{{ site.name }}" />
 	<meta name="copyright" content="&copy; {{ site.name }} {{ site.time | date: '%Y' }}" />
@@ -65,7 +64,7 @@
 		}}{% endif %}" />
 	<meta property="og:type" content="website" />
 	<meta property="og:image" content="{% if page.cover %}{{
-			page.cover | prepend: site.baseurl | prepend: site.url
+			page.cover
 		}}{% else %}{{
 			site.protocols.fb_image | prepend: site.baseurl | prepend: site.url
 		}}{% endif %}" />
