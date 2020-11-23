@@ -6,7 +6,7 @@ categories: Node.js
 date: 2020-11-23 12:05
 comments: true
 tags: [orm, sequelize, typeorm, typescript, n+1, migration, lazy, eager, 타입스크립트, 마이그레이션, 로딩]
-cover:
+cover: https://res.cloudinary.com/yangeok/image/upload/v1606139412/logo/posts/typeorm.jpg
 ---
 
 ## 목차
