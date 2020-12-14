@@ -2,7 +2,7 @@
 layout: post
 title: TypeORM으로 보는 마이그레이션과 N+1 문제
 author: Yangeok
-categories: Node.js
+categories: ORM
 date: 2020-11-23 12:05
 comments: true
 tags: [orm, sequelize, typeorm, typescript, n+1, migration, lazy, eager, 타입스크립트, 마이그레이션, 로딩]
