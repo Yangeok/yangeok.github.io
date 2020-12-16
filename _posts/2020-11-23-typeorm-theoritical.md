@@ -739,4 +739,4 @@ lazy loading은 아래와 같이 구현합니다.
 
 <br>
 
-같은 주제의 [슬라이드 쉐어](https://www2.slideshare.net/YangwookJeong/typeorm-n1) 링크 첨부합니다. 오탈자가 있거나 지적해주실 내용이 있다면 댓글 달아주세요!
+같은 주제의 [슬라이드 쉐어](https://www2.slideshare.net/YangwookJeong/typeorm-n1-240176291) 링크 첨부합니다. 오탈자가 있거나 지적해주실 내용이 있다면 댓글 달아주세요!

@@ -1130,4 +1130,5 @@ try {
 
 <br>
 
-본문에 오류가 있거나 보충해주시고 싶은 내용이 있다면 댓글 부탁드립니다 :)
+
+같은 주제의 [슬라이드 쉐어](https://www2.slideshare.net/YangwookJeong/typeorm-decorators) 링크 첨부합니다. 본문에 오류가 있거나 보충해주시고 싶은 내용이 있다면 댓글 부탁드립니다!
