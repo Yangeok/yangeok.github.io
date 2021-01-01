@@ -50,7 +50,7 @@ cover: https://res.cloudinary.com/yangeok/image/upload/v1606139412/logo/posts/ty
     - [Index](#index)
     - [Unique](#unique)
     - [Check](#check)
-  - [Transaction/TransactionManager/TransactionRepository](#transactiontransactionmanagertransactionrepository)
+  - [Transaction](#transaction)
 
 ## TL;DR;
 
@@ -1062,7 +1062,7 @@ export class User {
 
 <br>
 
-### Transaction/TransactionManager/TransactionRepository
+### Transaction
 
 *여기서 잠깐, 트랜잭션이란 뭘까요?*
 
