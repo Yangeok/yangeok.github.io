@@ -7,16 +7,6 @@ comments: true
 cover: https://res.cloudinary.com/yangeok/image/upload/v1552474849/logo/posts/sequelize.jpg
 ---
 
-## 목차
-
-- [콘솔에 뜨는 쿼리 로그가 보기 싫을 때](#콘솔에-뜨는-쿼리-로그가-보기-싫을-때)
-- [테이블명 plural 옵션을 끄고 싶을 때](#테이블명-plural-옵션을-끄고-싶을-때)
-- [FULLTEXT 인덱싱을 하고 싶을 때](#fulltext-인덱싱을-하고-싶을-때)
-- [substr 함수를 사용하고 싶을 때](#substr-함수를-사용하고-싶을-때)
-- [카운터 형태로 기존 값에 새로운 값을 더하고 싶을 때](#카운터-형태로-기존-값에-새로운-값을-더하고-싶을-때)
-- [raw, plain 옵션을 사용하고 싶을 때](#raw-plain-옵션을-사용하고-싶을-때)
-- [참조](#참조)
-
 ## 콘솔에 뜨는 쿼리 로그가 보기 싫을 때
 
 ```sql

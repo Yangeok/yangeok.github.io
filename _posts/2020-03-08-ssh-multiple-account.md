@@ -20,24 +20,6 @@ cover: https://res.cloudinary.com/yangeok/image/upload/v1591531187/logo/posts/gi
 
 <br>
 
-## 목차
-- [작업환경](#작업환경)
-- [목차](#목차)
-- [목표](#목표)
-- [ssh key란](#ssh-key란)
-- [ssh key 생성하기](#ssh-key-생성하기)
-- [ssh key 복사하기](#ssh-key-복사하기)
-- [ssh key daemon 추가 및 권한 확인](#ssh-key-daemon-추가-및-권한-확인)
-- [ssh config 작성하기](#ssh-config-작성하기)
-- [gitconfig, gitconfig-* 작성하기](#gitconfig-gitconfig--작성하기)
-- [참조](#참조)
-
-<br>
-
----
-
-<br>
-
 ## 목표
 
 경우에 따라 다르겠지만 회사 정책으로 저는 코드관리를 개인계정, 회사계정 따로 해야하는 상황입니다. 예전에는 회사코드도 개인계정으로 관리를 했기때문에 아래와 같은 폴더구조로 폴더관리만으로도 충분했습니다.

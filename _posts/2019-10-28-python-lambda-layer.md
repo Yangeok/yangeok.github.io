@@ -14,17 +14,6 @@ cover: https://res.cloudinary.com/yangeok/image/upload/v1572139949/logo/posts/py
 - python 3.7
 - docker for windows
 
-## 목차
-
-- [vanilla python](#vanilla-python)
-  - [python-lambda-local](#python-lambda-local)
-- [anaconda](#anaconda)
-  - [전역 pip 모듈 및 캐시 제거](#전역-pip-모듈-및-캐시-제거)
-  - [venv로 가상환경에서 실행](#venv로-가상환경에서-실행)
-- [python on docker](#python-on-docker)
-- [TL;DR](#TL;DR)
-- [참조](#참조)
-
 ## vanilla python
 
 빠른 코드 배포를 위해 다른 생각 없이 로컬환경에 python을 설치해 pip로 패키지를 설치했습니다. 로컬과 aws lambda의 리눅스 환경이 차이가 있다는 것을 이 때까지는 인지하지 못하고 있었죠. 며칠동안 펼쳐질 고통을 이 때 미리 깨달았어야 했습니다.

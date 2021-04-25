@@ -9,25 +9,6 @@ tags: [rebase, git, interactive, coworking, pair, 페어, 코워킹]
 cover: https://res.cloudinary.com/yangeok/image/upload/v1591531187/logo/posts/git.png
 ---
 
-## 목차
-- [목차](#목차)
-- [들어가기 앞서](#들어가기-앞서)
-- [대화형 rebase 사용하기](#대화형-rebase-사용하기)
-  - [pick, p](#pick-p)
-  - [reword, r](#reword-r)
-  - [edit, e](#edit-e)
-  - [squash, s](#squash-s)
-  - [fixup, f](#fixup-f)
-  - [drop, d](#drop-d)
-- [같은 브랜치에 여러명이 작업한 경우 Merge branch 커밋이 생긴 경우 해소하기](#같은-브랜치에-여러명이-작업한-경우-merge-branch-커밋이-생긴-경우-해소하기)
-- [현재 브랜치에 다른 브랜치에 다른 브랜치 커밋 로그를 붙이고 싶은 경우](#현재-브랜치에-다른-브랜치에-다른-브랜치-커밋-로그를-붙이고-싶은-경우)
-
-<br>
-
----
-
-<br>
-
 ## 들어가기 앞서
 
 `rebase`는 크게 두 가지 경우에 사용을 합니다. 

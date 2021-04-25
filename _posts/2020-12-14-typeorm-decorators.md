@@ -9,49 +9,6 @@ tags: [typeorm, orm, typescript, decorator, entity, relation, column]
 cover: https://res.cloudinary.com/yangeok/image/upload/v1606139412/logo/posts/typeorm.jpg
 ---
 
-
-## 목차
-
-- [목차](#목차)
-- [TL;DR;](#tldr)
-- [Entity](#entity)
-  - [Entity](#entity-1)
-    - [Entity inheritance](#entity-inheritance)
-      - [Concrete table inheritance](#concrete-table-inheritance)
-      - [Single table inheritance](#single-table-inheritance)
-      - [Embedded entities](#embedded-entities)
-  - [ViewEntity](#viewentity)
-- [Column](#column)
-  - [Column](#column-1)
-  - [IdColumn](#idcolumn)
-    - [PrimaryColumn](#primarycolumn)
-    - [PrimaryGeneratedColumn](#primarygeneratedcolumn)
-    - [Generated](#generated)
-  - [DateColumn](#datecolumn)
-    - [CreateDateColumn](#createdatecolumn)
-    - [UpdateDateColumn](#updatedatecolumn)
-    - [DeleteDateColumn](#deletedatecolumn)
-- [Relation](#relation)
-  - [OneToOne](#onetoone)
-  - [ManyToOne/OneToMany](#manytooneonetomany)
-  - [ManyToMany](#manytomany)
-  - [Tree entity](#tree-entity)
-    - [Adjacency list](#adjacency-list)
-    - [Nested set](#nested-set)
-    - [Materialized path](#materialized-path)
-    - [Closure table](#closure-table)
-  - [JoinColumn/JoinTable](#joincolumnjointable)
-    - [JoinColumn](#joincolumn)
-    - [JoinTable](#jointable)
-  - [RelationId](#relationid)
-- [Subscriber](#subscriber)
-- [Others](#others)
-  - [Index/Unique/Check](#indexuniquecheck)
-    - [Index](#index)
-    - [Unique](#unique)
-    - [Check](#check)
-  - [Transaction](#transaction)
-
 ## TL;DR;
 
 TypeORM 공식문서의 순서에 따라 데코레이터들을 소개합니다. 공식문서와 100% 일치하지 않고 늘릴 부분은 늘리고, 줄일 부분은 줄였음을 확인하신 후에 읽어주세요. SQL, ORM과 OOP에 대한 기본 지식을 가지고 계시는 분이라면 읽기에 더 수월할 수 있습니다! (데코레이터 사용법이 JPA와 아주 유사합니다)

@@ -9,29 +9,6 @@ tags: [react-native, fcm, firebase, push, notification, apns, apple, android, re
 cover: http://res.cloudinary.com/yangeok/image/upload/v1590495586/logo/posts/react-native-firebase.jpg
 ---
 
-## 목차
-
-- [목차](#목차)
-- [서론](#서론)
-- [푸시 알림 흐름](#푸시-알림-흐름)
-- [FCM 콘솔 설정](#fcm-콘솔-설정)
-  - [iOS](#ios)
-  - [안드로이드](#안드로이드)
-- [메시지 핸들러와 디바이스 토큰 저장](#메시지-핸들러와-디바이스-토큰-저장)
-  - [라이프 사이클](#라이프-사이클)
-  - [메시지 핸들러](#메시지-핸들러)
-  - [토큰 및 권한 관리](#토큰-및-권한-관리)
-  - [v5와의 차이점 및 마이그레이션](#v5와의-차이점-및-마이그레이션)
-- [메시지 전달 API](#메시지-전달-api)
-  - [레거시 API](#레거시-api)
-  - [HTTP v1 API](#http-v1-api)
-- [TL;DR](#tldr)
-
-<br> 
-
----
-<br>
-
 ## 서론
 
 모바일앱에서 푸시 알림 기능을 사용하는 방법을 다양합니다. 아래와 같은 방법 뿐만아니라 다른 방법들도 많이 있을겁니다.

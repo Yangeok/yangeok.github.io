@@ -9,36 +9,6 @@ tags: [orm, sequelize, typeorm, typescript, n+1, migration, lazy, eager, 타입�
 cover: https://res.cloudinary.com/yangeok/image/upload/v1606139412/logo/posts/typeorm.jpg
 ---
 
-## 목차
-- [목차](#목차)
-- [마이그레이션](#마이그레이션)
-  - [정의](#정의)
-  - [사용법](#사용법)
-    - [데이터베이스 및 config 파일 세팅](#데이터베이스-및-config-파일-세팅)
-    - [migration:create](#migrationcreate)
-    - [migration:generate](#migrationgenerate)
-    - [migration:run](#migrationrun)
-    - [migration:revert](#migrationrevert)
-  - [TypeORM vs. Sequelize](#typeorm-vs-sequelize)
-  - [타언어 ORM과 비교](#타언어-orm과-비교)
-    - [Doctrine (PHP)](#doctrine-php)
-    - [Active record (Ruby)](#active-record-ruby)
-- [N+1 문제](#n1-문제)
-  - [정의 & 해결방법](#정의--해결방법)
-    - [Eager loading](#eager-loading)
-    - [Lazy loading](#lazy-loading)
-  - [TypeORM vs. Sequelize](#typeorm-vs-sequelize-1)
-  - [타언어 ORM과 비교](#타언어-orm과-비교-1)
-    - [CakeORM (PHP)](#cakeorm-php)
-    - [JPA (Java)](#jpa-java)
-    - [Active Record (Ruby)](#active-record-ruby-1)
-
-<br>
-
----
-
-<br>
-
 ## 마이그레이션
 
 ### 정의

@@ -13,12 +13,6 @@ cover: https://res.cloudinary.com/yangeok/image/upload/v1572139949/logo/posts/gi
 - windows 10
 - git bash
 
-## 목차
-
-- [EC2 비밀번호 설정하기](#EC2-비밀번호-설정하기)
-- [git private 저장소 pull시 로그인 생략하기](#git-private-저장소-pull시-로그인-생략하기)
-- [참조](#참조)
-
 ## EC2 비밀번호 설정하기
 
 `INSTANCES - Instances`로 이동해서 `Launch Instance`를 클릭합니다. E키 페어를 만들어서 `.pem`파일을 다운받거나, 기존에 만들어둔 키 페어를 사용해서 인스턴스를 시작할 수 있습니다.

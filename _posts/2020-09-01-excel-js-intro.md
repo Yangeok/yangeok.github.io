@@ -9,22 +9,6 @@ tags: [excel, xlsx, sheetjs, exceljs, automation]
 cover: https://res.cloudinary.com/yangeok/image/upload/v1599281839/logo/posts/excel.jpg
 ---
 
-## 목차
-- [목차](#목차)
-- [엑셀 자동화?](#엑셀-자동화)
-- [exceljs vs. sheetjs](#exceljs-vs-sheetjs)
-  - [NPM Trends](#npm-trends)
-  - [Exceljs](#exceljs)
-  - [Sheetjs](#sheetjs)
-- [비교](#비교)
-- [결론](#결론)
-
-<br>
-
----
-
-<br>
-
 ## 엑셀 자동화?
 **엑셀 사무 자동화, 엑셀 문서 자동화**같은 키워드로 클래스101이나 인프런, 패스트캠퍼스 등에 강의가 종종 올라오고 있습니다. 그 목적은 자주 작업해야하고 실수하기 쉬운 일들을 자동화해 여기에 집중할 떄 필요한 리소스를 다른데 사용하기 위함입니다. 예를 들자면, 구글 스프레드에서 지원하는 API인 `GOOGLEFINANCE()`를 이용해 실시간 주식가를 긁어와서 포트폴리오를 만드는 정도의 작업은 자체 API만으로 가능합니다. 하지만 저수준으로 내려가서 라이브러리를 사용한다면 크롤한 데이터를 가공해서 혹은 DB에서 데이터를 가져와 보고서를 작성하거나 매일 작업해서 나가야 하는 같은 포맷의 n개의 파일을 합치는 등 더 많은 일들을 자동화할 수 있습니다. ✨
 
