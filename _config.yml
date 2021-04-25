@@ -27,7 +27,7 @@ search: "/assets/search.png"
 about: "/assets/profile-placeholder.jpg"
 
 # Build settings
-markdown: kramdown
+# markdown: kramdown
 paginate: 10
 paginate_path: "/page:num/"
 inter_post_navigation: true
