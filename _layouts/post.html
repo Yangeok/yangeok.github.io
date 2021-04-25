@@ -36,7 +36,6 @@ layout: default
 		<article class="post-content">
 			<article class="post-article">
 				<div class="toc">
-					<a href="#">&lt;맨 위로&gt;</a>
 					{% include toc.html html=content %}
 				</div>
 				{{ content }}
@@ -104,7 +103,7 @@ layout: default
 		return headerNodes;
 	}
 
-	var title = document.getElementsByClassName("post-title")[0];
+	var title = document.getElementsByClassName("title")[0];
 	var titleY = window.pageYOffset + title.getBoundingClientRect().top;
 
 	var article = document.getElementsByClassName("post-article")[0];
