@@ -89,73 +89,82 @@ layout: default
 
 <script>
 	function getTOCNodes(master) {
-		var nodes = Array.prototype.slice.call(master.getElementsByTagName("*"), 0);
-		var tocNodes = nodes.filter(function (elem) {
-			return elem.tagName == "A";
-		});
-		return tocNodes;
+		const nodes = Array.prototype.slice.call(master.getElementsByTagName("*"), 0)
+		const tocNodes = nodes.filter(function (elem) {
+			return elem.tagName == "A"
+		})
+		return tocNodes
 	}
 	function getHeaderNodes(master) {
-		var nodes = Array.prototype.slice.call(master.getElementsByTagName("*"), 0);
-		var headerNodes = nodes.filter(function (elem) {
-			return elem.tagName == "H1" || elem.tagName == "H2" || elem.tagName == "H3" || elem.tagName == "H4" || elem.tagName == "H5" || elem.tagName == "H6";
-		});
-		return headerNodes;
+		const nodes = Array.prototype.slice.call(master.getElementsByTagName("*"), 0)
+		const headerNodes = nodes.filter(function (elem) {
+			return elem.tagName == "H1" || elem.tagName == "H2" || elem.tagName == "H3" || elem.tagName == "H4" || elem.tagName == "H5" || elem.tagName == "H6"
+		})
+		return headerNodes
 	}
 
-	var title = document.getElementsByClassName("title")[0];
-	var titleY = window.pageYOffset + title.getBoundingClientRect().top;
+	const title = document.getElementsByClassName("title")[0]
+	let titleY = window.pageYOffset + title.getBoundingClientRect().top
 
-	var article = document.getElementsByClassName("post-article")[0];
-	var articleY = window.pageYOffset + article.getBoundingClientRect().top;
+	const article = document.getElementsByClassName("post-article")[0]
+	let articleY = window.pageYOffset + article.getBoundingClientRect().top
 
-	var toc = document.getElementsByClassName("toc")[0];
+	const toc = document.getElementsByClassName("toc")[0]
 
-	var headerNodes = getHeaderNodes(article);
-	var tocNodes = getTOCNodes(toc);
+	const headerNodes = getHeaderNodes(article)
+	const tocNodes = getTOCNodes(toc)
 
-	var before = undefined;
+	let before = undefined
 
-	document.addEventListener('scroll', function (e) {
+	document.addEventListener('scroll', e => {
 		if (window.scrollY >= articleY - 60) {
-			toc.style.cssText = "position: fixed; top: 60px;";
+			toc.style.cssText = "position: fixed; top: 60px;"
 		}
+		// TODO:
+		// else if (window.scrollY >= ) {
+		// toc.style.cssText = "position: fixed; top: 60px;"
+		// } 
 		else {
-			toc.style.cssText = "";
+			toc.style.cssText = ""
 		}
 
-		var current = headerNodes.filter(function (header) {
-			var headerY = window.pageYOffset + header.getBoundingClientRect().top;
-			return window.scrollY >= headerY - 60;
+		let current = headerNodes.filter(header => {
+			let headerY = window.pageYOffset + header.getBoundingClientRect().top
+			return window.scrollY >= headerY - 60
 		});
+		
 
 		if (current.length > 0) {
-			current = current[current.length - 1];
+			current = current[current.length - 1]
 
-			var currentA = tocNodes.filter(function (tocNode) {
-				return tocNode.innerHTML == current.innerHTML;
+			let currentA = tocNodes.filter(tocNode => {
+				return tocNode.innerHTML == current.innerHTML
 			})
 
 			currentA = currentA[0];
 			if (currentA) {
-				if (before == undefined) before = currentA;
-
-				if (before != currentA) {
-					before.classList.remove("toc-active");
-					before = currentA;
+				if (before === undefined) {
+					before = currentA
 				}
 
-				currentA.classList.add("toc-active");
+				if (before !== currentA) {
+					before.classList.remove("toc-active")
+					before = currentA
+				}
+
+				currentA.classList.add("toc-active")
 			}
 			else {
-				if (before)
-					before.classList.remove("toc-active");
+				if (before) {
+					before.classList.remove("toc-active")
+				}
 			}
 		}
 		else {
-			if (before)
-				before.classList.remove("toc-active");
+			if (before) {
+				before.classList.remove("toc-active")
+			}
 		}
 
-	}, false);
+	}, false)
 </script>
