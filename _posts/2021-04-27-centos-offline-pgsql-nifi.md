@@ -3,7 +3,7 @@ layout: post
 title: CentOS 내부망에 PostgreSQL, PostGIS, Apache NiFi 설치하기
 author: Yangeok
 categories: Linux
-date: 2021-04-25 09:00
+date: 2021-04-27 15:00
 comments: true
 tags: []
 cover: https://res.cloudinary.com/yangeok/image/upload/v1619337729/logo/posts/centos-nifi-pgsql.jpg
