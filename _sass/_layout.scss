@@ -159,17 +159,8 @@ pre code.hljs {
 		}
 	}
 
-	#search-container {
+	#fouc {
 		display: none;
-		color: $highlight-color;
-
-		@include media($desktop) {
-			margin: 2em 25% 0 25%;
-		}
-
-		@include media($tablet) {
-
-		}
 	}
 
 	nav {
@@ -245,12 +236,34 @@ pre code.hljs {
 	/*
 	*	index.html
 	*/
+	
+	.post-excerpt {
+		@include media($mobile) {
+				display: flex; 
+				align-items: center; 
+				justify-content: space-between; 
+				margin-bottom: 1.125rem;
+				img {
+					display: none;
+				}
+			}
+
+		@include media($tablet) {
+				img {
+					display: block;
+				}
+			}
+	}
+
 	.post-list {
 		padding-top: 1em !important;
 		@extend %default-ul;
 	}
 
 	.post-meta {
+		display: flex;
+		flex-direction: column;
+
 		@include outer-container;
 		// padding: 1em 0;
 		color: $medium-gray;
@@ -266,6 +279,11 @@ pre code.hljs {
 			margin-right: 0;
 			text-align: right;
 			font-size: 0.9em;
+		}
+
+		.post-tags {
+			@include span-columns(6);
+			width: 100%;
 		}
 	}
 

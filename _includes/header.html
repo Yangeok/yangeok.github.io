@@ -22,20 +22,15 @@
 			<ul id="js-navigation-menu" class="navigation-menu show">
 				<li class="nav-link"><a href="/about/">About</a></li>
 				<li class="nav-link"><a href="/posts/">Posts</a></li>
-				<!-- <li class="nav-link"><a href="/works">Works</a></li> -->
 				<li class="nav-link">
-					<a href="#">
-						<i class="xi-search" onclick="searchBar()"></i>
+					<a data-micromodal-trigger="modal-1" href="#">
+						<i class="xi-search"></i>
 					</a>
 				</li>
 			</ul>
 		</nav>
 	</div>
 	
-	<!-- Search bar -->
-	<div id="search-container">
-		<input type="text" id="search-input" placeholder="Enter the keyword" />
-		<ul id="results-container"></ul>
-	</div>
-	{% include search-bar.html %}
+<!-- Search bar -->
+{% include search_bar.html %}
 </header>
