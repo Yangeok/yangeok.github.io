@@ -4,25 +4,35 @@ layout: null
 [
   {% for post in site.posts %}
     {
-      "title"    : "{{ post.title | escape }}",
-      "category" : "{{ post.category }}",
-      "tags"     : "{{ post.tags | join: ', ' }}",
-      "url"      : "{{ site.baseurl }}{{ post.url }}",
-      "date"     : "{{ post.date }}",
-      "content"   : {{ page.content | jsonify }}
+      "cover": "{{ post.cover }}",
+      "title": "{{ post.title | escape }}",
+      "category": "{{ post.categories }}",
+      {% if post.tags.size > 0 %}
+        "tags": "{% assign sliced_tags = post.tags | slice: 0, 5 %}{% for tag in sliced_tags %}<a href='{{ site.baseurl }}/tag/{{ tag }}'>{{ tag }}</a>{% if forloop.last == false %},&nbsp;{%endif %}{% endfor %}</div>",
+        {% else %}
+        "tags": " ",
+        {% endif %}
+        "url": "{{ site.baseurl }}{{ post.url }}",
+        "date": "{{ post.date | date: '%B %-d, %Y' }}",
+        "content": {{ post.content | strip_html | truncatewords: 25 | jsonify }}
+        } {% unless forloop.last %},{% endunless %}
+        {% endfor %}
+        ,
+      {% for page in site.pages %}
+      {
+        {% if page.title != nil %}
+        "cover": "{{ post.cover }}",
+        "title": "{{ post.title | escape }}",
+        "category": "{{ post.categories }}",
+        {% if post.tags.size > 0 %}
+          "tags": "{% assign sliced_tags = post.tags | slice: 0, 5 %}{% for tag in sliced_tags %}<a href='{{ site.baseurl }}/tag/{{ tag }}'>{{ tag }}</a>{% if forloop.last == false %},&nbsp;{%endif %}{% endfor %}</div>",
+        {% else %}
+          "tags": " ",
+        {% endif %}
+        "url": "{{ site.baseurl }}{{ post.url }}",
+        "date": "{{ post.date | date: '%B %-d, %Y' }}",
+        "content": {{ post.content | strip_html | truncatewords: 25 | jsonify }}
+      {% endif %}
     } {% unless forloop.last %},{% endunless %}
-  {% endfor %}
-  ,
-  {% for page in site.pages %}
-   {
-     {% if page.title != nil %}
-        "title"    : "{{ page.title | escape }}",
-        "category" : "{{ page.category }}",
-        "tags"     : "{{ page.tags | join: ', ' }}",
-        "url"      : "{{ site.baseurl }}{{ page.url }}",
-        "date"     : "{{ page.date }}",
-        "content"   : {{ page.content | jsonify }}
-     {% endif %}
-   } {% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
