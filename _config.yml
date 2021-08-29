@@ -40,7 +40,7 @@ jekyll-archives:
   layout: "archive"
   permalinks:
     category: "/category/:name/"
-    # tag: '/tag/:name/'
+    tag: '/tag/:name/'
 
 # Disqus comments
 disqus_shortname: yangeok
