@@ -238,6 +238,11 @@ pre code.hljs {
 	*/
 	
 	.post-excerpt {
+		@media (min-width: 0px) and (max-width: $mobile) {
+			img {
+				display: none;
+			}
+		}
 		@include media($mobile) {
 				display: flex; 
 				align-items: center; 
