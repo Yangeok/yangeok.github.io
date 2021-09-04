@@ -236,28 +236,18 @@ pre code.hljs {
 	/*
 	*	index.html
 	*/
-	
-	.post-excerpt {
-		@media (min-width: 0px) and (max-width: $mobile) {
+	.post-thumbnail {
+		@media (min-width: 0px) and (max-width: $tablet) {
 			img {
 				display: none;
 			}
 		}
-		@include media($mobile) {
-				display: flex; 
-				align-items: center; 
-				justify-content: space-between; 
-				margin-bottom: 1.125rem;
-				img {
-					display: none;
-				}
-			}
 
 		@include media($tablet) {
-				img {
-					display: block;
-				}
+			img {
+				display: block;
 			}
+		}
 	}
 
 	.post-list {
