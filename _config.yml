@@ -26,6 +26,9 @@ logo: "/assets/logo_round_script.png"
 search: "/assets/search.png"
 about: "/assets/profile-placeholder.jpg"
 
+# Dark theme
+dark_theme_toggle: true
+
 # Build settings
 # markdown: kramdown
 paginate: 10
