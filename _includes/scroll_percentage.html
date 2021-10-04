@@ -3,16 +3,15 @@
 
 <!-- Script used to generate --scroll variable with current scroll percentage value -->
 <script>
-const element = document.documentElement
-const body = document.body
-const scrollTop = 'scrollTop'
-const scrollHeight = 'scrollHeight'
-let progress = document.querySelector('.progress-bar')
-let scroll
+  const element = document.documentElement
+  const body = document.body
+  const scrollTop = 'scrollTop'
+  const scrollHeight = 'scrollHeight'
+  let progress = document.querySelector('.progress-bar')
+  let scroll
 
-document.addEventListener('scroll', () => {
-  scroll = (element[scrollTop]||body[scrollTop]) / ((element[scrollHeight]||body[scrollHeight]) - element.clientHeight) * 100
-  progress.style.setProperty('--scroll', scroll + '%')
-  // document.querySelector('.progress-bar').innerHTML = `${Number(scroll).toFixed(2)}%`
-})
+  document.addEventListener('scroll', () => {
+    scroll = (element[scrollTop] || body[scrollTop]) / ((element[scrollHeight] || body[scrollHeight]) - element.clientHeight) * 100
+    progress.style.setProperty('--scroll', scroll + '%')
+  })
 </script>

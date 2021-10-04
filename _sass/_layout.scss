@@ -30,7 +30,7 @@ ul.default {
 }
 
 code {
-	background-color: rgb(248, 248, 248); // REF: hljs
+	background-color: var(--highlighter-background-color);
 	font-size: 0.8333333333em; // REF: hljs
 	display: inline-block;
 	border-radius: 3px;
@@ -444,7 +444,7 @@ pre code.hljs {
 .site-footer {
 	$link-color: $white;
 	padding: 1em 1em 2em 1em;
-	background-color: $highlight-color;
+	background-color: var(--action-color);
 	color: $white;
 
 	a {

@@ -26,8 +26,10 @@ $base-z-index: 0;
 
 // Colors
 $dark-gray: #333;
+$medium-dark-gray: #666;
 $medium-gray: #999;
 $light-gray: #ddd;
+$pale-gray: #f8f8f8;
 $white: #fff;
 // Flat UI Colors. For more, see http://flatuicolors.com/
 $turquoise: #1abc9c; // Turqoise
@@ -40,17 +42,25 @@ $gray: #7f8c8d; // Asbestos
 // Even more colors
 $bc-red: #bc0000;
 $blue-green: #32a7af;
+$dark-blue-green: #55a5ab;
 
 // Font Colors
 :root[color-theme='light'] {
   background-color: $white;
   color: $dark-gray;
+  --action-color: #{$blue-green};
+  --focused-action-color: #{$dark-blue-green};
+  --highlighter-background-color: #{$pale-gray};
 }
 
 :root[color-theme='dark'] {
-	background-color: $dark-gray;
+  background-color: $dark-gray;
   color: $white;
+  --action-color: #{$dark-blue-green};
+  --focused-action-color: #{$blue-green};
+  --highlighter-background-color: #{$medium-dark-gray};
 }
+
 
 $base-background-color: var(--background-color);
 $base-font-color: var(--color);

@@ -1,9 +1,7 @@
-<li class="nav-link">
-  {% if site.dark_theme_toggle == true %}
-  <input id="toggle_dark_theme" class="tgl tgl-light" type="checkbox">
-  <label for="toggle_dark_theme" class="tgl-btn"></label>
-  {% endif %}
-</li>
+{% if site.dark_theme_toggle == true %}
+<input id="toggle_dark_theme" class="tgl tgl-light" type="checkbox">
+<label for="toggle_dark_theme" class="tgl-btn"></label>
+{% endif %}
 
 <script>
   const $checkbox = document.querySelector('#toggle_dark_theme')

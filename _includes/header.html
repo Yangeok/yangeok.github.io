@@ -2,19 +2,12 @@
 	<div class="navigation-wrapper">
 		<a href="{{ site.baseurl }}/" class="logo">
 			{% if site.logo %}
-			<img
-				src="{{ site.logo | prepend: site.baseurl }}"
-				alt="{{ site.title }}"
-			/>
+			<img src="{{ site.logo | prepend: site.baseurl }}" alt="{{ site.title }}" />
 			{% else %}
 			<span>{{ site.title }}</span>
 			{% endif %}
 		</a>
-		<a
-			href="javascript:void(0)"
-			class="navigation-menu-button"
-			id="js-mobile-menu"
-		>
+		<a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
 			<i class="fa fa-bars"></i>
 		</a>
 
@@ -27,7 +20,9 @@
 						<i class="xi-search"></i>
 					</a>
 				</li>
-				{% include dark_theme_toggle.html %}
+				<li class="nav-link">
+					{% include dark_theme_toggle.html %}
+				</li>
 			</ul>
 		</nav>
 	</div>
