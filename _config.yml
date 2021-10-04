@@ -27,7 +27,7 @@ search: "/assets/search.png"
 about: "/assets/profile-placeholder.jpg"
 
 # Dark theme
-dark_theme_toggle: false
+dark_theme_toggle: true
 
 # Build settings
 # markdown: kramdown
