@@ -4,3 +4,32 @@
   <label for="toggle_dark_theme" class="tgl-btn"></label>
   {% endif %}
 </li>
+
+<script>
+  const $checkbox = document.querySelector('#toggle_dark_theme')
+
+  const isUserColorTheme = localStorage.getItem('color-theme')
+  const isOsColorTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+  const getUserTheme = () => (isUserColorTheme ? isUserColorTheme : isOsColorTheme)
+
+  window.onload = () => {
+    if (getUserTheme() === 'dark') {
+      localStorage.setItem('color-theme', 'dark')
+      document.documentElement.setAttribute('color-theme', 'dark')
+      $checkbox.setAttribute('checked', true)
+    } else {
+      localStorage.setItem('color-theme', 'light')
+      document.documentElement.setAttribute('color-theme', 'light')
+    }
+  }
+
+  $checkbox.addEventListener('click', e => {
+    if (e.target.checked) {
+      localStorage.setItem('color-theme', 'dark')
+      document.documentElement.setAttribute('color-theme', 'dark')
+    } else {
+      localStorage.setItem('color-theme', 'light')
+      document.documentElement.setAttribute('color-theme', 'light')
+    }
+  })
+</script>
