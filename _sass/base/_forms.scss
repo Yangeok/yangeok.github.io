@@ -8,6 +8,7 @@ fieldset {
 input,
 label,
 select {
+	color: $base-font-color;
 	display: block;
 	font-family: $base-font-family;
 	font-size: $base-font-size;

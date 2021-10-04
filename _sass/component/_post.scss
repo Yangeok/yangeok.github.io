@@ -34,7 +34,7 @@
     font-weight: 800;
     transition: all 0.25s ease 0s; 
     transform: scale(1.05);
-    color: $dark-gray;
+    color: $base-font-color;
     font-size: 1rem;
   }
 
@@ -53,8 +53,8 @@
       color: $medium-gray;
       text-decoration: none;
   }
- 
+
   a:hover {
-   color: $dark-gray;
+    color: $dark-gray;
   }
 }

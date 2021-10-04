@@ -49,18 +49,18 @@
 
 .tgl-light {
     + .tgl-btn {
-        background: lightgray;
+        background: $light-gray;
         border-radius: 1.5em;
         padding: 2px;
         transition: all 0.4s ease;
         &:after {
             border-radius: 50%;
-            background: white;
+            background: $white;
             transition: all 0.2s ease;
         }
     }
 
     &:checked + .tgl-btn {
-        background: gray;
+        background: $gray;
     }
 }
