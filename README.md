@@ -6,5 +6,4 @@
 
 ## Screenshot
 
-[![](https://res.cloudinary.com/yangeok/image/upload/v1558355128/portfolio/blog-full-screen.jpg)](https://res.cloudinary.com/yangeok/image/upload/v1558355128/portfolio/blog-full-screen.jpg)
-
+[![alt](https://res.cloudinary.com/yangeok/image/upload/v1558355128/portfolio/blog-full-screen.jpg)](https://res.cloudinary.com/yangeok/image/upload/v1558355128/portfolio/blog-full-screen.jpg)
