@@ -6,7 +6,7 @@ categories: ReactNative
 date: 2020-06-07 13:35
 comments: true
 tags: [react-native, fcm, firebase, push, notification, apns, apple, android, react-native-firebase, noti]
-cover: http://res.cloudinary.com/yangeok/image/upload/v1590495586/logo/posts/react-native-firebase.jpg
+cover: https://res.cloudinary.com/yangeok/image/upload/v1590495586/logo/posts/react-native-firebase.jpg
 ---
 
 ## 서론
