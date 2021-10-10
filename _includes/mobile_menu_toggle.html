@@ -1,0 +1,11 @@
+<script>
+  const menuToggle = $('#js-mobile-menu') //.unbind()
+  menuToggle.on('click', e => {
+    e.preventDefault()
+    $('#js-navigation-menu').slideToggle(() => {
+      if ($('#js-navigation-menu').is(':hidden')) {
+        $('#js-navigation-menu').removeAttr('style')
+      }
+    })
+  })
+</script>
