@@ -3,8 +3,9 @@ version: "3"
 services:
   jekyll:
     image: jekyll/jekyll
-    command: jekyll serve --force_polling --livereload
+    command: jekyll serve --force_polling --livereload --force --force_polling
     ports:
       - 4000:4000
+      - 35729:35729
     volumes:
       - .:/srv/jekyll
