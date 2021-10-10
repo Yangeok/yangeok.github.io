@@ -7,7 +7,7 @@ plugins:
   - jekyll-include-cache
 
 exclude:
-  - "/vendor/"
+  - '/vendor/'
   - .jekyll-cache
 
 # Timezone setting
@@ -19,12 +19,12 @@ subtitle: Development Blog
 email: yangwookee@gmail.com
 name: Yangwook Jeong
 description: Yangwook Ian Jeongs' Development Blog
-baseurl: ""
-url: "https://yangeok.github.io" # the base hostname & protocol for your site
-cover: "/assets/header_image.jpg"
-logo: "/assets/logo_round_script.png"
-search: "/assets/search.png"
-about: "/assets/profile-placeholder.jpg"
+baseurl: ''
+url: 'https://yangeok.github.io' # the base hostname & protocol for your site
+cover: '/assets/header_image.jpg'
+logo: '/assets/logo_round_script.png'
+search: '/assets/search.png'
+about: '/assets/profile-placeholder.jpg'
 
 # Dark theme
 dark_theme_toggle: true
@@ -32,7 +32,7 @@ dark_theme_toggle: true
 # Build settings
 # markdown: kramdown
 paginate: 10
-paginate_path: "/page:num/"
+paginate_path: '/page:num/'
 inter_post_navigation: true
 
 # Archive settings (see https://github.com/jekyll/jekyll-archives/)
@@ -40,40 +40,22 @@ jekyll-archives:
   enabled:
     - categories
     - tags
-  layout: "archive"
+  layout: archive
   permalinks:
-    category: "/category/:name/"
+    category: '/category/:name/'
     tag: '/tag/:name/'
 
-# Disqus comments
-disqus_shortname: yangeok
+# Utterances comments
+utterances:
+  repo: Yangeok/blog-comments
+  issue-term: pathname
+  theme: preferred-color-scheme
+  crossorigin: anonymous
 
 # Google analytics
-ga_tracking_id: "UA-125441608-1"
-
-# Category descriptions (for archive pages)
-# descriptions:
-# - cat: jekyll
-#   desc: "Posts describing Jekyll setup techniques."
-
-# - cat: JAVASCRIPT
-#   desc: "JAVASCRIPT"
+ga_tracking_id: 'UA-125441608-1'
 
 # Social icons and sharing options
-#
-# Social settings are used in two places:
-# * In the footer, as links to your personal profiles
-# * After each blog post for sharing widgets
-#
-# Example:
-#
-# social:
-#   - name: Twitter                         # Name of the service
-#     icon: twitter                         # Font Awesome icon to use (minus fa- prefix)
-#     username: "@Theyangeok"               # (User) Name to display in the footer link
-#     url:                                  # URL of your profile (leave blank to not display in footer)
-#     desc: Follow me on Twitter            # Description to display as link title, etc
-#     share: true                           # Include in the "Share" section of posts
 
 social:
   - name: Kakaotalk
