@@ -35,13 +35,13 @@ cover: https://res.cloudinary.com/yangeok/image/upload/v1552474850/logo/posts/my
 만약 5.6 버전 이하를 사용한다면 아래와 같이 파일에 접근하세요.
 
 ```sh
-$ vim /etc/mysql/my.cnf
+vim /etc/mysql/my.cnf
 ```
 
 그리고 5.7 버전 이상을 사용한다면 아래와 같이 파일에 접근하세요.
 
 ```sh
-$ vim /etc/mysql/mysql.conf.d/mysqld.cnf
+vim /etc/mysql/mysql.conf.d/mysqld.cnf
 ```
 
 아마 파일이 `[New File]`이라고 뜨면 잘못 접근한게 확실하니 본인이 사용하는 MySQL버전에 맞게 디렉토리와 파일명을 입력하세요. 설정파일에 들어왔다면 다음과 같은 텍스트가 있을겁니다.
@@ -111,7 +111,7 @@ EXIT;
 마지막으로 MySQL을 재시작하면 로컬에서도 인스턴스에 있는 MySQL에 접근할 수 있게 됩니다.
 
 ```sh
-$ sudo service mysql restart
+sudo service mysql restart
 ```
 
 이제 커맨드라인에서 원격환경 MySQL에 접속이 잘 되는지 확인을 한번 해볼까요. 다음과 같이 잘되는 모습을 확인할 수 있습니다.

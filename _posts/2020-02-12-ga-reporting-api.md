@@ -104,7 +104,7 @@ docker run -it \
 아래와 같이 컨테이너에 접속합니다.
 
 ```sh
-$ sh start.sh
+sh start.sh
 ```
 
 docker-compose를 사용하는 방법은 다음과 같습니다.
@@ -124,7 +124,7 @@ services:
 아래와 같이 컨테이너에 접속합니다.
 
 ```sh
-$ docker-compose run ga bash
+docker-compose run ga bash
 ```
 
 <br>
@@ -152,7 +152,7 @@ times==0.7
 `install.sh`을 실행해 라이브러리를 설치합니다.
 
 ```sh
-$ sh install.sh
+sh install.sh
 ```
 
 참고로, `requirements.txt`에 있는 모듈 외에 클라이언트 라이브러리인 `google-api-python-client`가 최신버전이 아닌 상태라면 아래와 같이 모듈을 찾지 못하는 에러가 발생하더라구요.
@@ -256,7 +256,7 @@ if __name__ == '__main__':
 이제 터미널에서 아래와 같은 명령어로 파일을 실행합니다.
 
 ```sh
-$ python index.py --noauth_local_webserver
+python index.py --noauth_local_webserver
 ```
 
 `--noauth_local_webserver` 플래그를 같이 작성하지 않으면 아래와 같은 경고메시지가 발생하고, 링크를 타고 들어가서 권한부여를 하더라도 리디렉션이 일어나지 않습니다.

@@ -23,13 +23,13 @@ cover: https://res.cloudinary.com/yangeok/image/upload/v1566999441/logo/posts/pu
 ![](https://s3.amazonaws.com/checkli.com/featured/old-school.png)
 출처: [나의 자존감 체크리스트](https://www.checkli.com/checklists/terces/-1)
 
-#### 통합검색이 구글검색인지 아닌지 확인한다.
+#### 통합검색이 구글검색인지 아닌지 확인한다
 
 해당 게시판이 구글검색이라면 제 생각에 그 게시판은 포기하는게 낫다라고 봅니다. 구글검색으로 얻어온 결과가 페이지당 10개씩 10페이지까지밖에 나오지 않거든요. 즉 상단에 검색결과가 1000개라고 나와도 우리가 받아볼 수 있는 결과는 100개가 최대한입니다.
 
 그래서 해당 커뮤니티에 검색기능이 구글검색으로 붙어있다면 사이트를 샅샅이 뒤져 자체 검색기능이 있나 찾아봅니다. 그래도 없다면 과감히 포기합니다.
 
-#### UI가 페이지네이션인지 무한스크롤인지 확인한다.
+#### UI가 페이지네이션인지 무한스크롤인지 확인한다
 
 대부분 커뮤니티라면 페이지네이션 방식을 사용할 것이고, 대부분 sns라면 무한스크롤 방식을 사용할겁니다. 코드를 처음 짤때부터 접근하는 방식이 달라집니다.
 
@@ -40,7 +40,7 @@ cover: https://res.cloudinary.com/yangeok/image/upload/v1566999441/logo/posts/pu
 ![](https://www.knowband.com/blog/wp-content/uploads/2019/05/infinite-scroll-and-pagination.jpg)
 출처: [Pagination vs Infinite Scrolling](https://www.knowband.com/blog/de/ecommerce-blog-de/pagination-vs-infinite-scrolling/)
 
-#### 총 게시물 수 혹은 총 페이지 수가 명시되었는지 확인한다.
+#### 총 게시물 수 혹은 총 페이지 수가 명시되었는지 확인한다
 
 둘 다 나와있다면 크롤하는 입장에서는 완전 땡큐지만, 그렇지 않을 가능성이 훨씬 큽니다.
 
@@ -51,7 +51,7 @@ cover: https://res.cloudinary.com/yangeok/image/upload/v1566999441/logo/posts/pu
 
 둘 다 나와있지 않은 경우는 마지막 페이지까지 클릭해서 마지막 페이지의 `.text()`값을 가져와서 사용해야 합니다.
 
-#### Iframe이 적용되었는지 확인한다.
+#### Iframe이 적용되었는지 확인한다
 
 `$`로 셀렉터를 찍어봐도 html요소가 반환되지 않는다면 Iframe이 적용됐는지를 의심해볼 수 있습니다. 하지만 걱정하지 않아도 됩니다. puppeteer에서는 프레임 이름만 안다면 Iframe을 뚫고 들어갈 수 있습니다. 다음과 같은 식으로 할 수 있습니다.
 
@@ -70,14 +70,14 @@ for (const frame of page.mainFrame().childFrames()) {
 }
 ```
 
-#### 날짜필터링 기능이 queryString에 들어있나 확인한다.
+#### 날짜필터링 기능이 queryString에 들어있나 확인한다
 
 날짜 필터링을 하려면 조건문을 여러개 작성해야하는 불편함이 따를 수 있습니다. 네이버나 구글같이 필터링이 가능하다면 개발하는 입장에서는 세상 편합니다.
 
 ![](https://howto.caspio.com/wp-content/uploads/2016/12/creating_query_strings1.png)
 출처: [Parameters as Query String Values](https://howto.caspio.com/parameters/parameters-as-query-string-values/)
 
-#### jQuery가 적용되었는지 확인한다.
+#### jQuery가 적용되었는지 확인한다
 
 puppeteer 내장 함수 혹은 cheerio로 html 요소를 가져올때 참고하면 좋은 부분이기 때문입니다. jQuery에서 사용하는 `$()`를 두 라이브러리에서 사용 가능하기 때문입니다. 크롤하고자 하는 웹페이지에서 검사창을 띄워놓고 `$`를 쳐보면 어떠한 함수가 나올겁니다. 그러면 이 페이지에는 jQuery가 설치되어 있다는 소리죠. 하지만 네이버같은 경우에는 자체 라이브러리인 jindo가 설치되어 `$`가 먹히지 않고 `$$`를 써야하더라구요.
 

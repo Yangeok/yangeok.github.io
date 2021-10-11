@@ -49,8 +49,8 @@ mgba/windows                                                  Windows autobuilds
 있네요. 신기하네요. 우분투 이미지를 검색하고 최신버전을 받습니다.
 
 ```sh
-$ docker serach ubuntu
-$ docker pull ubuntu:latest
+docker serach ubuntu
+docker pull ubuntu:latest
 ```
 
 이미지를 받아왔으면 확인을 합니다.
@@ -94,8 +94,8 @@ done.
 done이란 메시지와 함께 깃의 설치가 끝납니다. 가장 먼저 해줘야할 것은 `git config`로 이름과 이메일을 설정하는겁니다.
 
 ```sh
-$ git config --global user.name "Yangwook Jeong"
-$ git config --global user.email wooky92@naver.com
+git config --global user.name "Yangwook Jeong"
+git config --global user.email wooky92@naver.com
 ```
 
 설정을 마쳤습니다. 이제 확인을 해봅니다.
@@ -109,13 +109,13 @@ user.email=wooky92@naver.com
 다행이도 설정한대로 뜨네요. 저장소를 클론을 떠서 파일을 수정해야하는데 vim이 없네요. 설치합니다.
 
 ```sh
-$ apt-get install -y vim
+apt-get install -y vim
 ```
 
 두근거리는 마음으로 에디터로 파일을 만지러 들어갑니다. 네, 한글이 설치되어있질 않아서 인코딩이 깨집니다.
 
 ```sh
-$ apt-get install -y locales
+apt-get install -y locales
 ```
 
 언어팩을 설치하고 `locale`명령어로 언어설정이 도대체 뭘로 됐길래 이러나 확인합니다.
@@ -149,9 +149,9 @@ POSIX
 `ko_KR`이 들어간게 보이지 않습니다. locale을 생성하고 등록까지 해줍니다. 필요한 언어팩을 컴파일 합니다. `-i` 옵션은 inputfile을 의미하고 `-f`는 문자셋을 뜻한다고 합니다.
 
 ```sh
-$ localedef -i ko_KR -f UTF-8 ko_KR.UTF-8
-$ localedef -i en_US -f UTF-8 en_US.UTF-8
-$ locale -a
+localedef -i ko_KR -f UTF-8 ko_KR.UTF-8
+localedef -i en_US -f UTF-8 en_US.UTF-8
+locale -a
 ```
 
 그러고 나서 `locale -a`로 확인해보면 한국어와 영어가 생겨 있습니다.
@@ -167,7 +167,7 @@ ko_KR.utf8
 맞아요 아직 끝난게 아니에요. 왜냐면 아직도 `locale`로 확인해봐도 한글이 안보이거든요. 설정을 다시 해줘야합니다.
 
 ```sh
-$ dpkg-reconfigure locales
+dpkg-reconfigure locales
 ```
 
 를 하면 언어셋들이 뜰겁니다. 각자 환경에서 보이는 `ko_KR.UTF-8`을 찾아 입력란에 입력합니다. 두가지를 묻는데 한글을 선택합니다.
@@ -184,7 +184,7 @@ Default locale for the system environment: 3
 다왔습니다. `LANG`환경값을 아래와 같이 등록합니다.
 
 ```sh
-$ export LANG=ko_KR.UTF-8
+export LANG=ko_KR.UTF-8
 ```
 
 이제 `locale`로 확인을 해도 POSIX는 보이지않고 `ko_KR.UTF-8`이 보일것이며 vim 에디터로 파일을 만져봐도 한글이 아름답게 위치할겁니다.
@@ -205,5 +205,5 @@ $ export LANG=ko_KR.UTF-8
 다음과 같이 이미지를 가져와서 돌리시면 위의 과정 대부분을 생략할 수가 있습니다. 하지만 빌드중 커맨드 입력이 안되기 때문에 locale 패키지 재설정과 LANG 환경값 등록은 컨테이너 실행후 직접 하셔야합니다.
 
 ```sh
-$ docker pull wooky92/ubuntu-git
+docker pull wooky92/ubuntu-git
 ```

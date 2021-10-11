@@ -31,7 +31,7 @@ cover: https://res.cloudinary.com/yangeok/image/upload/v1591531187/logo/posts/gi
 └── Y # 개인 코드
 ```
 
-로컬머신에서 원래 사용하던 계정이 회사계정이라고 가정하고 이야기하겠습니다. 개인계정으로 `test-for-posting`이란 private 저장소를 만든 후에 clone해보겠습니다. 
+로컬머신에서 원래 사용하던 계정이 회사계정이라고 가정하고 이야기하겠습니다. 개인계정으로 `test-for-posting`이란 private 저장소를 만든 후에 clone해보겠습니다.
 
 ```
 $ git clone https://github.com/Yangeok/test-for-posting.git
@@ -50,7 +50,7 @@ fatal: repository 'https://github.com/Yangeok/test-for-posting.git/' not found
 
 ## ssh key란
 
-ssh 통신을 하기 위해 client와 server가 서로를 식별하기 위해 가지고 있는 public, private key 쌍입니다. 
+ssh 통신을 하기 위해 client와 server가 서로를 식별하기 위해 가지고 있는 public, private key 쌍입니다.
 
 아래의 이미지처럼 ssh key로 인증하는 과정은 다음과 같은 흐름을 갖습니다.
 
@@ -75,7 +75,7 @@ ssh 통신을 하기 위해 client와 server가 서로를 식별하기 위해 �
 우선 github 계정 두 개가 준비된 상태에서 터미널로 갑니다. `~/.ssh`로 이동해서 아래와 같이 입력합니다.
 
 ```sh
-$ ssh-keygen -t rsa -b 4096 -C "yangwookee@gmail.com"
+ssh-keygen -t rsa -b 4096 -C "yangwookee@gmail.com"
 ```
 
 아래와 같이 대화형으로 key 쌍을 만들도록 도와줍니다. 먼저 key 파일명을 입력합니다. 먼저 저는 개인 계정용 key 파일을 먼저 만들거라 `id_rsa_personal`이라고 입력하겠습니다.
@@ -84,14 +84,14 @@ $ ssh-keygen -t rsa -b 4096 -C "yangwookee@gmail.com"
 Enter file in which to save the key (~/.ssh/id_rsa): id_rsa_personal
 ```
 
-보안 목적으로 passphrase를 입력하라고 하지만 굳이 할 필요성을 느끼지 못해 넘어가겠습니다. 
+보안 목적으로 passphrase를 입력하라고 하지만 굳이 할 필요성을 느끼지 못해 넘어가겠습니다.
 
 ```
 Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
 ```
 
-자, key 쌍이 하나 생성되었습니다. 
+자, key 쌍이 하나 생성되었습니다.
 
 ```
 Your identification has been saved in ~/.ssh/id_rsa_personal.
@@ -131,21 +131,24 @@ id_rsa_work.pub
 
 [Adding a new SSH key to your GitHub account](https://help.github.com/en/enterprise/2.15/user/articles/adding-a-new-ssh-key-to-your-github-account)에 설명이 너무 자세히 나와있으므로 링크로 대체하겠습니다. 각 운영체제 별로 설명이 있습니다.
 
-public key를 복사해 github에서 붙여넣어주는 과정입니다만, 아래의 명령어를 사용하면 파일을 콘솔에 찍어보거나 직접 열어서 복사할 필요가 없어집니다. 
+public key를 복사해 github에서 붙여넣어주는 과정입니다만, 아래의 명령어를 사용하면 파일을 콘솔에 찍어보거나 직접 열어서 복사할 필요가 없어집니다.
 
-맥을 사용한다면, 
+맥을 사용한다면,
+
 ```sh
-$ cat id_rsa_personal.pub | pbcopy
+cat id_rsa_personal.pub | pbcopy
 ```
 
-혹은 
+혹은
+
 ```sh
-$ pbcoby < id_rsa_personal.pub
+pbcoby < id_rsa_personal.pub
 ```
 
 윈도우를 사용한다면 아래와 같이 복사할 수 있습니다.
+
 ```sh
-$ clip < id_rsa_personal.pub
+clip < id_rsa_personal.pub
 ```
 
 <br>
@@ -156,17 +159,17 @@ $ clip < id_rsa_personal.pub
 
 ## ssh key daemon 추가 및 권한 확인
 
-터미널로 다시 돌아와서 생성한 key를 daemon에 등록합니다. 
+터미널로 다시 돌아와서 생성한 key를 daemon에 등록합니다.
 
 ```sh
 $ eval "$(ssh-agent -s)" &&\
-	ssh-add -K id_rsa_personal		 
+ ssh-add -K id_rsa_personal   
 ```
 
 daemon에 추가된 ssh키는 다음과 같이 확인합니다.
 
 ```sh
-$ ssh-add -l
+ssh-add -l
 ```
 
 생성한 private key는 시스템 내의, 그룹 내의 다른 사용자가 봐서는 안됩니다. 즉, 소유자만 `rw-`를 가져야하므로, 권한 번호는 `600`이 되겠군요. key 쌍의 권한이 파일들의 권한이 `600`인지 확인합니다.
@@ -192,21 +195,21 @@ ssh profile을 관리해주는 `~/.ssh`에서 `config`파일을 생성합니다.
 ```sh
 # 개인용 계정
 Host personal
-	HostName github.com
-	User git
-	IdentityFile ~/.ssh/id_rsa_personal
+ HostName github.com
+ User git
+ IdentityFile ~/.ssh/id_rsa_personal
 
 # 회사용 계정
 Host work
-	HostName github.com
-	User git
-	IdentityFile ~/.ssh/id_rsa_work
+ HostName github.com
+ User git
+ IdentityFile ~/.ssh/id_rsa_work
 ```
 
 위의 것 외의 옵션은 [여기](https://www.ssh.com/ssh/config)에서 확인하실 수 있습니다.
 
 - `Host`: profile별 식별자명을 입력한다.
-- `HostName`: 실제 호스트명을 로그로 입력한다. 이것은 호스트에 닉네임이나 약어로 사용될 수 있으며, ip주소도 사용할 수 있다. 
+- `HostName`: 실제 호스트명을 로그로 입력한다. 이것은 호스트에 닉네임이나 약어로 사용될 수 있으며, ip주소도 사용할 수 있다.
 - `User`: 사용자명을 입력한다.
 - `IdentityFile`: private key 파일의 위치를 입력한다.
 
@@ -222,8 +225,7 @@ Hi Yangeok! You've successfully authenticated, but GitHub
 does not provide shell access.
 ```
 
-`ssh -T git@{Host}`로 테스트해볼 수 있습니다. 
-
+`ssh -T git@{Host}`로 테스트해볼 수 있습니다.
 
 git remote url을 설정할때 저장소 소유자의 유저명을 다음과 같이 입력해야 함을 주의해야 합니다. 저장소가 `{User}`의 소유가 아닌 John의 소유라면 `{User}` 부분은 John이 들어가줘야 하는 점 주의해주세요.
 
@@ -254,28 +256,28 @@ git@{Host}:{User}/{Repository}.git
 
 ```sh
 [includeIf "gitdir:{폴더명}/"]
-	path = .gitconfig-{프로파일명}
+ path = .gitconfig-{프로파일명}
 ```
 
 우리는 `personal`, `work`이란 이름의 profile을 만들었고, `JOB`은 profile을 `work`로, `TEST`, `Y`는 `personal`로 연결시키기로 했으니, 다음과 같이 쓸 수 있겠네요.
 
 ```sh
 [includeIf "gitdir:~/JOB/"]
-	path = .gitconfig-work
+ path = .gitconfig-work
 [includeIf "gitdir:~/TEST/"]
-	path = .gitconfig-personal
+ path = .gitconfig-personal
 [includeIf "gitdir:~/Y/"]
-	path = .gitconfig-personal
+ path = .gitconfig-personal
 ```
 
 자 이제 변수 `path`에 들어간 `.gitconfig-*`를 만들어줄 차례입니다. 빈 파일에 다음과 같은 형태의 구문을 추가합니다. `.gitconfig-work`에는 회사계정 정보를, `.gitconfig-personal`에는 개인계정 정보를 넣습니다. github profile에 표시되는 이름을 유저명에 넣어줘야하는 점 주의해주세요.
 
 ```sh
 [user]
-	email = {이메일 주소}
-	name = {이름}
-[github]	
-	user = {유저명}
+ email = {이메일 주소}
+ name = {이름}
+[github] 
+ user = {유저명}
 ```
 
 자, 모든 여정을 다 왔습니다. 이제 여러분은 한 대의 머신에서 두 개의 계정을 자유롭게 왔다갔다하면서 커밋 로그를 남길 수 있게 되었습니다. 혹시라도 push, pull을 하는데 문제가 생긴다면 안된다면 `~/.ssh`의 권한이 `700`이 맞나 확인해봅니다. 잘못된 내용이 있다면 댓글이나 메일 주시면 감사하겠습니다 :)
@@ -288,5 +290,5 @@ git@{Host}:{User}/{Repository}.git
 
 ## 참조
 
-- [ssh 사용시 암호 대신 SSH key로 인증하기](https://arsviator.blogspot.com/2015/04/ssh-ssh-key.html) 
+- [ssh 사용시 암호 대신 SSH key로 인증하기](https://arsviator.blogspot.com/2015/04/ssh-ssh-key.html)
 - [SSH Config File](https://www.ssh.com/ssh/config)

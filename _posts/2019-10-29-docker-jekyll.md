@@ -13,7 +13,6 @@ cover: https://res.cloudinary.com/yangeok/image/upload/v1572138444/logo/posts/do
 - git bash
 - [docker for windows](https://docs.docker.com/docker-for-windows/install/)
 
-
 로컬에 다 설치하고 실행하면 생각할 필요도 없는 문제들이 계속해 발생했습니다. 문제 별로 묶어서 확인 해보겠습니다.
 
 ## 경로 및 옵션 문제

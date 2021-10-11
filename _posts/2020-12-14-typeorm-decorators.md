@@ -9,7 +9,7 @@ tags: [typeorm, orm, typescript, decorator, entity, relation, column]
 cover: https://res.cloudinary.com/yangeok/image/upload/v1606139412/logo/posts/typeorm.jpg
 ---
 
-## TL;DR;
+## TL;DR
 
 TypeORM 공식문서의 순서에 따라 데코레이터들을 소개합니다. 공식문서와 100% 일치하지 않고 늘릴 부분은 늘리고, 줄일 부분은 줄였음을 확인하신 후에 읽어주세요. SQL, ORM과 OOP에 대한 기본 지식을 가지고 계시는 분이라면 읽기에 더 수월할 수 있습니다! (데코레이터 사용법이 JPA와 아주 유사합니다)
 
@@ -117,9 +117,9 @@ export class Post {
 
 ##### Concrete table inheritance
 
-위에서 중복된 칼럼인 `id`, `title`, `description`을 아래와 같이 베이스가 되는 추상 클래스를 선언한 다음 확장할 수 있습니다. 
+위에서 중복된 칼럼인 `id`, `title`, `description`을 아래와 같이 베이스가 되는 추상 클래스를 선언한 다음 확장할 수 있습니다.
 
-참고로 active record 패턴을 사용할 예정이라면, `BaseEntity`라는 이름은 피하는게 좋습니다. typeorm에서 제공하는 클래스인 `BaseEntity`는 기본 쿼리 메서드 `hasId`, `save`, `remove` 등의 메서드를 담은 클래스입니다. 
+참고로 active record 패턴을 사용할 예정이라면, `BaseEntity`라는 이름은 피하는게 좋습니다. typeorm에서 제공하는 클래스인 `BaseEntity`는 기본 쿼리 메서드 `hasId`, `save`, `remove` 등의 메서드를 담은 클래스입니다.
 
 ```ts
 export abstract class Content {
@@ -158,7 +158,7 @@ export class Post extends Content {
 
 ##### Single table inheritance
 
-`@TableInheritance()`, `@ChildEntity()`를 사용하는 방법입니다. 이 방법은 데이터베이스에 `Content` 테이블이 생성됩니다. `Content` 위에 `@Entity()`를 선언해줘야 아래와 같은 패턴을 사용할 수 있습니다. 
+`@TableInheritance()`, `@ChildEntity()`를 사용하는 방법입니다. 이 방법은 데이터베이스에 `Content` 테이블이 생성됩니다. `Content` 위에 `@Entity()`를 선언해줘야 아래와 같은 패턴을 사용할 수 있습니다.
 
 ```ts
 @Entity()
@@ -332,7 +332,7 @@ isActive: boolean
 - `nullable: boolean`: 칼럼을 `NULL`이나 `NOT NULL`로 만드는 옵션이다. 기본값은 `false`이다.
 - `default: string`: 칼럼에 `DEFAULT` 값을 추가한다.
 - `unique: boolean`: 유니크 칼럼이라고 표시할 수 있다. 유니크 constraint를 만든다. 기본값은 `false`이다.
-- `enum: string[] | AnyEnum`: 칼럼의 값으로 `enum`을 사용할 수 있다. `enum`은 db단에서 처리할 수도, orm단에서 처리할 수도 있다. 
+- `enum: string[] | AnyEnum`: 칼럼의 값으로 `enum`을 사용할 수 있다. `enum`은 db단에서 처리할 수도, orm단에서 처리할 수도 있다.
 
 ```ts
 @Column({ enum: AnyEnum })
@@ -415,7 +415,7 @@ export class User {
 
 ### DateColumn
 
-#### CreateDateColumn 
+#### CreateDateColumn
 
 해당 열이 추가된 시각을 자동으로 기록합니다. 옵션을 적지 않을시 `datetime` 타입으로 기록됩니다.
 
@@ -585,7 +585,7 @@ export class Photo {
 }
 ```
 
-`@OneToMany()`/`@ManyToOne()`에서는 `@JoinColumn()`을 생략할 수 있습니다. `@OneToMany()`는 `@ManyToOne()`이 없으면 안됩니다. 하지만 반대로 `@ManyToOne()`은 `@OneToMany()`이 없어도 정의할 수 있습니다. `@ManyToOne()`을 설정한 테이블에는 relation id가 외래키를 가지고 있게 됩니다. 
+`@OneToMany()`/`@ManyToOne()`에서는 `@JoinColumn()`을 생략할 수 있습니다. `@OneToMany()`는 `@ManyToOne()`이 없으면 안됩니다. 하지만 반대로 `@ManyToOne()`은 `@OneToMany()`이 없어도 정의할 수 있습니다. `@ManyToOne()`을 설정한 테이블에는 relation id가 외래키를 가지고 있게 됩니다.
 
 `DESC`문을 돌리면 아래와 같이 나옵니다.
 
@@ -638,7 +638,7 @@ const photos = await connection
 
 ### ManyToMany
 
-`Category`와 `Question` 테이블을 아래와 같이 준비합니다. 둘의 관계는 N:M 관계입니다. 카테고리는 여러개의 질문을 가질 수 있고, 질문 또한 여러개의 카테고리를 가질 수 있습니다. 관계는 단방향과 양방향 모두 작성이 가능합니다. 
+`Category`와 `Question` 테이블을 아래와 같이 준비합니다. 둘의 관계는 N:M 관계입니다. 카테고리는 여러개의 질문을 가질 수 있고, 질문 또한 여러개의 카테고리를 가질 수 있습니다. 관계는 단방향과 양방향 모두 작성이 가능합니다.
 
 ```ts
 @Entity()
@@ -667,7 +667,7 @@ export class Question {
 }
 ```
 
-`@ManyToMany()` 관계에서는 `@JoinTable()`이 반드시 필요합니다. 한쪽 테이블에만 `@JoinTable()`을 넣어주면 됩니다. 
+`@ManyToMany()` 관계에서는 `@JoinTable()`이 반드시 필요합니다. 한쪽 테이블에만 `@JoinTable()`을 넣어주면 됩니다.
 
 `DESC`문을 돌리면 아래와 같이 나옵니다.
 
@@ -755,7 +755,7 @@ export class Category {
 
 ---
 
-#### Nested set 
+#### Nested set
 
 `@Tree()`, `@TreeChildren()`, `@TreeParent()`를 사용한 또 다른 패턴입니다. 읽기 작업에는 효과적이지만 쓰기 작업에는 그렇지 않습니다. 여러 개의 루트를 가질 수 없다는 점도 문제이다. `@Tree()`의 인자로 `nested-set`이 들어갑니다.
 
@@ -779,7 +779,7 @@ export class Category {
 
 ---
 
-#### Materialized path 
+#### Materialized path
 
 구체화된 경로 혹은 경로 열거라고 부릅니다. 간단하고 효율적입니다. nested set과 사용방법은 같습니다. `@Tree()`의 인자로 `materialized-path`이 들어갑니다.
 
@@ -930,7 +930,7 @@ Logger.log(`Price changed from
 
 ### Index/Unique/Check
 
-#### Index 
+#### Index
 
 *여기서 잠깐, soft delete이란 뭘까요?*
 
@@ -1033,7 +1033,7 @@ export class User {
 격리성 수준은 다음과 같이 분류할 수 있습니다. 아래로 갈수록 격리성 수준이 높아집니다.
 
 - `READ UNCOMMITTED`
-- `READ COMMITTED` 
+- `READ COMMITTED`
 - `REPEATABLE READ`
 - `SERIALIZABLE`
 
@@ -1043,7 +1043,7 @@ global connection을 열어서 트랜젝션을 사용하는 경우는 아래와 
 await getManager().transaction('SERIALIZABLE', transactionalEntityManager => {})
 ```
 
-하지만 global connection은 사이드이펙트가 많은 방법이기때문에 데코레이터나 `queryRunner`를 사용한 방법을 추천합니다. 아래는 데코레이터 `@Transaction()`, `@TransactionManager()`, 
+하지만 global connection은 사이드이펙트가 많은 방법이기때문에 데코레이터나 `queryRunner`를 사용한 방법을 추천합니다. 아래는 데코레이터 `@Transaction()`, `@TransactionManager()`,
 `@TransactionRepository()`를 사용한 패턴입니다.
 
 ```ts
@@ -1086,6 +1086,5 @@ try {
 ---
 
 <br>
-
 
 같은 주제의 [슬라이드 쉐어](https://www2.slideshare.net/YangwookJeong/typeorm-decorators) 링크 첨부합니다. 본문에 오류가 있거나 보충해주시고 싶은 내용이 있다면 댓글 부탁드립니다!

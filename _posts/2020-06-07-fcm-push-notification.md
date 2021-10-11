@@ -27,7 +27,7 @@ FCM, APNS로 따로 나눠서 푸시 알림을 관리하는 것도 불편해보�
 
 위의 이미지에서 FCM/APNS 바깥에 Invertase의 `react-native-firebase`가 한 번 감싸져 있는 형태이며 백엔드에서 메시지 제공자로 메시지를 전달하는 과정에는 FCM HTTP v1 API를 사용해서 진행할 예정입니다.
 
-<br> 
+<br>
 
 ---
 <br>
@@ -45,7 +45,7 @@ FCM, APNS로 따로 나눠서 푸시 알림을 관리하는 것도 불편해보�
 
 출처: [jakubkoci - React Native Push Notifications](https://dev.to/jakubkoci/react-native-push-notifications-313i)
 
-<br> 
+<br>
 
 ---
 <br>
@@ -55,7 +55,7 @@ FCM, APNS로 따로 나눠서 푸시 알림을 관리하는 것도 불편해보�
 <!-- <img src="https://res.cloudinary.com/yangeok/image/upload/v1591490805/fcm-push-notification/03.gif" width="500"> -->
 ![](https://res.cloudinary.com/yangeok/image/upload/v1591490805/fcm-push-notification/03.gif)
 
-프로젝트를 생성하고 **성장 > Cloud Messaging**으로 들어가 추가하고자 하는 앱을 추가합니다. 
+프로젝트를 생성하고 **성장 > Cloud Messaging**으로 들어가 추가하고자 하는 앱을 추가합니다.
 
 <br>
 
@@ -114,15 +114,14 @@ buildescript {
 }
 ```
 
-<br> 
+<br>
 
 ---
 <br>
 
-
 ## 메시지 핸들러와 디바이스 토큰 저장
 
-`react-native`에서 메시지를 수신하는 코드와 정해진 디바이스에서만 메시지를 수신하기 위한 고유한 식별자가 필요합니다. 이 작업을 하기 위해서는 `firebase` 혹은 `firebase`를 래핑하고 있는 써드파티<sup>Third Party</sup> 라이브러리인 `react-native-firebase`가 필요합니다. 
+`react-native`에서 메시지를 수신하는 코드와 정해진 디바이스에서만 메시지를 수신하기 위한 고유한 식별자가 필요합니다. 이 작업을 하기 위해서는 `firebase` 혹은 `firebase`를 래핑하고 있는 써드파티<sup>Third Party</sup> 라이브러리인 `react-native-firebase`가 필요합니다.
 
 아래와 같이 라이브러리를 설치합니다. v6로 업데이트하면서 세부 기능들을 분리했기때문에 코어 모듈인 `@react-native-firebase/app`를 반드시 설치해야 합니다. FCM 기능을 제공하는 `@react-native-firebase/mesasging`를 추가로 설치해줍니다. `react-native-firebase`는 v5로 아직 지원하고는 있지만 **deprecated**될 예정이니 최신 버전으로 사용하는 것을 추천합니다.
 
@@ -148,7 +147,7 @@ cd ios && pod install
 
 ### 라이프 사이클
 
-여기서 잠깐 앱이 동작하는 라이프사이클을 알아보고 갈게요. 
+여기서 잠깐 앱이 동작하는 라이프사이클을 알아보고 갈게요.
 
 - Foreground
 - Background
@@ -159,7 +158,7 @@ cd ios && pod install
 
 출처: [Working with the watchOS App Life Cycle](https://developer.apple.com/documentation/watchkit/working_with_the_watchos_app_life_cycle?language=objc)
 
-벌써 앱의 상태만 해도 4가지나 되는데요. `react-native-firebase`에서는 아래와 같은 상태로 표현합니다. 
+벌써 앱의 상태만 해도 4가지나 되는데요. `react-native-firebase`에서는 아래와 같은 상태로 표현합니다.
 
 - Foreground: 애플리케이션이 뷰 안에 열려있을 때
 - Background: 애플리케이션이 열려있지만 최소화되어있는 상태일 때
@@ -169,12 +168,12 @@ cd ios && pod install
 
 ### 메시지 핸들러
 
-위에서 설명한 상태에 따라서 API를 아래와 같이 구별해서 써줘야 합니다. 
+위에서 설명한 상태에 따라서 API를 아래와 같이 구별해서 써줘야 합니다.
 
 - Forgorund: `onMessage`
 - Background/Quit: `setBackgroundMessageHandler`
 
-`onMessage` 메서드는 리액트 컨텍스트<sup>React Context</sup>를 통해 실행되고 앱과 인터렉션<sup>Interaction</sup>이 가능하기 때문에 `App.js` 가장 바깥에 넣어줘야 합니다. 
+`onMessage` 메서드는 리액트 컨텍스트<sup>React Context</sup>를 통해 실행되고 앱과 인터렉션<sup>Interaction</sup>이 가능하기 때문에 `App.js` 가장 바깥에 넣어줘야 합니다.
 
 ```js
 import React, { useEffect } from 'react'
@@ -290,7 +289,7 @@ const handlePushToken = useCallback(async () => {
 }, [])
 ```
 
-권한이 있는지 확인하는 함수인 `handlePushToken`은 앱이 렌더될 때 최초 한 번 실행하도록 합니다. `hasPermission` 메서드를 통해 권한을 확인한 다음 가져온 토큰을 상태에 저장합니다. 권한이 없다면 권한을 요청해서 상태를 변경하는데 권한을 어디에 쓰는지 더 확인한 후 정리하도록 하겠습니다. 
+권한이 있는지 확인하는 함수인 `handlePushToken`은 앱이 렌더될 때 최초 한 번 실행하도록 합니다. `hasPermission` 메서드를 통해 권한을 확인한 다음 가져온 토큰을 상태에 저장합니다. 권한이 없다면 권한을 요청해서 상태를 변경하는데 권한을 어디에 쓰는지 더 확인한 후 정리하도록 하겠습니다.
 
 ```js
 const saveTokenToDatabase = useCallback(async (token) => {
@@ -299,7 +298,7 @@ const saveTokenToDatabase = useCallback(async (token) => {
 }, [])
 ```
 
-`saveTokenToDatabase`는 아래의 함수들에서 사용할 GraphQL 쿼리 래퍼입니다. 
+`saveTokenToDatabase`는 아래의 함수들에서 사용할 GraphQL 쿼리 래퍼입니다.
 
 ```js
 const saveDeviceToken = useCallback(async () => {
@@ -320,20 +319,20 @@ const saveDeviceToken = useCallback(async () => {
 
 ### v5와의 차이점 및 마이그레이션
 
-`unimodules`가 v6부터는 자동으로 pod install을 해준다고 명시되어 있습니다. 때문에 iOS에서도 따로 `Podfile`을 써주거나 `react-native link`를 해줄 필요가 없어졌습니다. 
+`unimodules`가 v6부터는 자동으로 pod install을 해준다고 명시되어 있습니다. 때문에 iOS에서도 따로 `Podfile`을 써주거나 `react-native link`를 해줄 필요가 없어졌습니다.
 
 새로 버전업한 라이브러리 네이밍을 살펴보면 `@apollo/client`같이 라이브러리 이름 앞에 `@`를 붙이는게 요새 추세인 것 같더라구요. 이것은 가장 최신버전을 나타내기도 하면서 라이브러리를 모듈단위로 나눠서 불필요한 용량을 줄일 수 있는 장점이 있습니다.
 
-마이그레이션하면서 오류를 너무 많이 겪었습니다. v5에서 v6로 마이그레이션할 예정이라면 맘편하게 `Pods`와 `node_modules` 및 메시지 핸들러를 싹다 지운 후에 처음부터 하시는 것을 추천합니다. 
+마이그레이션하면서 오류를 너무 많이 겪었습니다. v5에서 v6로 마이그레이션할 예정이라면 맘편하게 `Pods`와 `node_modules` 및 메시지 핸들러를 싹다 지운 후에 처음부터 하시는 것을 추천합니다.
 
-<br> 
+<br>
 
 ---
 <br>
 
 ## 메시지 전달 API
 
-이제 Firebase 콘솔에서 날렸던 테스트로 날릴 수 있었던 메시지를 백엔드에서 날릴 수 있습니다. 메시지를 디바이스로 날리는 방법은 아래와 같습니다. 
+이제 Firebase 콘솔에서 날렸던 테스트로 날릴 수 있었던 메시지를 백엔드에서 날릴 수 있습니다. 메시지를 디바이스로 날리는 방법은 아래와 같습니다.
 
 - Firebase Admin SDK
 - FCM HTTP v1 API
@@ -406,7 +405,7 @@ v1 요청의 경우 이전 요청에서 사용하는 **서버 키** 대신에 **
 - 수동으로 사용자 인증 정보 제공
 - 사용자 인증 정보를 사용하여 액세스 토큰 발급
 
-저희는 `googleapi` 라이브러리를 사용해 아래와 같은 형태의 헤더에 넣을 수 있는 **사용자 인증 정보를 사용하여 액세스 토큰 발급**하도록 하겠습니다. 
+저희는 `googleapi` 라이브러리를 사용해 아래와 같은 형태의 헤더에 넣을 수 있는 **사용자 인증 정보를 사용하여 액세스 토큰 발급**하도록 하겠습니다.
 
 ```sh
 Authorization: Bearer generated_token
@@ -430,7 +429,7 @@ interface User {
 }
 ```
 
-다음은 인증을 통해 메시지를 보내는 로직입니다. 
+다음은 인증을 통해 메시지를 보내는 로직입니다.
 
 ```ts
 import { google } from 'googleapis'
@@ -523,7 +522,7 @@ const tokens = await User.findByIds(receiverIds, {select: ['fcmToken']})
 
 다음은 받을 사용자의 토큰별로 메시지를 정의합니다. HTTP v1 API에서는 메시지 멀티캐스팅<sup>Multicasting</sup>이 불가능하므로 루프를 돌려 요청을 보내는 방식을 택했습니다.
 
-```js    
+```js
 const result = tokens.map(async token => {
   const message = {
     message: {
@@ -564,7 +563,7 @@ message : {
 }
 ```
 
-<br> 
+<br>
 
 ---
 <br>

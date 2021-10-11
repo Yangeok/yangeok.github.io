@@ -80,15 +80,15 @@ async (accesstoken, loginInfo, refreshToken, done) => {
 
 ```js
 {
-	"iss": 'accounts.google.com',
-	"azp": 'SECRET.apps.googleusercontent.com',
-	"aud": 'SECRET.apps.googleusercontent.com',
-	"sub": 'ID',
-	"email": 'yangwookee@gmail.com',
-	"email_verified": true,
-	"at_hash": 'HASH_VALUE',
-	"iat": 1543542243,
-	"exp": 1543545843
+ "iss": 'accounts.google.com',
+ "azp": 'SECRET.apps.googleusercontent.com',
+ "aud": 'SECRET.apps.googleusercontent.com',
+ "sub": 'ID',
+ "email": 'yangwookee@gmail.com',
+ "email_verified": true,
+ "at_hash": 'HASH_VALUE',
+ "iat": 1543542243,
+ "exp": 1543545843
 }
 ```
 

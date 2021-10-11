@@ -123,4 +123,4 @@ module.exports = {
         });
 ```
 
-테스트전 `migrations`에서도 PK는 그냥 `primaryKey`만 정의해줘도 되지만 FK는 [`references`객체]()도 작성해야 하는것 잊지마세요 :)
+테스트전 `migrations`에서도 PK는 그냥 `primaryKey`만 정의해줘도 되지만 FK는 `references`객체도 작성해야 하는 것 잊지마세요 :)

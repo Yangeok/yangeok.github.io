@@ -36,6 +36,7 @@ cover: /assets/header_image.jpg
 document 객체나 jquery 둘 중 아무거나 써도 상관 없습니다. 어차피 같은 javascript잖아요? 성능은 좋지 않아도 빠르게 데이터를 뽑아내야 할 경우엔 jquery를 사용하는 것을 더 선호한답니다. 두 가지 경우 모두 예시를 보도록 하겠습니다.
 
 ### DOM을 사용하는 방법
+
 유사배열인 `NodeList`가 콘솔에 찍히는 것을 확인할 수 있습니다.
 
 ```js
@@ -45,6 +46,7 @@ document.querySelectorAll('#list > .item')
 ```
 
 ### jquery를 사용하는 방법
+
 유사배열인 `HTMLCollection`이 콘솔이 찍히는 것을 확인할 수 있습니다.
 
 ```js
@@ -62,14 +64,16 @@ $('#list').children
 둘 다 배열이 아니라서 배열 메서드를 사용하려고 하면 에러가 발생하거나 자식 요소를 볼 수 없게 됩니다.
 
 ### DOM을 사용하는 경우
+
 ```js
 document.querySelectorAll('#list > .item').map(el => el)
 ```
 
 > Uncaught TypeError: document.querySelectorAll(...).map is not a function
->    at <anonymous>:1:46
+> at <anonymous>:1:46
 
 ### jquery를 사용하는 경우
+
 ```js
 $('#list > .item').children().map(el => el)
 ```
@@ -110,11 +114,11 @@ $$('.item')
 
 <br>
 
-이제부터 배열 메서드나 트릭을 사용해서 간단하게 유사배열을 배열로 바꿔볼겁니다. 
+이제부터 배열 메서드나 트릭을 사용해서 간단하게 유사배열을 배열로 바꿔볼겁니다.
 
 ### `Array.from()`를 사용하는 방법
 
-유사 배열 객체나 반복 가능한 객체를 얕게 복사해 새로운 `Array`객체를 만드는 방법입니다. 
+유사 배열 객체나 반복 가능한 객체를 얕게 복사해 새로운 `Array`객체를 만드는 방법입니다.
 
 ```js
 Array.from(document.querySelectorAll('#list > .item'))
@@ -123,6 +127,7 @@ Array.from(document.querySelectorAll('#list > .item'))
 ```
 
 ### `Array.slice()`를 사용하는 방법
+
 참고로 인자로는 `start`, `end`값이 들어가는데, `end`는 생략 가능합니다.
 
 ```js
@@ -138,6 +143,7 @@ Array.slice(document.querySelectorAll('#list > .item'))
 
 // (10) [li.item, li.item, li.item, li.item, li.item, li.item, li.item, li.item, li.item, li.item]
 ```
+
 <br>
 
 ---

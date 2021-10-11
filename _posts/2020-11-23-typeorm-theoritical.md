@@ -56,7 +56,7 @@ mysql> SELECT * FROM People;
 5 rows in set (0.00 sec)
 ```
 
-여기서 `People.city`를 `country`로 변경하고 싶은 경우가 있을 것입니다. 칼럼명을 바꾸되 바뀐 칼럼 안에 있는 데이터는 날아가면 절대 안됩니다. 그럼에도 저는 테이블 스키마를 바로 수정하면 될 것 같다고 생각했습니다. ORM에서 작성한 스키마를 데이터베이스에 동기화하는 방법으로 가장 쉬운 방법은 synchronize가 있습니다. 애플리케이션을 재시작할 때마다 기존 테이블에서 열을 추가, 삭제하는 동작을 할 수 있습니다. 
+여기서 `People.city`를 `country`로 변경하고 싶은 경우가 있을 것입니다. 칼럼명을 바꾸되 바뀐 칼럼 안에 있는 데이터는 날아가면 절대 안됩니다. 그럼에도 저는 테이블 스키마를 바로 수정하면 될 것 같다고 생각했습니다. ORM에서 작성한 스키마를 데이터베이스에 동기화하는 방법으로 가장 쉬운 방법은 synchronize가 있습니다. 애플리케이션을 재시작할 때마다 기존 테이블에서 열을 추가, 삭제하는 동작을 할 수 있습니다.
 
 아래는 [sequelize](https://sequelize.org/master/class/lib/sequelize.js~Sequelize.html#instance-method-sync), [typeorm](https://orkhan.gitbook.io/typeorm/docs/connection-api#connection-api)에서 프로그램을 재실행하면 자동으로 데이터베이스에 동기화할 수 있도록 도와주는 메서드들의 사용방법입니다.
 
@@ -70,7 +70,7 @@ const connection = await createConnection(options)
 await getConnection().synchronize()
 ```
 
-테이블 스키마를 `People.city`에서 `country`로 수정하고 코드를 저장하면, 변경한 칼럼에 들어있는 데이터가 날아가버리고 맙니다. 각각 synchronize를 켠 상태에서는 다음과 같이 SQL 쿼리문을 날리는 것 같습니다. 
+테이블 스키마를 `People.city`에서 `country`로 수정하고 코드를 저장하면, 변경한 칼럼에 들어있는 데이터가 날아가버리고 맙니다. 각각 synchronize를 켠 상태에서는 다음과 같이 SQL 쿼리문을 날리는 것 같습니다.
 
 ```sql
 ALTER TABLE People DROP COLUMN city;
@@ -111,7 +111,7 @@ mysql> SELECT * FROM People;
 5 rows in set (0.01 sec)
 ```
 
-synchronize는 최초에 데이터와 테이블 스키마를 동기화할 때는 좋은 옵션이지만 프로덕션에는 안전하지 않습니다. 위같은 간단한 쿼리는 어느정도 개발하는 입장에서 예상이 가능하지만, association이 엮이는 경우에는 나같은 초보개발자는 synchronize를 해서 오는 사이드이펙트를 가늠하지 못할 것입니다. 라이브 환경에서 데이터가 날아가는 일은 끔찍합니다. 라이브 환경에서라면 데이터베이스를 안정적으로 관리하기 위한 도구인 migration을 적극 사용하는 것을 ORM 공식문서에서 하나같이 권장합니다. 
+synchronize는 최초에 데이터와 테이블 스키마를 동기화할 때는 좋은 옵션이지만 프로덕션에는 안전하지 않습니다. 위같은 간단한 쿼리는 어느정도 개발하는 입장에서 예상이 가능하지만, association이 엮이는 경우에는 나같은 초보개발자는 synchronize를 해서 오는 사이드이펙트를 가늠하지 못할 것입니다. 라이브 환경에서 데이터가 날아가는 일은 끔찍합니다. 라이브 환경에서라면 데이터베이스를 안정적으로 관리하기 위한 도구인 migration을 적극 사용하는 것을 ORM 공식문서에서 하나같이 권장합니다.
 
 <br>
 
@@ -214,7 +214,7 @@ docker-compose up
 yarn typeorm migration:create -n test-migration-create
 ```
 
-참고로 `-n` 플래그는 migration 파일의 이름을 정해줍니다. 
+참고로 `-n` 플래그는 migration 파일의 이름을 정해줍니다.
 
 빈 껍데기인 migration 파일을 만들때 사용합니다. 스크립트를 실행하면 `ormconfig.json`에서 `cli.migrationsDir`에 정의한 경로에 `timestamp-test-migration-create.ts`와 같이 timestamp를 포함한 파일명으로 `up`, `down` 메서드에 구현부는 비어있는 파일이 아래처럼 생성됩니다.
 
@@ -242,7 +242,7 @@ export class test-migration-create1605840315914 implements MigrationInterface {
 }
 ```
 
-다시 한 번 말하자면 `migration:create`은 빈 껍데기만 만들어주기 때문에 구현부는 직접 작성해야 합니다. 
+다시 한 번 말하자면 `migration:create`은 빈 껍데기만 만들어주기 때문에 구현부는 직접 작성해야 합니다.
 
 #### migration:generate
 
@@ -312,7 +312,7 @@ export class test-migration-generate1605840315915 implements MigrationInterface 
 
 #### migration:run
 
-`migration:run`은 모든 migration파일들을 데이터베이스에 한꺼번에 반영합니다. 
+`migration:run`은 모든 migration파일들을 데이터베이스에 한꺼번에 반영합니다.
 
 ```sh
 yarn typeorm migration:run
@@ -335,8 +335,7 @@ mysql> SELECT * FROM migrations;
 
 #### migration:revert
 
-`migration:run`을 통해 동기화한 내용들을 하나씩 걷어내는 역할을 합니다. 가장 마지막에 쌓인 migration부터 스택처럼 `down` 메서드를 실행합니다. 아직까지는 `migration:revert:all`같은 솔루션은 없습니다. 
-
+`migration:run`을 통해 동기화한 내용들을 하나씩 걷어내는 역할을 합니다. 가장 마지막에 쌓인 migration부터 스택처럼 `down` 메서드를 실행합니다. 아직까지는 `migration:revert:all`같은 솔루션은 없습니다.
 
 ```sh
 yarn typeorm migration:revert
@@ -364,7 +363,7 @@ mysql> SELECT * FROM migrations;
 
 sequelize에서 제공하는 migration은 아쉽게도 typeorm에서 제공하는 `entities`의 변화를 자동감지해서 migration하는 기능은 가지고 있지 않습니다. sequelize의 `migration:generate` 커맨드는 typeorm의 `migration:create`와 같다. typeorm에서는 `entities`의 변경사항을 서버를 실행하지 않고 cli로만 synchronize시키는 `schema:sync`도 제공합니다. 다만 조심해서 사용해야 합니다.
 
-반대로 typeorm에서는 되지 않는 `migration:revert:all`을 sequelize에서는 `db:migrate:undo:all`을 사용해서 모든 migration 파일들의 `down` 메서드를 실행할 수 있습니다. 
+반대로 typeorm에서는 되지 않는 `migration:revert:all`을 sequelize에서는 `db:migrate:undo:all`을 사용해서 모든 migration 파일들의 `down` 메서드를 실행할 수 있습니다.
 
 sequelize는 seeding을 cli에서 지원해줘서 정해진 인터페이스에 맞는 데이터들만 `up`, `down` 메서드에 아래와 같이 집어넣어주면 손쉽게 사용할 수 있습니다.
 
@@ -414,7 +413,7 @@ sequelize의 장점은 다음과 같습니다.
 php의 doctrine은 다음과 같은 특징을 가지고 있습니다.
 
 - 테이블 스키마의 변화를 자동감지해서 migration 파일 생성하는 기능을 제공한다.
-- sequelize의 umzug처럼 migration hook이 있어서 cli용 플러그인을 만들기 용이하다. 
+- sequelize의 umzug처럼 migration hook이 있어서 cli용 플러그인을 만들기 용이하다.
 
 #### Active record (Ruby)
 
@@ -534,7 +533,7 @@ SELECT department FROM Companies c WHERE c.id = 5; -- planning
 
 N+1이란 최초의 쿼리를 던진 다음 아래 실행된 `Companies`에서 `SELECT`하는 문장만큼을 N이라고 해서 쿼리가 총 6(1+5)번 일어나는 것을 보고 N+1 문제라고 합니다.
 
-해당 문제를 고치는 방법은 아주 간단합니다. `INNER JOIN`으로 쿼리를 날리면 해결이 가능하다. `JOIN`은 `INNER JOIN`의 별칭입니다. 
+해당 문제를 고치는 방법은 아주 간단합니다. `INNER JOIN`으로 쿼리를 날리면 해결이 가능하다. `JOIN`은 `INNER JOIN`의 별칭입니다.
 
 ```ts
 const people = await People.query(`
@@ -567,7 +566,7 @@ mysql> SELECT * FROM People p JOIN Companies c ON p.id = c.id;
 
 #### Eager loading
 
-데이터베이스로부터 데이터를 가져올때 가능한 적은 쿼리를 날리기 위해 아래처럼 `JOIN`을 사용하는 것을 eager loading이라고 합니다. 
+데이터베이스로부터 데이터를 가져올때 가능한 적은 쿼리를 날리기 위해 아래처럼 `JOIN`을 사용하는 것을 eager loading이라고 합니다.
 
 ```ts
 const people = await People.query(`
@@ -582,7 +581,7 @@ const people = await People.query(`
 
 #### Lazy loading
 
-위에서 `JOIN`을 사용하지 않고 반복문 안에서 아래처럼 N+1번 쿼리를 날리는 케이스를 보고 지연로딩 혹은 lazy loading이라고 합니다. 
+위에서 `JOIN`을 사용하지 않고 반복문 안에서 아래처럼 N+1번 쿼리를 날리는 케이스를 보고 지연로딩 혹은 lazy loading이라고 합니다.
 
 ```ts
 const department = await Companies.query(`
@@ -628,7 +627,7 @@ sequelize는 `find*` 메서드에 옵션으로 `include`를 아래처럼 추가�
 const people = await People.findOne({ include: Companies, where: { id: 1 } })
 ```
 
-그럼 `JOIN`을 한 것과 같이 아래의 결과가 나옵니다. 
+그럼 `JOIN`을 한 것과 같이 아래의 결과가 나옵니다.
 
 ```json
 {
@@ -672,6 +671,7 @@ lazy loading은 아래와 같이 구현합니다.
 $category = $this->Category->get(1);
 $category->posts
 ```
+
 #### JPA (Java)
 
 eager loading은 아래와 같이 구현합니다. `FetchType.EAGER`란 상수를 사용합니다.
