@@ -1,5 +1,6 @@
 <script>
-  const menuToggle = $('#js-mobile-menu') //.unbind()
+  const menuToggle = $('#js-mobile-menu').unbind()
+  $('#js-navigation-menu').removeClass('show')
   menuToggle.on('click', e => {
     e.preventDefault()
     $('#js-navigation-menu').slideToggle(() => {
