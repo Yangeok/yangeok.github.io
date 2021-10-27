@@ -132,8 +132,6 @@ const pageDown = async page => {
 
 #### 게시물 내용을 크롤하는 함수
 
-{% include google_adsense_mid_text.html %}
-
 ```js
 const goToPostPageAndGetInfo = async page => {
   const result = await page.evaluate(() => {
