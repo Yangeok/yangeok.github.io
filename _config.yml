@@ -52,8 +52,9 @@ utterances:
   theme: preferred-color-scheme
   crossorigin: anonymous
 
-# Google analytics
-ga_tracking_id: 'UA-125441608-1'
+# Google 
+ga_tracking_id: UA-125441608-1
+gas_tracking_id: ca-pub-2713910386733232
 
 # Social icons and sharing options
 
