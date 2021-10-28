@@ -7,7 +7,8 @@ layout: default
 </head>
 {% include scroll_percentage.html %}
 <div class="post">
-	<div class="post-header-container {% if page.cover %}has-cover{% endif %}" {% if page.cover%}style="background-image: url({{ page.cover | prepend: site.baseurl }});" {%endif%}>
+	<div class="post-header-container {% if page.cover %}has-cover{% endif %}" {% if
+		page.cover%}style="background-image: url({{ page.cover | prepend: site.baseurl }});" {%endif%}>
 		<div class="scrim {% if page.cover %}has-cover{% endif %}">
 			<header class="post-header">
 				<h1 class="title">{{ page.title }}</h1>
@@ -48,8 +49,8 @@ layout: default
 
 		{% if site.jekyll-archives %} {% if page.tags.size > 0 %}
 		<section class="tags">
-			<strong>Tags:</strong> {% for tag in page.tags %}<a
-				href="{{ site.baseurl }}/tag/{{ tag }}">{{ tag }}</a>{% if forloop.last == false %}, {% endif %}{% endfor %}
+			<strong>Tags:</strong> {% for tag in page.tags %}<a href="{{ site.baseurl }}/tag/{{ tag }}">{{ tag }}</a>{% if
+			forloop.last == false %}, {% endif %}{% endfor %}
 		</section>
 		{% endif %} {% endif %} {% if site.inter_post_navigation == true %}
 		<section class="post-navigation">
@@ -77,6 +78,8 @@ layout: default
 			</span>
 		</section>
 		{% endif %}
+
+		{% include google_adsense_auto.html %}
 
 		<section class="comments">
 			{% include utterances.html %}
