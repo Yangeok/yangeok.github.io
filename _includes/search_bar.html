@@ -51,7 +51,7 @@
           <a href="{url}"><h4>{title}</h4></a>
           <p>{content}</p>
           <div class="subinfo space-between">
-            <span>{date}</span>
+            <span>{date} · {% include read_time.html %}</span>
             <span>in <a href="{{site.baseurl}}/category/{category}">{category}</a></span>
           </div>
           <div class='subinfo'>
