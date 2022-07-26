@@ -40,7 +40,7 @@ layout: default
 				</section>
 				<section class="post-meta">
 					<div>
-						<div class="post-date">{{ post.date | date: '%B %-d, %Y' }}&nbsp;{% include read_time.html %}</div>
+						<div class="post-date">{{ post.date | date: '%B %-d, %Y' }} · {% include read_time_main.html %}</div>
 						<div class="post-categories">
 							{% if post.categories.size > 0 %}in {% for cat in post.categories %}
 							{% if site.jekyll-archives %}
@@ -57,7 +57,7 @@ layout: default
 					</div>
 					<div class="post-tags">
 						{% assign sliced_tags = post.tags | slice: 0, 5 %}
-						{% for tag in sliced_tags %}<a href="{{ site.baseurl }}/tag/{{ tag }}">{{ tag }}</a>{% if forloop.last == false %}, {%
+						{% for tag in sliced_tags %}<a href="{{ site.baseurl }}/tag/{{ tag }}">#{{ tag }}</a>{% if forloop.last == false %}&nbsp;{%
 						endif %}{% endfor %}
 					</div>
 				</section>
