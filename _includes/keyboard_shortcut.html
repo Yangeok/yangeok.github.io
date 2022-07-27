@@ -1,0 +1,68 @@
+<script>
+  const keyCombinationStore = {}
+
+  function onKeyPress (e) {
+    console.log(e)
+    const isKeyDown = e.type === 'keydown'
+    keyCombinationStore[e.code] = isKeyDown
+    
+    const isWindows = navigator.platform.includes('win') && event.ctrlKey && event.code === 'KeyK'
+    const isMac = navigator.platform.includes('Mac') && event.metaKey && event.code === 'KeyK'
+
+    if (isWindows || isMac) {
+      console.log('palette')
+    }
+
+    // Help Dialog
+    if (event.shiftKey && event.code === 'Slash') {
+      MicroModal.show('modal-2')
+    }
+
+    // Search Bar
+    if (!event.shiftKey && event.code === 'Slash') {
+      MicroModal.show('modal-1')
+    }
+    
+    // Theme Toggle
+    if (isKeyDown && keyCombinationStore['KeyC'] && keyCombinationStore['KeyT']) {
+      document.querySelector('#toggle_dark_theme').click()
+    }
+
+    // Next Post/Page
+    if (event.code === 'ArrowRight') {
+      if (document.querySelector('.next-post a')) {
+        document.querySelector('.next-post a').click()
+      }
+    }
+
+    // Previous Post/Page
+    if (event.code === 'ArrowLeft') {
+      if (document.querySelector('.prev-post a')) {
+        document.querySelector('.prev-post a').click()
+      }
+    }
+
+    // Go to Home
+    if (isKeyDown && keyCombinationStore['KeyG'] && keyCombinationStore['KeyH']) {
+      location.href = '/'
+    }
+
+    // Go to TIL
+    if (isKeyDown && keyCombinationStore['KeyG'] && keyCombinationStore['KeyT']) {
+      location.href = 'https://github.com/Yangeok/Today-I-learned'
+    }
+    
+    // Go to Posts
+    if (isKeyDown && keyCombinationStore['KeyG'] && keyCombinationStore['KeyP']) {
+      location.href = '/posts'
+    }
+    
+    // Go to About
+    if (isKeyDown && keyCombinationStore['KeyG'] && keyCombinationStore['KeyA']) {
+      location.href = '/about'
+    }
+  }
+
+  document.addEventListener('keyup', onKeyPress)
+  document.addEventListener('keydown', onKeyPress)
+</script>
