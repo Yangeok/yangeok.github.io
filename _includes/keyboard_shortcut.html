@@ -32,12 +32,24 @@
       if (document.querySelector('.next-post a')) {
         document.querySelector('.next-post a').click()
       }
+      if (document.querySelectorAll('.newer-posts').length > 1) {
+        document.querySelectorAll('.newer-posts')[1].click()
+      }
+      if (document.querySelectorAll('.newer-posts').length === 1 && location.pathname === '/') {
+        document.querySelectorAll('.newer-posts')[0].click()
+      }
     }
 
     // Previous Post/Page
     if (event.code === 'ArrowLeft') {
       if (document.querySelector('.prev-post a')) {
         document.querySelector('.prev-post a').click()
+      }
+      if (document.querySelectorAll('.newer-posts').length > 1) {
+        document.querySelectorAll('.newer-posts')[0].click()
+      }
+      if (document.querySelectorAll('.newer-posts').length === 1 && location.pathname.includes('/page')) {
+        document.querySelectorAll('.newer-posts')[0].click()
       }
     }
 
