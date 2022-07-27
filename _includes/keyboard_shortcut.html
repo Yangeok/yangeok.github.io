@@ -2,7 +2,6 @@
   const keyCombinationStore = {}
 
   function onKeyPress (e) {
-    console.log(e)
     const isKeyDown = e.type === 'keydown'
     keyCombinationStore[e.code] = isKeyDown
     
