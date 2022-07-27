@@ -26,16 +26,10 @@
 </div>
 
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    try {
-      MicroModal.init({
-        awaitCloseAnimation: true, // set to false, to remove close animation
-        // onShow: modal => console.log("micromodal open"),
-        // onClose: modal => console.log("micromodal close")
-      })
-    } catch (e) {
-      console.log("micromodal error: ", e)
-    }
+  MicroModal.init({
+    awaitCloseAnimation: true,
+    // onShow: modal => console.log(`${modal.id} micromodal open`),
+    // onClose: modal => console.log(`${modal.id} micromodal close`)
   })
 
   SimpleJekyllSearch({
@@ -69,8 +63,8 @@
       fuzzy: false,
       debounceTime: 500,
       sortMiddleware: (a, b) => {
-        const astr = String(a.section) + "-" + String(a.caption)
-        const bstr = String(b.section) + "-" + String(b.caption)
+        const astr = `${String(a.section)}-${String(a.caption)}`
+        const bstr = `${String(b.section)}-${String(b.caption)}`
         return astr.localeCompare(bstr)
       },
       exclude: ['Welcome']
@@ -78,5 +72,5 @@
 </script>
 
 <script>
-  document.getElementById("fouc").style.display = "block"
+  document.getElementById('fouc').style.display = 'block'
 </script>
