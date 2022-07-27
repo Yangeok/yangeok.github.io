@@ -551,3 +551,21 @@ pre code.hljs {
 		}
 	}
 }
+
+/*
+* Modal
+*/
+.d-flex {
+	display: flex;
+}
+.flex-row {
+	flex-direction: row;
+}
+.flex-auto {
+	flex: auto;
+}
+.box-row {
+	list-style-type: none;
+	border: 1px solid transparent;
+	padding: 0.5em 0.25em 0.5em 0.25em;
+}
