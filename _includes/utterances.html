@@ -1,3 +1,28 @@
-<script src="https://utteranc.es/client.js" repo="{{ site.utterances.repo }}"
-  issue-term="{{ site.utterances.issue-term }}" theme="{{ site.utterances.theme }}"
-  crossorigin="{{ site.utterances.crossorigin }}" async></script>
+<script>
+  const scriptElement = document.createElement('script')
+  scriptElement.src = 'https://utteranc.es/client.js'
+  scriptElement.setAttribute('repo', '{{ site.utterances.repo }}')
+  scriptElement.setAttribute('issue-term', '{{ site.utterances.issue-term }}')
+  scriptElement.setAttribute('theme', getUserTheme() === 'dark' ? 'github-dark' : 'github-light')
+  scriptElement.setAttribute('crossorigin', '{{ site.utterances.crossorigin }}')
+  scriptElement.setAttribute('async', '')
+
+  document.querySelector('section.comments').innerText = ''
+  document.querySelector('section.comments').appendChild(scriptElement)
+
+  const mutationObserver = new MutationObserver((mutationsList, observer) => {
+    mutationsList.forEach(mutation => {
+      if (mutation.attributeName === 'color-theme') {
+        if (document.querySelector('.utterances-frame')) {
+          const message = { 
+            type: 'set-theme', 
+            theme: localStorage.getItem('color-theme') === 'dark' ? 'github-dark' : 'github-light',
+          }
+          const iframe = document.querySelector('.utterances-frame')
+          iframe.contentWindow.postMessage(message, 'https://utteranc.es')
+        }
+      }
+    })
+  })
+  mutationObserver.observe(document.documentElement, { attributes: true })
+</script>
