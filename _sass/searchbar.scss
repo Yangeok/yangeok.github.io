@@ -60,12 +60,17 @@
 }
 
 .modal__overlay {
+  html[color-theme="dark"] & {
+    background: rgba(0, 0, 0, 0.80);
+  }
+  html[color-theme="light"] & {
+    background: rgba(0, 0, 0, 0.75);
+  }
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0,0,0,0.75);
   display: flex;
   justify-content: center;
   align-items: center;
