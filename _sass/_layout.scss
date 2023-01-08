@@ -29,6 +29,12 @@ ul.default {
 	@extend %default-ul;
 }
 
+blockquote {
+	border-left: 5px solid $light-gray;
+	margin: 15px 0;
+	padding: 15px;
+}
+
 code {
 	background-color: var(--highlighter-background-color);
 	font-size: 0.8333333333em; // REF: hljs
