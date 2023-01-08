@@ -58,6 +58,7 @@ utterances:
   crossorigin: anonymous
 
 # Google
+search_console_id: DHfuRMH2zEAmkf823DTbhM6ES_IJNldUP_GzIDDOi4w
 ga_tracking_id: UA-125441608-1
 gas_tracking_id: ca-pub-2713910386733232
 
