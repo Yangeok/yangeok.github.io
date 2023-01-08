@@ -1,6 +1,6 @@
 <!-- Script pointing to jekyll-search.js -->
-<script src="{{ site.baseurl }}/dest/jekyll-search.js" type="text/javascript"></script>
-<script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+<script src="/js/jekyll-search.min.js"></script>
+<script src="/js/micromodal-0.4.10.min.js"></script>
 
 <div id="fouc">
   <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
@@ -37,8 +37,25 @@
       if (prop === 'date') {
       }
     },
-    searchResultTemplate: '{% include search_result.html %}',
-    noResultsText: '{% include no_result.html %}',
+    searchResultTemplate: `
+      <div>
+        <a href="{url}"><h4>{title}</h4></a>
+        <p>{content}</p>
+        <div class="subinfo space-between">
+          <span>{date} · {% include read_time.html %}</span>
+          <span>in <a href="{{site.baseurl}}/category/{category}">{category}</a></span>
+        </div>
+        <div class='subinfo'>
+          <div class='post-tags'>{tags}</div>
+        </div>
+      </div>
+      <hr>
+    `,
+    noResultsText: `
+      <div>
+        <h4>No results found</h4>
+      </div>
+    `,
     limit: 10,
     fuzzy: false,
     debounceTime: 500,
