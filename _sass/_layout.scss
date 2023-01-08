@@ -47,6 +47,12 @@ pre code.hljs {
 	font-size: modular-scale(-1);
 }
 
+.mermaid {
+	display: flex;
+	justify-content: center;
+	padding: 2em;
+}
+
 .page-divider {
 	$divider-color: $light-gray;
 	display: block;
