@@ -5,10 +5,15 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-include-cache
+  - jekyll-mermaid
 
 exclude:
-  - '/vendor/'
+  - /vendor/
   - .jekyll-cache
+
+# mermaid
+mermaid:
+  src: /js/mermaid-9.3.0.min.js
 
 # Timezone setting
 timezone: Asia/Seoul
@@ -19,12 +24,12 @@ subtitle: Development Blog
 email: yangwookee@gmail.com
 name: Yangwook Jeong
 description: Yangwook Ian Jeongs' Development Blog
-baseurl: ''
-url: 'https://yangeok.github.io' # the base hostname & protocol for your site
-cover: '/assets/header_image.jpg'
-logo: '/assets/logo_round_script.png'
-search: '/assets/search.png'
-about: '/assets/profile-placeholder.jpg'
+baseurl:
+url: https://yangeok.github.io # the base hostname & protocol for your site
+cover: /assets/header_image.jpg
+logo: /assets/logo_round_script.png
+search: /assets/search.png
+about: /assets/profile-placeholder.jpg
 
 # Dark theme
 dark_theme_toggle: true
@@ -32,7 +37,7 @@ dark_theme_toggle: true
 # Build settings
 # markdown: kramdown
 paginate: 10
-paginate_path: '/page:num/'
+paginate_path: /page:num/
 inter_post_navigation: true
 
 # Archive settings (see https://github.com/jekyll/jekyll-archives/)
@@ -42,8 +47,8 @@ jekyll-archives:
     - tags
   layout: archive
   permalinks:
-    category: '/category/:name/'
-    tag: '/tag/:name/'
+    category: /category/:name/
+    tag: /tag/:name/
 
 # Utterances comments
 utterances:
@@ -52,7 +57,7 @@ utterances:
   theme: preferred-color-scheme
   crossorigin: anonymous
 
-# Google 
+# Google
 ga_tracking_id: UA-125441608-1
 gas_tracking_id: ca-pub-2713910386733232
 
@@ -112,13 +117,13 @@ social:
 # These are for automatically generating sharing metadata for FB and Twitter
 # OS Protocol is for sharing the source of your site, if you're interested. For more, see osprotocol.com
 protocols:
-  fb_image: '/assets/logo.png'
+  fb_image: /assets/logo.png
   fb_image_width: 612
   fb_image_height: 605
-  fb_image_type: 'image/png'
+  fb_image_type: image/png
 
-  twitter_image: '/assets/logo.png'
+  twitter_image: /assets/logo.png
 
-  os_repo: 'https://github.com/Yangeok/yangeok.github.io'
-  os_rcs_type: 'git'
-  os_src: 'git@github.com:Yangeok/yangeok.github.io.git'
+  os_repo: https://github.com/Yangeok/yangeok.github.io
+  os_rcs_type: git
+  os_src: git@github.com:Yangeok/yangeok.github.io.git
