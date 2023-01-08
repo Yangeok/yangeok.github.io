@@ -50,7 +50,7 @@ $dark-blue-green: #55a5ab;
   color: $dark-gray;
   --action-color: #{$blue-green};
   --focused-action-color: #{$dark-blue-green};
-  --highlighter-background-color: #{$pale-gray};
+  --highlighter-background-color: #{$white};
 }
 
 :root[color-theme='dark'] {
