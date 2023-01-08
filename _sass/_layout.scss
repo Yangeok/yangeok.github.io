@@ -47,7 +47,7 @@ pre code.hljs {
 	font-size: modular-scale(-1);
 }
 
-.mermaid {
+[class$='-mermaid'] {
 	display: flex;
 	justify-content: center;
 	padding: 2em;
