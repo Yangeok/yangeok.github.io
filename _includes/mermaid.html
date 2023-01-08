@@ -1,0 +1,10 @@
+<script src="/js/mermaid-9.3.0.min.js"></script>
+<script>
+  $(document).ready(function () {
+    mermaid.initialize({
+      startOnLoad: false,
+      theme: localStorage.getItem('color-theme') === 'light' ? 'default' : 'dark',
+    })
+    mermaid.init(undefined, document.querySelectorAll('.language-mermaid'))
+  })
+</script>
