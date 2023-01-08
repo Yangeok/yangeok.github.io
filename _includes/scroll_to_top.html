@@ -1,5 +1,5 @@
 <script>
-  function addBackToTop (params = {}) {
+  function addBackToTop(params = {}) {
     const {
       backgroundColor = '#000',
       bottomCornerOffset = 20,
@@ -28,25 +28,25 @@
     scrollEmitter.addEventListener('scroll', adapt)
     adapt()
 
-    function adapt () {
+    function adapt() {
       getScrollTop() >= showWhenScrollTopIs ?
         show() :
         hide()
     }
 
-    function show () {
+    function show() {
       if (!hidden) return
       upEl.className = ''
       hidden = false
     }
 
-    function hide () {
+    function hide() {
       if (hidden) return
       upEl.className = 'hidden'
       hidden = true
     }
 
-    function appendElement () {
+    function appendElement() {
       const upEl = document.createElement('div')
       upEl.id = id
       upEl.className = 'hidden'
@@ -59,7 +59,7 @@
       return upEl
     }
 
-    function appendStyles () {
+    function appendStyles() {
       const svgSize = Math.round(0.43 * size)
       const svgTop = Math.round(0.29 * size)
       const styles = /*css*/`
@@ -100,7 +100,7 @@
       document.head.insertAdjacentElement('afterbegin', styleEl)
     }
 
-    function scrollUp () {
+    function scrollUp() {
       const scrollTo = typeof onClickScrollTo === 'function' ? onClickScrollTo() : onClickScrollTo
       const { performance, requestAnimationFrame } = window
       if (scrollDuration <= 0 || typeof performance === 'undefined' || typeof requestAnimationFrame === 'undefined') {
@@ -112,25 +112,25 @@
 
       requestAnimationFrame(step)
 
-      function step (timestamp) {
+      function step(timestamp) {
         const progress = Math.min((timestamp - start) / scrollDuration, 1)
         setScrollTop(initScrollTop - Math.round(ease(progress) * pxsToScrollBy))
         if (progress < 1) { requestAnimationFrame(step) }
       }
     }
 
-    function getScrollTop () {
+    function getScrollTop() {
       return scrollContainer.scrollTop || (scrollDocumentElement && document.documentElement.scrollTop || 0)
     }
 
-    function setScrollTop (value) {
+    function setScrollTop(value) {
       scrollContainer.scrollTop = value
       if (scrollDocumentElement) {
         document.documentElement.scrollTop = value
       }
     }
 
-    function inOutSine (n) {
+    function inOutSine(n) {
       return 0.5 * (1 - Math.cos(Math.PI * n))
     }
   }
