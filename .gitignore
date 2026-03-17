@@ -12,3 +12,11 @@ vendor/
 
 #
 LICENSE.md
+
+.agents
+.claude
+.gemini
+.codex
+.cursor
+.specify
+specs
